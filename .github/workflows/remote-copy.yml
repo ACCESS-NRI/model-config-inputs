@@ -55,17 +55,71 @@ jobs:
             exit 1
           fi
 
+  test-acl:
+    name: Test ACL
+    runs-on: ubuntu-latest
+    if: inputs.target-acl-spec != ''
+    container: rockylinux/rockylinux:8.10
+    env:
+      TEST_DIR: /opt/test
+    steps:
+      - name: Format ACL
+        id: fmt
+        # Remove spaces from ACL string as we have later logic that relies on
+        # the IFS=,
+        run: |
+          acl=$(echo '${{ inputs.target-acl-spec }}' | tr -d ' ')
+          echo "Formatted ACL: $acl
+          echo "acl=$acl" >> $GITHUB_OUTPUT
+
+      - name: Create Users in ACL String
+        # We don't error out here as it could have been because we are adding the same user twice
+        run: |
+          set +e
+          acl="${{ steps.fmt.outputs.acl }}"
+          IFS=,
+          for entry in $acl; do
+            echo "Testing ACL for u(ser): $entry"
+            if [[ $entry =~ ^u(ser)?:([^:]+): ]]; then
+              user="${BASH_REMATCH[2]}"
+              echo "Adding user $user"
+              useradd $user
+            fi
+          done
+
+      - name: Create Groups in ACL String
+        # We don't error out here as it could have been because we are adding the same group twice
+        run: |
+          set +e
+          acl="${{ steps.fmt.outputs.acl }}"
+          IFS=,
+          for entry in $acl; do
+            if [[ $entry =~ ^g(roup)?:([^:]+): ]]; then
+              echo "Testing ACL for g(roup): $entry"
+              group="${BASH_REMATCH[2]}"
+              echo "Adding group $group"
+              groupadd $group
+            fi
+          done
+
       - name: Verify Valid ACL Spec
-        if: inputs.target-acl-spec != ''
-        env:
-          TEST_DIR: ./test
+        # Now that we have created the users and groups from the ACL string, check if it is valid!
         run: |
           mkdir ${{ env.TEST_DIR }}
-          setfacl --test --recursive --modify "${{ inputs.target-acl-spec }}" ${{ env.TEST_DIR }}
+          echo "---- Users ----"
+          cut -d: -f1 /etc/passwd
+
+          echo "---- Groups ----"
+          groups
+
+          setfacl --test --recursive --modify "${{ steps.fmt.outputs.acl }}" ${{ env.TEST_DIR }}
 
   remote:
     name: Remote
     runs-on: ubuntu-latest
+    needs:
+      - setup
+      - test-acl
     environment: ${{ inputs.remote-environment }}
     steps:
       - name: Setup SSH
