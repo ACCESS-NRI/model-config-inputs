@@ -141,4 +141,7 @@ jobs:
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
         run: |
+          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           setfacl --recursive --modify "${{ inputs.target-acl-spec }}" ${{ inputs.target }}
+          getfacl -t ${{ inputs.target }}
+          EOT
