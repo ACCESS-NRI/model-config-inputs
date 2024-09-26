@@ -38,6 +38,12 @@ on:
           d:m::rwx,
           d:o::---
         description: ACL spec to be passed to `setfacl -m` for the given target
+      store-on-tape:
+        type: boolean
+        required: true
+        default: true
+        description: Also store target on the remotes cold storage service
+
 jobs:
   setup:
     name: Setup
@@ -158,7 +164,7 @@ jobs:
     needs:
       - copy-to-remote
     # TODO: Generalize the copy-to-tape job for future remote-environments
-    if: inputs.remote-environment == 'Gadi'
+    if: inputs.store-on-tape && inputs.remote-environment == 'Gadi'
     environment: ${{ inputs.remote-environment }}
     env:
       TAPE_ROOT_DIR: 'FIXME: Where is it?'
