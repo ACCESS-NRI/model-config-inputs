@@ -42,41 +42,46 @@ jobs:
   setup:
     name: Setup
     runs-on: ubuntu-latest
+    outputs:
+      # The `inputs.target-acl-spec` with spaces removed
+      formatted-acl: ${{ steps.fmt.outputs.acl }}
     steps:
       - name: Log inputs
         run: |
-          echo ""::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
+          echo "::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
           echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite ${{ inputs.target }}"
 
       - name: Verify Remote Target
         run: |
-          if [[ "${{ startsWith(inputs.target, vars.CONFIGS_INPUT_DIR) }}" == "true" ]]; then
+          if [[ "${{ startsWith(inputs.target, vars.CONFIGS_INPUT_DIR) }}" == "false" ]]; then
             echo "::error::Remote target '${{ inputs.target }}' doesn't look like a configurations input directory."
             exit 1
           fi
 
-  test-acl:
-    name: Test ACL
-    runs-on: ubuntu-latest
-    if: inputs.target-acl-spec != ''
-    container: rockylinux/rockylinux:8.10
-    env:
-      TEST_DIR: /opt/test
-    steps:
       - name: Format ACL
         id: fmt
         # Remove spaces from ACL string as we have later logic that relies on
         # the IFS=,
         run: |
           acl=$(echo '${{ inputs.target-acl-spec }}' | tr -d ' ')
-          echo "Formatted ACL: $acl
+          echo "Formatted ACL: $acl"
           echo "acl=$acl" >> $GITHUB_OUTPUT
 
+  test-acl:
+    name: Test ACL
+    runs-on: ubuntu-latest
+    if: inputs.target-acl-spec != ''
+    needs:
+      - setup
+    container: rockylinux/rockylinux:8.10
+    env:
+      TEST_DIR: /opt/test
+    steps:
       - name: Create Users in ACL String
         # We don't error out here as it could have been because we are adding the same user twice
         run: |
           set +e
-          acl="${{ steps.fmt.outputs.acl }}"
+          acl="${{ needs.setup.outputs.formatted-acl }}"
           IFS=,
           for entry in $acl; do
             echo "Testing ACL for u(ser): $entry"
@@ -91,7 +96,7 @@ jobs:
         # We don't error out here as it could have been because we are adding the same group twice
         run: |
           set +e
-          acl="${{ steps.fmt.outputs.acl }}"
+          acl="${{ needs.setup.outputs.formatted-acl }}"
           IFS=,
           for entry in $acl; do
             if [[ $entry =~ ^g(roup)?:([^:]+): ]]; then
@@ -112,7 +117,7 @@ jobs:
           echo "---- Groups ----"
           groups
 
-          setfacl --test --recursive --modify "${{ steps.fmt.outputs.acl }}" ${{ env.TEST_DIR }}
+          setfacl --test --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ env.TEST_DIR }}
 
   remote:
     name: Remote
@@ -133,15 +138,16 @@ jobs:
 
       - name: Rsync Source to Target
         run: |
-          rsync --recursive --verbose -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
+          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          rsync --recursive --verbose \
             ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
-            '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ inputs.source }}' \
-            '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ inputs.target }}'
+            ${{ inputs.source }} ${{ inputs.target }}
+          EOT
 
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
         run: |
           ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          setfacl --recursive --modify "${{ inputs.target-acl-spec }}" ${{ inputs.target }}
+          setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ inputs.target }}
           getfacl -t ${{ inputs.target }}
           EOT
