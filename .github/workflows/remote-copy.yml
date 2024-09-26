@@ -123,7 +123,12 @@ jobs:
           echo "---- Groups ----"
           groups
 
-          setfacl --test --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ env.TEST_DIR }}
+          if setfacl --test --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ env.TEST_DIR }}; then
+            echo "::notice::ACL Verification Successful. This does not test that the users/groups exist on the remote environment"
+          else
+            echo "::error::ACL Verification Failed. Check the preceding lines."
+            exit 1
+          fi
 
   copy-to-remote:
     name: Copy To ${{ inputs.remote-environment }}
