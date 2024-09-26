@@ -119,8 +119,8 @@ jobs:
 
           setfacl --test --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ env.TEST_DIR }}
 
-  remote:
-    name: Remote
+  copy-to-remote:
+    name: Copy To ${{ inputs.remote-environment }}
     runs-on: ubuntu-latest
     needs:
       - setup
@@ -150,4 +150,32 @@ jobs:
           ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ inputs.target }}
           getfacl -t ${{ inputs.target }}
+          EOT
+
+  copy-to-tape:
+    name: Copy To Tape
+    runs-on: ubuntu-latest
+    needs:
+      - copy-to-remote
+    # TODO: Generalize the copy-to-tape job for future remote-environments
+    if: inputs.remote-environment == 'Gadi'
+    environment: ${{ inputs.remote-environment }}
+    env:
+      TAPE_ROOT_DIR: 'FIXME: Where is it?'
+    steps:
+      - name: Setup SSH
+        id: ssh
+        uses: access-nri/actions/.github/actions/setup-ssh@main
+        with:
+          private-key: ${{ secrets.SSH_KEY }}
+          hosts: |
+            ${{ secrets.SSH_HOST }}
+            ${{ secrets.SSH_HOST_DATA }}
+
+      - name: Send Target to Tape
+        run: |
+          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          now=$(date +%Y_%m_%d_%H_%M)
+          mdss mkdir ${{ env.TAPE_ROOT_DIR }}/$now
+          mdss put -r -w ${{ inputs.target }} ${{ env.TAPE_ROOT_DIR }}/$now
           EOT
