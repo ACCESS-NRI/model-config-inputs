@@ -9,6 +9,7 @@ on:
         description: The Github Environment for the given remote
         options:
           - Gadi
+          - Gadi Prerelease
       source:
         type: string
         required: true
@@ -137,6 +138,11 @@ jobs:
       - setup
       - test-acl
     environment: ${{ inputs.remote-environment }}
+    outputs:
+      # Space-separated list of paths copied to the target
+      files: ${{ steps.copy.outputs.paths }}
+      # Space-separated list of manifests created at the target
+      manifests: ${{ steps.manifest.outputs.paths }}
     steps:
       - name: Setup SSH
         id: ssh
@@ -148,12 +154,23 @@ jobs:
             ${{ secrets.SSH_HOST_DATA }}
 
       - name: Rsync Source to Target
+        id: copy
+        env:
+          REMOTE_RSYNC_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-files-${{ github.run_id }}.log
+        # In this step, we rsync the files from the source to the target,
+        # capturing the list of files copied as output of the step, since
+        # it's used in the manifest step.
         run: |
           ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          rsync --recursive --verbose \
-            ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
-            ${{ inputs.source }} ${{ inputs.target }}
+          files=$(rsync --recursive --out-format="%n" \
+              ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
+              ${{ inputs.source }} ${{ inputs.target }} \
+            | tr '\n' ' ' \  # convert to space-separated for output
+            > ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
+          )
           EOT
+
+          echo "paths=$(scp -q ${{ secrets.USER }}:${{ secrets.HOST }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} /dev/stdout) >> $GITHUB_OUTPUT
 
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
@@ -162,6 +179,29 @@ jobs:
           setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ inputs.target }}
           getfacl -t ${{ inputs.target }}
           EOT
+
+      - name: Update Manifests
+        id: manifest
+        env:
+          REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
+        # Generate manifests for files copied over in the earlier rsync job
+        run: |
+          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          # FIXME: Make these module use/load an environment variable
+          module use /g/data/vk83/prerelease/modules
+          module load payu
+
+          manifest_paths=()
+          while read -r path:
+            cd $(dirname $path)
+            manifest_dir=$(basename $path)
+            yamf add -n manifest.yaml --force $manifest_dir
+            manifest_paths+=("$manifest_dir/manifest.yaml")
+          done <<< "${{ steps.copy.outputs.paths }}"
+          echo "${manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
+          EOT
+
+          echo "paths=$(scp -q ${{ secrets.USER }}:${{ secrets.HOST }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} /dev/stdout) >> $GITHUB_OUTPUT
 
   copy-to-tape:
     name: Copy To Tape
@@ -172,7 +212,8 @@ jobs:
     if: inputs.store-on-tape && inputs.remote-environment == 'Gadi'
     environment: ${{ inputs.remote-environment }}
     env:
-      TAPE_ROOT_DIR: 'FIXME: Where is it?'
+      TAPE_ROOT_DIR: model-config-inputs
+      PROJECT_CODE: vk83
     steps:
       - name: Setup SSH
         id: ssh
@@ -187,6 +228,7 @@ jobs:
         run: |
           ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           now=$(date +%Y_%m_%d_%H_%M)
-          mdss mkdir ${{ env.TAPE_ROOT_DIR }}/$now
-          mdss put -r -w ${{ inputs.target }} ${{ env.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ env.PROJECT_CODE }} mkdir -p ${{ env.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ env.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.files }} ${{ env.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ env.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.manifests }} ${{ env.TAPE_ROOT_DIR }}/$now
           EOT
