@@ -58,13 +58,6 @@ jobs:
           echo "::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
           echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite ${{ inputs.target }}"
 
-      - name: Verify Remote Target
-        run: |
-          if [[ "${{ startsWith(inputs.target, vars.CONFIGS_INPUT_DIR) }}" == "false" ]]; then
-            echo "::error::Remote target '${{ inputs.target }}' doesn't look like a configurations input directory."
-            exit 1
-          fi
-
       - name: Format ACL
         id: fmt
         # Remove spaces from ACL string as we have later logic that relies on
@@ -153,6 +146,13 @@ jobs:
             ${{ secrets.SSH_HOST }}
             ${{ secrets.SSH_HOST_DATA }}
 
+      - name: Verify Remote Target
+        run: |
+          if [[ "${{ startsWith(inputs.target, vars.CONFIGS_INPUT_DIR) }}" == "false" ]]; then
+            echo "::error::Remote target '${{ inputs.target }}' doesn't look like a configurations input directory."
+            exit 1
+          fi
+
       - name: Rsync Source to Target
         id: copy
         env:
@@ -161,7 +161,7 @@ jobs:
         # capturing the list of files copied as output of the step, since
         # it's used in the manifest step.
         run: |
-          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           files=$(rsync --recursive --out-format="%n" \
               ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
               ${{ inputs.source }} ${{ inputs.target }} \
@@ -175,7 +175,7 @@ jobs:
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
         run: |
-          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ inputs.target }}
           getfacl -t ${{ inputs.target }}
           EOT
@@ -186,10 +186,9 @@ jobs:
           REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
         # Generate manifests for files copied over in the earlier rsync job
         run: |
-          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          # FIXME: Make these module use/load an environment variable
-          module use /g/data/vk83/prerelease/modules
-          module load payu
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          module use ${{ vars.YAMF_MODULE_PATH }}
+          module load ${{ vars.YAMF_MODULE_NAME }}
 
           manifest_paths=()
           while read -r path:
@@ -201,7 +200,7 @@ jobs:
           echo "${manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
           EOT
 
-          echo "paths=$(scp -q ${{ secrets.USER }}:${{ secrets.HOST }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} /dev/stdout) >> $GITHUB_OUTPUT
+          echo "paths=$(scp -q ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} /dev/stdout) >> $GITHUB_OUTPUT
 
   copy-to-tape:
     name: Copy To Tape
@@ -211,9 +210,6 @@ jobs:
     # TODO: Generalize the copy-to-tape job for future remote-environments
     if: inputs.store-on-tape && inputs.remote-environment == 'Gadi'
     environment: ${{ inputs.remote-environment }}
-    env:
-      TAPE_ROOT_DIR: model-config-inputs
-      PROJECT_CODE: vk83
     steps:
       - name: Setup SSH
         id: ssh
@@ -226,9 +222,9 @@ jobs:
 
       - name: Send Target to Tape
         run: |
-          ssh ${{ secrets.USER}}@${{ secrets.HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           now=$(date +%Y_%m_%d_%H_%M)
-          mdss -P ${{ env.PROJECT_CODE }} mkdir -p ${{ env.TAPE_ROOT_DIR }}/$now
-          mdss -P ${{ env.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.files }} ${{ env.TAPE_ROOT_DIR }}/$now
-          mdss -P ${{ env.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.manifests }} ${{ env.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ vars.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.files }} ${{ vars.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ vars.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.manifests }} ${{ vars.TAPE_ROOT_DIR }}/$now
           EOT
