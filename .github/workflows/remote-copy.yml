@@ -58,6 +58,27 @@ jobs:
           echo "::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
           echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite ${{ inputs.target }}"
 
+      - name: Verify inputs
+        run: |
+          errors=false
+
+          if [ -z "${{ inputs.source }}"]; then
+            echo "::error::No 'source' input given, can't copy anything."
+            errors=true
+          fi
+          if [ -z "${{ inputs.target }}"]; then
+            echo "::error::No 'target' input given, can't copy to anywhere."
+            errors=true
+          fi
+          if [ -z "${{ inputs.target-acl-spec }}" ]; then
+            echo "::notice::No 'ACL' input given, not setting the ACLs explicitly."
+          fi
+
+          if [[ "$errors" == "true" ]]; then
+            echo "::error::Errors above, exiting..."
+            exit 1
+          fi
+
       - name: Format ACL
         id: fmt
         # Remove spaces from ACL string as we have later logic that relies on
@@ -160,17 +181,17 @@ jobs:
         # In this step, we rsync the files from the source to the target,
         # capturing the list of files copied as output of the step, since
         # it's used in the manifest step.
+        # We also put it in a space-separated format suitable for output.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          files=$(rsync --recursive --out-format="%n" \
+          rsync --recursive --out-format="%n" \
               ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
               ${{ inputs.source }} ${{ inputs.target }} \
-            | tr '\n' ' ' \  # convert to space-separated for output
-            > ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
-          )
+            | tr '\n' ' ' \
+            | tee ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
           EOT
 
-          echo "paths=$(scp -q ${{ secrets.USER }}:${{ secrets.HOST }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} /dev/stdout) >> $GITHUB_OUTPUT
+          echo "paths=$(scp -q ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} /dev/stdout)" >> $GITHUB_OUTPUT
 
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
@@ -191,8 +212,8 @@ jobs:
           module load ${{ vars.YAMF_MODULE_NAME }}
 
           manifest_paths=()
-          while read -r path:
-            cd $(dirname $path)
+          while read -r path; do
+            cd $(dirname $path) || exit
             manifest_dir=$(basename $path)
             yamf add -n manifest.yaml --force $manifest_dir
             manifest_paths+=("$manifest_dir/manifest.yaml")
@@ -200,7 +221,7 @@ jobs:
           echo "${manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
           EOT
 
-          echo "paths=$(scp -q ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} /dev/stdout) >> $GITHUB_OUTPUT
+          echo "paths=$(scp -q ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} /dev/stdout)" >> $GITHUB_OUTPUT
 
   copy-to-tape:
     name: Copy To Tape
