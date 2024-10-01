@@ -176,12 +176,15 @@ jobs:
 
       - name: Rsync Source to Target
         id: copy
+        # output:
+        #   paths: space-separated list of files copied
         env:
           REMOTE_RSYNC_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-files-${{ github.run_id }}.log
           LOCAL_RSYNC_FILE_LIST_PATH: ./files-copied.log
-        # In this step, we rsync the files from the source to the target,
-        # capturing the list of files copied as output of the step, since
-        # it's used in the manifest step.
+        # In this step, we rsync the files from the source to the target, capturing the list of files copied.
+        # We also remove the empty directories copied, and make it space-separated.
+        # There are two rsync steps, one for the rsyncing of source to target,
+        # and then one locally on the runner to copy the list of files from the remote.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           rsync --recursive --out-format="${{ inputs.target }}/%n" \
@@ -189,13 +192,12 @@ jobs:
               ${{ inputs.source }} ${{ inputs.target }} \
             | grep --invert-match '/$' \
             | tr '\n' ' ' \
-            > ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
+            | tee ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
           EOT
 
           rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} \
             ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
-          cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
           paths=$(cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})
           echo "paths are $paths"
           echo "paths=$paths" >> $GITHUB_OUTPUT
@@ -210,11 +212,15 @@ jobs:
 
       - name: Update Manifests
         id: manifest
+        # output:
+        #   paths: space-separated list of manifests created
         env:
           REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
           LOCAL_MANIFEST_FILE_LIST_PATH: ./manifests-copied.log
           MANIFEST_FILE_NAME: manifest.yaml
-        # Generate manifests for files copied over in the earlier rsync job
+        # Generate manifests for files copied over in the earlier rsync job.
+        # Similar to the copy step, we generate a list of manifest paths created on the remote,
+        # then copy that to the runner locally so we can set it as output.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           module use ${{ vars.YAMF_MODULE_PATH }}
@@ -227,6 +233,7 @@ jobs:
             cd $manifest_dir || exit
             manifest_file=$(basename $path)
             echo "Generating a manifest in $manifest_dir for $manifest_file"
+
             yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_file
             manifest_paths+=("$manifest_dir/${{ env.MANIFEST_FILE_NAME }}")
           done
@@ -236,17 +243,15 @@ jobs:
           rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} \
             ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
-          cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
           paths=$(cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }})
           echo "paths are $paths"
           echo "paths=$paths" >> $GITHUB_OUTPUT
 
-  copy-to-tape:
-    name: Copy To Tape
+  copy-to-tape-gadi:
+    name: Copy To Tape On ${{ inputs.remote-environment }}
     runs-on: ubuntu-latest
     needs:
       - copy-to-remote
-    # TODO: Generalize the copy-to-tape job for future remote-environments
     if: inputs.store-on-tape && startsWith(inputs.remote-environment, 'Gadi')
     environment: ${{ inputs.remote-environment }}
     steps:
@@ -260,6 +265,9 @@ jobs:
             ${{ secrets.SSH_HOST_DATA }}
 
       - name: Send Target to Tape
+        # For each of the absolute paths of copied files and manifests, put
+        # the file (and it's directories relative to inputs.target) on the tape storage
+        # under a datestamp directory.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           now=$(date +%Y_%m_%d_%H_%M)
@@ -267,7 +275,7 @@ jobs:
           mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now
           for file in ${{ needs.copy-to-remote.outputs.files }}; do
             file_relative_to_target=${file#${{ inputs.target }}/}
-            echo "Moving '$file' to ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target"
+            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target'"
             dirs_after_target=$(dirname $file_relative_to_target)
             if [[ "$dirs_after_target" != "." ]]; then
               mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$(dirname $file_relative_to_target)
@@ -277,7 +285,7 @@ jobs:
 
           for file in ${{ needs.copy-to-remote.outputs.manifests }}; do
             file_relative_to_target=${file#${{ inputs.target }}/}
-            echo "Moving '$file' to ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target"
+            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target'"
             dirs_after_target=$(dirname $file_relative_to_target)
             if [[ "$dirs_after_target" != "." ]]; then
               mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$(dirname $file_relative_to_target)
