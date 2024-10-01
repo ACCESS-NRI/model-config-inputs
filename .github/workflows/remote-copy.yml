@@ -178,20 +178,27 @@ jobs:
         id: copy
         env:
           REMOTE_RSYNC_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-files-${{ github.run_id }}.log
+          LOCAL_RSYNC_FILE_LIST_PATH: ./files-copied.log
         # In this step, we rsync the files from the source to the target,
         # capturing the list of files copied as output of the step, since
         # it's used in the manifest step.
-        # We also put it in a space-separated format suitable for output.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          rsync --recursive --out-format="%n" \
+          rsync --recursive --out-format="${{ inputs.target }}/%n" \
               ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
               ${{ inputs.source }} ${{ inputs.target }} \
+            | grep --invert-match '/$' \
             | tr '\n' ' ' \
-            | tee ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
+            > ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
           EOT
 
-          echo "paths=$(scp -q ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} /dev/stdout)" >> $GITHUB_OUTPUT
+          rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} \
+            ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
+          cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
+          paths=$(cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})
+          echo "paths are $paths"
+          echo "paths=$paths" >> $GITHUB_OUTPUT
 
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
@@ -205,6 +212,8 @@ jobs:
         id: manifest
         env:
           REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
+          LOCAL_MANIFEST_FILE_LIST_PATH: ./manifests-copied.log
+          MANIFEST_FILE_NAME: manifest.yaml
         # Generate manifests for files copied over in the earlier rsync job
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
@@ -212,16 +221,25 @@ jobs:
           module load ${{ vars.YAMF_MODULE_NAME }}
 
           manifest_paths=()
-          while read -r path; do
-            cd $(dirname $path) || exit
-            manifest_dir=$(basename $path)
-            yamf add -n manifest.yaml --force $manifest_dir
-            manifest_paths+=("$manifest_dir/manifest.yaml")
-          done <<< "${{ steps.copy.outputs.paths }}"
+          for path in ${{ steps.copy.outputs.paths }}; do
+            echo "Path is $path"
+            manifest_dir=$(dirname $path)
+            cd $manifest_dir || exit
+            manifest_file=$(basename $path)
+            echo "Generating a manifest in $manifest_dir for $manifest_file"
+            yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_file
+            manifest_paths+=("$manifest_dir/${{ env.MANIFEST_FILE_NAME }}")
+          done
           echo "${manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
           EOT
 
-          echo "paths=$(scp -q ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} /dev/stdout)" >> $GITHUB_OUTPUT
+          rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} \
+            ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
+          cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
+          paths=$(cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }})
+          echo "paths are $paths"
+          echo "paths=$paths" >> $GITHUB_OUTPUT
 
   copy-to-tape:
     name: Copy To Tape
@@ -229,7 +247,7 @@ jobs:
     needs:
       - copy-to-remote
     # TODO: Generalize the copy-to-tape job for future remote-environments
-    if: inputs.store-on-tape && inputs.remote-environment == 'Gadi'
+    if: inputs.store-on-tape && startsWith(inputs.remote-environment, 'Gadi')
     environment: ${{ inputs.remote-environment }}
     steps:
       - name: Setup SSH
@@ -245,7 +263,28 @@ jobs:
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           now=$(date +%Y_%m_%d_%H_%M)
+
           mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now
-          mdss -P ${{ vars.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.files }} ${{ vars.TAPE_ROOT_DIR }}/$now
-          mdss -P ${{ vars.PROJECT_CODE }} put -r ${{ needs.copy-to-remote.outputs.manifests }} ${{ vars.TAPE_ROOT_DIR }}/$now
+          for file in ${{ needs.copy-to-remote.outputs.files }}; do
+            file_relative_to_target=${file#${{ inputs.target }}/}
+            echo "Moving '$file' to ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target"
+            dirs_after_target=$(dirname $file_relative_to_target)
+            if [[ "$dirs_after_target" != "." ]]; then
+              mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$(dirname $file_relative_to_target)
+            fi
+            mdss -P ${{ vars.PROJECT_CODE }} put -r $file ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target
+          done
+
+          for file in ${{ needs.copy-to-remote.outputs.manifests }}; do
+            file_relative_to_target=${file#${{ inputs.target }}/}
+            echo "Moving '$file' to ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target"
+            dirs_after_target=$(dirname $file_relative_to_target)
+            if [[ "$dirs_after_target" != "." ]]; then
+              mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$(dirname $file_relative_to_target)
+            fi
+            mdss -P ${{ vars.PROJECT_CODE }} put -r $file ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target
+          done
+
+          echo "Output:"
+          mdss -P ${{ vars.PROJECT_CODE }} ls -R ${{ vars.TAPE_ROOT_DIR }}/$now
           EOT
