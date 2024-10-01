@@ -13,11 +13,11 @@ on:
       source:
         type: string
         required: true
-        description: Remote absolute path to configuration input file/folder
+        description: Remote absolute path to configuration input source
       target:
         type: string
         required: true
-        description: Remote absolute path for the copied configuration input file/folder
+        description: Remote absolute path to configuration input destination
       overwrite-target:
         type: boolean
         required: true
