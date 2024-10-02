@@ -198,9 +198,7 @@ jobs:
           rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} \
             ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
-          paths=$(cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})
-          echo "paths are $paths"
-          echo "paths=$paths" >> $GITHUB_OUTPUT
+          echo "paths=$(cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
 
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
@@ -243,9 +241,7 @@ jobs:
           rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} \
             ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
-          paths=$(cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }})
-          echo "paths are $paths"
-          echo "paths=$paths" >> $GITHUB_OUTPUT
+          echo "paths=$(cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
 
   copy-to-tape-gadi:
     name: Copy To Tape On ${{ inputs.remote-environment }}
