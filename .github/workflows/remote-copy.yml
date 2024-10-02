@@ -230,7 +230,7 @@ jobs:
             manifest_dir=$(dirname $path)
             cd $manifest_dir || exit
             manifest_file=$(basename $path)
-            echo "Generating a manifest in $manifest_dir for $manifest_file"
+            echo "Generating a manifest entry in $manifest_dir for $manifest_file"
 
             yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_file
             manifest_paths+=("$manifest_dir/${{ env.MANIFEST_FILE_NAME }}")
