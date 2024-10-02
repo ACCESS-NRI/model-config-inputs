@@ -229,10 +229,10 @@ jobs:
             echo "Path is $path"
             manifest_dir=$(dirname $path)
             cd $manifest_dir || exit
-            manifest_file=$(basename $path)
-            echo "Generating a manifest entry in $manifest_dir for $manifest_file"
+            manifest_entry_filename=$(basename $path)
+            echo "Generating a manifest entry in $manifest_dir for $manifest_entry_filename"
 
-            yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_file
+            yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_entry_filename
             manifest_paths["$manifest_dir/${{ env.MANIFEST_FILE_NAME }}"]=1
           done
           echo "${!manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
