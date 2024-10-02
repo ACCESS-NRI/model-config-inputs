@@ -1,0 +1,285 @@
+name: Config Inputs Remote Copy
+run-name: "${{ inputs.remote-environment }} Config Input Copy to ${{ inputs.target }}"
+on:
+  workflow_dispatch:
+    inputs:
+      remote-environment:
+        type: choice
+        required: true
+        description: The Github Environment for the given remote
+        options:
+          - Gadi
+          - Gadi Prerelease
+      source:
+        type: string
+        required: true
+        description: Remote absolute path to configuration input source
+      target:
+        type: string
+        required: true
+        description: Remote absolute path to configuration input destination
+      overwrite-target:
+        type: boolean
+        required: true
+        description: Overwrite the remote target if it already exists
+      target-acl-spec:
+        type: string
+        required: true
+        # Default to no write for everyone except tm70_ci
+        # TODO: This default will probably not work for other `remote-environment`s
+        default: >-
+          u::rwx,
+          u:tm70_ci:rwx,
+          g::r-x,
+          m::rwx,
+          o::---,
+          d:u::rwx,
+          d:u:tm70_ci:rwx,
+          d:g::r-x,
+          d:m::rwx,
+          d:o::---
+        description: ACL spec to be passed to `setfacl -m` for the given target
+      store-on-tape:
+        type: boolean
+        required: true
+        default: true
+        description: Also store target on the remotes cold storage service
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    outputs:
+      # The `inputs.target-acl-spec` with spaces removed
+      formatted-acl: ${{ steps.fmt.outputs.acl }}
+    steps:
+      - name: Log inputs
+        run: |
+          echo "::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
+          echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite ${{ inputs.target }}"
+
+      - name: Verify inputs
+        run: |
+          errors=false
+
+          if [ -z "${{ inputs.source }}"]; then
+            echo "::error::No 'source' input given, can't copy anything."
+            errors=true
+          fi
+          if [ -z "${{ inputs.target }}"]; then
+            echo "::error::No 'target' input given, can't copy to anywhere."
+            errors=true
+          fi
+          if [ -z "${{ inputs.target-acl-spec }}" ]; then
+            echo "::notice::No 'ACL' input given, not setting the ACLs explicitly."
+          fi
+
+          if [[ "$errors" == "true" ]]; then
+            echo "::error::Errors above, exiting..."
+            exit 1
+          fi
+
+      - name: Format ACL
+        id: fmt
+        # Remove spaces from ACL string as we have later logic that relies on
+        # the IFS=,
+        run: |
+          acl=$(echo '${{ inputs.target-acl-spec }}' | tr -d ' ')
+          echo "Formatted ACL: $acl"
+          echo "acl=$acl" >> $GITHUB_OUTPUT
+
+  test-acl:
+    name: Test ACL
+    runs-on: ubuntu-latest
+    if: inputs.target-acl-spec != ''
+    needs:
+      - setup
+    container: rockylinux/rockylinux:8.10
+    env:
+      TEST_DIR: /opt/test
+    steps:
+      - name: Create Users in ACL String
+        # We don't error out here as it could have been because we are adding the same user twice
+        run: |
+          set +e
+          acl="${{ needs.setup.outputs.formatted-acl }}"
+          IFS=,
+          for entry in $acl; do
+            echo "Testing ACL for u(ser): $entry"
+            if [[ $entry =~ ^u(ser)?:([^:]+): ]]; then
+              user="${BASH_REMATCH[2]}"
+              echo "Adding user $user"
+              useradd $user
+            fi
+          done
+
+      - name: Create Groups in ACL String
+        # We don't error out here as it could have been because we are adding the same group twice
+        run: |
+          set +e
+          acl="${{ needs.setup.outputs.formatted-acl }}"
+          IFS=,
+          for entry in $acl; do
+            if [[ $entry =~ ^g(roup)?:([^:]+): ]]; then
+              echo "Testing ACL for g(roup): $entry"
+              group="${BASH_REMATCH[2]}"
+              echo "Adding group $group"
+              groupadd $group
+            fi
+          done
+
+      - name: Verify Valid ACL Spec
+        # Now that we have created the users and groups from the ACL string, check if it is valid!
+        run: |
+          mkdir ${{ env.TEST_DIR }}
+          echo "---- Users ----"
+          cut -d: -f1 /etc/passwd
+
+          echo "---- Groups ----"
+          groups
+
+          if setfacl --test --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ env.TEST_DIR }}; then
+            echo "::notice::ACL Verification Successful. This does not test that the users/groups exist on the remote environment"
+          else
+            echo "::error::ACL Verification Failed. Check the preceding lines."
+            exit 1
+          fi
+
+  copy-to-remote:
+    name: Copy To ${{ inputs.remote-environment }}
+    runs-on: ubuntu-latest
+    needs:
+      - setup
+      - test-acl
+    environment: ${{ inputs.remote-environment }}
+    outputs:
+      # Space-separated list of paths copied to the target
+      files: ${{ steps.copy.outputs.paths }}
+      # Space-separated list of manifests created at the target
+      manifests: ${{ steps.manifest.outputs.paths }}
+    steps:
+      - name: Setup SSH
+        id: ssh
+        uses: access-nri/actions/.github/actions/setup-ssh@main
+        with:
+          private-key: ${{ secrets.SSH_KEY }}
+          hosts: |
+            ${{ secrets.SSH_HOST }}
+            ${{ secrets.SSH_HOST_DATA }}
+
+      - name: Verify Remote Target
+        run: |
+          if [[ "${{ startsWith(inputs.target, vars.CONFIGS_INPUT_DIR) }}" == "false" ]]; then
+            echo "::error::Remote target '${{ inputs.target }}' doesn't look like a configurations input directory."
+            exit 1
+          fi
+
+      - name: Rsync Source to Target
+        id: copy
+        # output:
+        #   paths: space-separated list of files copied
+        env:
+          REMOTE_RSYNC_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-files-${{ github.run_id }}.log
+          LOCAL_RSYNC_FILE_LIST_PATH: ./files-copied.log
+        # In this step, we rsync the files from the source to the target, capturing the list of files copied.
+        # We also remove the empty directories copied, and make it space-separated.
+        # There are two rsync steps, one for the rsyncing of source to target,
+        # and then one locally on the runner to copy the list of files from the remote.
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          rsync --recursive --out-format="${{ inputs.target }}/%n" \
+              ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
+              ${{ inputs.source }} ${{ inputs.target }} \
+            | grep --invert-match '/$' \
+            | tr '\n' ' ' \
+            | tee ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
+          EOT
+
+          rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} \
+            ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
+          echo "paths=$(cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
+
+      - name: Set ACLs on Target
+        if: inputs.target-acl-spec != ''
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ inputs.target }}
+          getfacl -t ${{ inputs.target }}
+          EOT
+
+      - name: Update Manifests
+        id: manifest
+        # output:
+        #   paths: space-separated list of manifests created
+        env:
+          REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
+          LOCAL_MANIFEST_FILE_LIST_PATH: ./manifests-copied.log
+          MANIFEST_FILE_NAME: manifest.yaml
+        # Generate manifests for files copied over in the earlier rsync job.
+        # Similar to the copy step, we generate a list of manifest paths created on the remote,
+        # then copy that to the runner locally so we can set it as output.
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          module use ${{ vars.YAMF_MODULE_PATH }}
+          module load ${{ vars.YAMF_MODULE_NAME }}
+
+          declare -A manifest_paths
+          for path in ${{ steps.copy.outputs.paths }}; do
+            echo "Path is $path"
+            manifest_dir=$(dirname $path)
+            cd $manifest_dir || exit
+            manifest_entry_filename=$(basename $path)
+            echo "Generating a manifest entry in $manifest_dir for $manifest_entry_filename"
+
+            yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_entry_filename
+            manifest_paths["$manifest_dir/${{ env.MANIFEST_FILE_NAME }}"]=1
+          done
+          echo "${!manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
+          EOT
+
+          rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }} \
+            ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
+          echo "paths=$(cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
+
+  copy-to-tape-gadi:
+    name: Copy To Tape On ${{ inputs.remote-environment }}
+    runs-on: ubuntu-latest
+    needs:
+      - copy-to-remote
+    if: inputs.store-on-tape && startsWith(inputs.remote-environment, 'Gadi')
+    environment: ${{ inputs.remote-environment }}
+    steps:
+      - name: Setup SSH
+        id: ssh
+        uses: access-nri/actions/.github/actions/setup-ssh@main
+        with:
+          private-key: ${{ secrets.SSH_KEY }}
+          hosts: |
+            ${{ secrets.SSH_HOST }}
+            ${{ secrets.SSH_HOST_DATA }}
+
+      - name: Send Target to Tape
+        # For each of the absolute paths of copied files and manifests, put
+        # the file (and it's directories relative to inputs.target) on the tape storage
+        # under a datestamp directory.
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          now=$(date +%Y_%m_%d_%H_%M)
+
+          mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now
+
+          for file in ${{ needs.copy-to-remote.outputs.files }} ${{ needs.copy-to-remote.outputs.manifests }}; do
+            file_relative_to_target=${file#${{ inputs.target }}/}
+            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target'"
+            dirs_after_target=$(dirname $file_relative_to_target)
+            if [[ "$dirs_after_target" != "." ]]; then
+              mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$(dirname $file_relative_to_target)
+            fi
+            mdss -P ${{ vars.PROJECT_CODE }} put -r $file ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target
+          done
+
+          echo "Output:"
+          mdss -P ${{ vars.PROJECT_CODE }} ls -R ${{ vars.TAPE_ROOT_DIR }}/$now
+          EOT
