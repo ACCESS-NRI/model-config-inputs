@@ -224,7 +224,7 @@ jobs:
           module use ${{ vars.YAMF_MODULE_PATH }}
           module load ${{ vars.YAMF_MODULE_NAME }}
 
-          manifest_paths=()
+          declare -A manifest_paths
           for path in ${{ steps.copy.outputs.paths }}; do
             echo "Path is $path"
             manifest_dir=$(dirname $path)
@@ -233,9 +233,9 @@ jobs:
             echo "Generating a manifest entry in $manifest_dir for $manifest_file"
 
             yamf add -n ${{ env.MANIFEST_FILE_NAME }} --force $manifest_file
-            manifest_paths+=("$manifest_dir/${{ env.MANIFEST_FILE_NAME }}")
+            manifest_paths["$manifest_dir/${{ env.MANIFEST_FILE_NAME }}"]=1
           done
-          echo "${manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
+          echo "${!manifest_paths[@]}" > ${{ env.REMOTE_MANIFEST_FILE_LIST_PATH }}
           EOT
 
           rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
