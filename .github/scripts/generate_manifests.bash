@@ -22,13 +22,6 @@ traverse_dir() {
       # If there are some files, add them using yamf
       # shellcheck disable=SC2086
       yamf add -n manifest.yaml $files
-    else
-      # Else we need to create an empty manifest file...
-      cat <<EOT >> manifest.yaml
-format: yamanifest
-version: 1.0
----
-EOT
     fi
   fi
 }
