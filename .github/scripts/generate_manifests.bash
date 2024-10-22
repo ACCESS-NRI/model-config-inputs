@@ -33,6 +33,19 @@ EOT
   fi
 }
 
-# Start traversal from the directory passed as an argument, or current directory
-start_dir="${1:-.}"
+# Start traversal from the directory passed as an argument
+if [[ $# -ne 3 ]]; then
+  echo "Error, arguments required are not given."
+  exit 1
+fi
+
+yamf_module_path="${1}"
+yamf_module_name="${2}"
+start_dir="${3:-.}"
+
+module use "$yamf_module_path"
+module load "$yamf_module_name"
+
 traverse_dir "$start_dir"
+
+module unload "$yamf_module_name"
