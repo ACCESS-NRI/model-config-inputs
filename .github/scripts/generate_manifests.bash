@@ -13,6 +13,7 @@ traverse_dir() {
       cd "$dir" || exit 2
       # shellcheck disable=SC2086
       yamf add -n manifest.yaml $files
+      cd - || exit 2
     fi
   done
 }
