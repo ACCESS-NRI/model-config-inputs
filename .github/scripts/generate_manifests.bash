@@ -2,20 +2,10 @@
 # Script for the initial generation of manifest.yaml files in inputs directories
 
 traverse_dir() {
-  local dir="$1"
-  local contains_subdir=false
-
-  # Loop through the directory contents
-  for file in "$dir"/*; do
-    if [ -d "$file" ]; then
-      contains_subdir=true
-      traverse_dir "$file"
-    fi
-  done
-
-  # If the directory does not contain any subdirectories...
-  if [ "$contains_subdir" = false ]; then
+  dir_without_subdir=$(find "$1" -type d -links 2 ! -empty)
+  for dir in $dir_without_subdir; do
     echo "Working on $dir:"
+    ...
     # Find all the files that we want to turn into manifests
     files=$(find "$dir" -maxdepth 1 -type f -printf '%f ')
     if [ -n "$files" ]; then
