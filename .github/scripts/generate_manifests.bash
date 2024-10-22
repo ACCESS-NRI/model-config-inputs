@@ -18,7 +18,7 @@ traverse_dir() {
     echo "Working on $dir:"
     # Find all the files that we want to turn into manifests
     files=$(find "$dir" -maxdepth 1 -type f -printf '%f ')
-    if [ -n "$find" ]; then
+    if [ -n "$files" ]; then
       # If there are some files, add them using yamf
       cd "$dir" || exit 2
       # shellcheck disable=SC2086
