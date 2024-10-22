@@ -20,6 +20,7 @@ traverse_dir() {
     files=$(find "$dir" -maxdepth 1 -type f -printf '%f ')
     if [ -n "$find" ]; then
       # If there are some files, add them using yamf
+      cd "$dir" || exit 2
       # shellcheck disable=SC2086
       yamf add -n manifest.yaml $files
     fi
