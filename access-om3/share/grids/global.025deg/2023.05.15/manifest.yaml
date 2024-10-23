@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.025deg/2023.05.15/manifest.yaml
+  hashes:
+    binhash: dd834df7e685c9c2db554e2e3d082f3c
+    md5: 92b685e71a9ff349a39c871f334a55fb
+topog.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.025deg/2023.05.15/topog.nc
+  hashes:
+    binhash: c596006f0bbc89dbefd038c24347ec4e
+    md5: fa71dfdf4a91198d651d657bcf9aadb6

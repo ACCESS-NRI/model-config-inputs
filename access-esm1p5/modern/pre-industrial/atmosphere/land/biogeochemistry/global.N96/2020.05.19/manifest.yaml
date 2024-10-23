@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+Ndep_1850_ESM1.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/atmosphere/land/biogeochemistry/global.N96/2020.05.19/Ndep_1850_ESM1.anc
+  hashes:
+    binhash: 47374849ef42f83e3c02629827a482ee
+    md5: 48462cfa1aeed200c3b8d0bf1b49654a

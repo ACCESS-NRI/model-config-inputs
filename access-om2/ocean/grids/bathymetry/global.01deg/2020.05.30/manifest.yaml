@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+ocean_mask.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/grids/bathymetry/global.01deg/2020.05.30/ocean_mask.nc
+  hashes:
+    binhash: 69e50446fcdcbb2c3cef6e0a772cef8e
+    md5: 7868653fbcc22b1654a6ace0e3b15763
+topog.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/grids/bathymetry/global.01deg/2020.05.30/topog.nc
+  hashes:
+    binhash: 3a4546c712c9848ed0edd4c58efcc1d5
+    md5: 1e69c16bd3a2fd335a746ff30fe7cc84

@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.slt:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/atmosphere/climatology/global.N96/2020.05.19/qrclim.slt
+  hashes:
+    binhash: a16a2eec9778a5964fd2928537c8f4fb
+    md5: dfb5e52b445917514e5c6ce2ac208c46
+qrclim.smow:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/atmosphere/climatology/global.N96/2020.05.19/qrclim.smow
+  hashes:
+    binhash: 6ed44258926230fb895dc936e6696c41
+    md5: 89d4912892b8ebd22329dd131d326ccc

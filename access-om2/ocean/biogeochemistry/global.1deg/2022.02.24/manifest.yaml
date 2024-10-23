@@ -1,0 +1,38 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/README
+  hashes:
+    binhash: ded88ccb69d99cc9b770a17a9603332c
+    md5: 7d2d3019b1ed224b3cd4e8dedf4bb66e
+bgc_param.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/bgc_param.nc
+  hashes:
+    binhash: 5cc81e6e19593309fbc87b0793b4177f
+    md5: 850cd274cfe138ef4aa671b403bfe96e
+co2_iaf.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/co2_iaf.nc
+  hashes:
+    binhash: f850413468c209ee844a0afafc859a66
+    md5: a1385f25d63375156fba70e75a53334a
+co2_ryf.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/co2_ryf.nc
+  hashes:
+    binhash: fc8c64c61763de98ecf3b97f5a0a5363
+    md5: 7b3557fc31a44eeac14094db895e55f3
+csiro_bgc.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/csiro_bgc.res.nc
+  hashes:
+    binhash: 72c80e33d54e157494ae7ea53cf8fbe4
+    md5: 87f4a657f2d8e459d1ae38eec3723fd3
+csiro_bgc_sediment.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/csiro_bgc_sediment.res.nc
+  hashes:
+    binhash: 7cf6a3e8b0392ef7591a68b5caeba28f
+    md5: 12488f7cf8f9c2f714c0ff2dbbb33a9b
+dust.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.1deg/2022.02.24/dust.nc
+  hashes:
+    binhash: 7d2b9b331191472ad81ab5d577443bb4
+    md5: b66d8d72cd49801a74da90b211e8dd21

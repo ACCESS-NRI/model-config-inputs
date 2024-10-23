@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+grid.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ice/grids/global.1deg/2020.05.19/grid.nc
+  hashes:
+    binhash: e27f1045f956550305426c6abb36c868
+    md5: 1213e346055ee073fe33dc12578d99c6
+kmt.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ice/grids/global.1deg/2020.05.19/kmt.nc
+  hashes:
+    binhash: 0ed504b151b168eebdee3aa13edd8c37
+    md5: 2bde88b9e44c46aecf2ba2dff188d1ac

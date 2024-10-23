@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+BC_hi_1850_ESM1.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/atmosphere/aerosol/global.N96/2020.05.19/BC_hi_1850_ESM1.anc
+  hashes:
+    binhash: a98741eb50f16483786933e6bbd700e3
+    md5: 74803eb36a358f9ac8ecdae36cdb7f56
+Bio_1850_ESM1.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/atmosphere/aerosol/global.N96/2020.05.19/Bio_1850_ESM1.anc
+  hashes:
+    binhash: 4ee80aefae4975731a21667b5b26343f
+    md5: 69dc6afb4bc7524d346f3b82f2657c97
+OCFF_1850_ESM1.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/atmosphere/aerosol/global.N96/2020.05.19/OCFF_1850_ESM1.anc
+  hashes:
+    binhash: 0ec3fde7a17984009b8d90ff1ddbc92f
+    md5: 95eec04860fa30ee863d30e67e683407
+scycl_1850_ESM1_v4.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/atmosphere/aerosol/global.N96/2020.05.19/scycl_1850_ESM1_v4.anc
+  hashes:
+    binhash: 4dac8b00fc0b26a086f2dd9e610aba6a
+    md5: 2c390f44c4f57078340cfbd408fdc754

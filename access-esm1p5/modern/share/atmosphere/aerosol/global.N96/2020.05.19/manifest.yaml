@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+DMS_conc.N96:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/aerosol/global.N96/2020.05.19/DMS_conc.N96
+  hashes:
+    binhash: da1baa25e78ec281c82ea4588e30a340
+    md5: 7e8ec8de832c0b9b8c1d9f0eda4d54e5
+biogenic_351sm.N96L38:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/aerosol/global.N96/2020.05.19/biogenic_351sm.N96L38
+  hashes:
+    binhash: 35f8585c3290dfc25ed19e7d93f6a1bb
+    md5: 55eb75f602a4639fb3c8ff40e36eb661
+sulpc_oxidants_N96_L38:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/aerosol/global.N96/2020.05.19/sulpc_oxidants_N96_L38
+  hashes:
+    binhash: e8b31e6ca1af7da756d87243e622e3c8
+    md5: 7c42d1faf74b2b9f6819f2349a8d0d25

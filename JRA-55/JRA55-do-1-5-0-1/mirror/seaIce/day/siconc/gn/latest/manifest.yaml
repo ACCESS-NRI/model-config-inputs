@@ -1,0 +1,128 @@
+format: yamanifest
+version: 1.0
+---
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20210101-20211231.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20210101-20211231.nc
+  hashes:
+    binhash: 9e7b0a7e68425548fdad8ca7961064ee
+    md5: 27de98ba0a5bdd0cf7d78779fbaf14be
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20220331.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20220331.nc
+  hashes:
+    binhash: 8e133882b951946382e88331d210f0e5
+    md5: 945aab5799c13c73f763fef9311fb5d1
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20220508.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20220508.nc
+  hashes:
+    binhash: 718d076a99e84c306a86e880c07f28c4
+    md5: 88548a30abb4e57f83789374192e24d4
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20220625.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20220625.nc
+  hashes:
+    binhash: 4b5924e331a30d4b3ade4a562929911b
+    md5: c7de53136d1b8e3e9e25c0c7ce70941e
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20221103.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20221103.nc
+  hashes:
+    binhash: 5506530e097304965d0cb2d8e6c67521
+    md5: cf45bef26037ac8a953ac018158c3db1
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20221231.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20220101-20221231.nc
+  hashes:
+    binhash: 8a4faa3c8372da08d6914ff8f267447d
+    md5: e9e162ebea206c2509133f992f3435ad
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230211.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230211.nc
+  hashes:
+    binhash: c4699b91b1ddf58f0bb63ecd48f9dac5
+    md5: f8cf7c4f9fca4de105528eb164084d61
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230309.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230309.nc
+  hashes:
+    binhash: ff9f4e06df4ba5dec8af1fbd6f3cd779
+    md5: 6d6fa5c7dd1dd52611965ed04425ee65
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230510.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230510.nc
+  hashes:
+    binhash: ffb0dd2579ff3c1c5754699131ec827c
+    md5: 49f68df76e4fb3408934b799362f505b
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230629.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230629.nc
+  hashes:
+    binhash: 0af3f60dfa4534e53968974c860cf724
+    md5: d7c62693b5be4d752e35957d611a9827
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230710.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230710.nc
+  hashes:
+    binhash: e7e743511621a4d09ca7be27d039c49a
+    md5: a3f3c2d7e6fecbe585d797acea9b98ba
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230713.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230713.nc
+  hashes:
+    binhash: 02355a64e5c40ba01945f1b8ff46fe4a
+    md5: 379cb12f373eacf24f5078eb294bea7d
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230721.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230721.nc
+  hashes:
+    binhash: 1a828a05700910e4f77a5d453f529011
+    md5: 4e0ca95dadefe9d23a240bba1ce21133
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230731.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230731.nc
+  hashes:
+    binhash: d06535e68bf4bb57a64151a5bbbad4e9
+    md5: be51dfb553b806f22ddd10ec780758e0
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230803.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230803.nc
+  hashes:
+    binhash: a061092d84c6d547ab7d17d83e3030ed
+    md5: 6247ac6296b79d5969d36e9eebac1a16
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230804.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230804.nc
+  hashes:
+    binhash: 42706ca55f2c908f6ea91aab8eb1b956
+    md5: 10ee1971aa63f61966400328d18fc6cc
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230812.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230812.nc
+  hashes:
+    binhash: cd6ed3ac1dce5c7a2dc858022bd02df1
+    md5: 12576c5b5ec00444f86a68189873e2c5
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230901.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230901.nc
+  hashes:
+    binhash: 59ec5fdd7fffaa671314280864d07e36
+    md5: 2b23a930f723bae414452985904e8028
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230902.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230902.nc
+  hashes:
+    binhash: 35188c6f2059e94fbeed15fc9a543eee
+    md5: cfa73d9e9b1dd86044d33ed143e8cb3b
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230905.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230905.nc
+  hashes:
+    binhash: 4002c5747a6b36fb0485657bf1c14d80
+    md5: d4e8b20b50634333efd9a7e5eebaae26
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230928.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20230928.nc
+  hashes:
+    binhash: 75834c418dcbe1d055df0428545a8055
+    md5: 7ec616b92de79ba49140551ffcf762c9
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231005.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231005.nc
+  hashes:
+    binhash: 30c2fe3b27fe0c3da0718a20eb9572c4
+    md5: ac9b018787d69d4c0bc8f54fc9eab2dd
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231019.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231019.nc
+  hashes:
+    binhash: 4db336cd3b1449cabe180c9ab88fffe7
+    md5: b84117b932746ce23e05aeb5337d5247
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231029.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231029.nc
+  hashes:
+    binhash: 0d5575f12c605ba41affdec46a69d3f7
+    md5: c6d5d3c5918c4e860c39c356d587039c
+siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231030.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/day/siconc/gn/latest/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gn_20230101-20231030.nc
+  hashes:
+    binhash: cd6d05f235ca9f7455ddf4feba576ee8
+    md5: 8b6dc6e495483b726070f691a7f530c6

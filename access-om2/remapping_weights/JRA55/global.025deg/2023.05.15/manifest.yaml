@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/README
+  hashes:
+    binhash: 37370cd9b1d20c368ae4c1696fc11752
+    md5: f2423848515175147aaf28c88d7cd945
+rmp_jra55_cice_1st_conserve.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/rmp_jra55_cice_1st_conserve.nc
+  hashes:
+    binhash: 5af5fbeafa4947fcc9835e06aadee70e
+    md5: a5ab556badacc038c034ce088745a511
+rmp_jra55_cice_2nd_conserve.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/rmp_jra55_cice_2nd_conserve.nc
+  hashes:
+    binhash: 0b538d790484d1487ff560821f640987
+    md5: d9da8f0e91f3ba5e2699ddb42930a09a
+rmp_jra55_cice_patch.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/rmp_jra55_cice_patch.nc
+  hashes:
+    binhash: 915fef7a42086764a649fde0fc9da249
+    md5: 8379069a00d376c3723c7bd821af2a42

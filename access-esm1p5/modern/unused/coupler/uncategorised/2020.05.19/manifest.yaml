@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+cf_name_table.txt:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/coupler/uncategorised/2020.05.19/cf_name_table.txt
+  hashes:
+    binhash: 1037c693373593b6f91aa991c863fc5d
+    md5: 74333d6fa3153ac294a74a506792375c

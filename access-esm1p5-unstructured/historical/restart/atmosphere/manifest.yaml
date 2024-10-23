@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5-unstructured/historical/restart/atmosphere/README
+  hashes:
+    binhash: 891dcc78f6e1b506efa71ad14037c454
+    md5: 7bd64f211428cf0756fc965d7b443501
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5-unstructured/historical/restart/atmosphere/manifest.yaml
+  hashes:
+    binhash: 133a2decfadde0a1a198632526a3d81d
+    md5: 440924e49c0fa796a5dd36cd78675f3c
+restart_dump.astart:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5-unstructured/historical/restart/atmosphere/restart_dump.astart
+  hashes:
+    binhash: 50aee769bd0377e2678200a417cade69
+    md5: c46e4c9265692579cdca359972bfd3d4
+um.res.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5-unstructured/historical/restart/atmosphere/um.res.yaml
+  hashes:
+    binhash: 151f0ebe5107aba621c18ce1a8c3dce1
+    md5: 78f26c60a2e2e0336c7acec9bfecd7bf

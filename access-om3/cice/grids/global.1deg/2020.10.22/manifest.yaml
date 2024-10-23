@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+kmt.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.1deg/2020.10.22/kmt.nc
+  hashes:
+    binhash: 82aa29ffb62b4c382e3b5b998dcbd235
+    md5: 1f9806c646a620378e5257e480bc9df7
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.1deg/2020.10.22/manifest.yaml
+  hashes:
+    binhash: 1a623ca782ae240a6f9d7a7aec463774
+    md5: 6d1b805ecdcfdc5f885907cc0d00ea77

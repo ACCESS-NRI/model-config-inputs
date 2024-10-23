@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+JRA55do-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.01.25/JRA55do-ESMFmesh.nc
+  hashes:
+    binhash: 2e3338c0e60e1a635ddb96a6ddf75500
+    md5: 1c8481b8c85f59b6cbfc2ed5bc24c77d
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.01.25/manifest.yaml
+  hashes:
+    binhash: a1ab62057feca13ff8ce167581ac6c85
+    md5: f626d28b122177c5d4ed4fb4f6d6551b

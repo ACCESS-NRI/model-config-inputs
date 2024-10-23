@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+o2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions/global.025deg/2020.10.22/o2i.nc
+  hashes:
+    binhash: c07032092b730ae59179869539683379
+    md5: 5c695c6a91b4a2f64e653a5baa62c34a

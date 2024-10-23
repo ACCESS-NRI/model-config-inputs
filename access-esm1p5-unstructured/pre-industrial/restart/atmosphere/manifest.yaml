@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+PI-02.astart-01010101:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5-unstructured/pre-industrial/restart/atmosphere/PI-02.astart-01010101
+  hashes:
+    binhash: d2260b73e5e916887bac8a0af9d34fc2
+    md5: bfc4e6d8dfdb52d75e870adf62f2fb54
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5-unstructured/pre-industrial/restart/atmosphere/manifest.yaml
+  hashes:
+    binhash: 2f4ef62e0f078fe90ce62900710257a7
+    md5: bbb0640a2735c001fef0cad9a0c2ac9f

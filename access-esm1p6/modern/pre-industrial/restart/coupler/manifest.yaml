@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+a2i.nc-01001231:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/coupler/a2i.nc-01001231
+  hashes:
+    binhash: 09dc9a5c184985d4ab39ea497840094d
+    md5: c8f135384aaf0b9a9119a441f76d3f32
+i2a.nc-01001231:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/coupler/i2a.nc-01001231
+  hashes:
+    binhash: 5cd86d9c3715498d7a16d8c2bc0ce39c
+    md5: 87e48c0403e304fe20d21cb277dcc07a
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/coupler/manifest.yaml
+  hashes:
+    binhash: 1a3a44a2f0698c3e5f10c006b257aac1
+    md5: 92fe53451572992ee11892028e78a704
+o2i.nc-01001231:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/coupler/o2i.nc-01001231
+  hashes:
+    binhash: 7c90ebeda8e9ab512143ec1c361ec83f
+    md5: b724ded00ce0f5ad5984b61bee1ad43e

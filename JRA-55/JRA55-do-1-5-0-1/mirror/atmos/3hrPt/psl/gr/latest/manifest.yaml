@@ -1,0 +1,133 @@
+format: yamanifest
+version: 1.0
+---
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202101010000-202112312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202101010000-202112312100.nc
+  hashes:
+    binhash: 8e166cd7863c1502d6887af30a96cf6a
+    md5: 0acae6fe31cd811ad45217ee2efa3bef
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202203312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202203312100.nc
+  hashes:
+    binhash: 0cc8caecb00a082f21cf8a53256c6a91
+    md5: cebb6bdd25296dbb06efab461cffb15b
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202205082100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202205082100.nc
+  hashes:
+    binhash: 8296665d2ed50b3519692277416e2a33
+    md5: 4a307ec93a0d8a165e1761c9b82acce5
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202206252100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202206252100.nc
+  hashes:
+    binhash: cce2b3e9467715dd92013b5f30e77b30
+    md5: 541d04e447e80f9a194b4a2374eb3f79
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202211032100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202211032100.nc
+  hashes:
+    binhash: 9a0c01318daa025597d9d528da0be51f
+    md5: 6f291d3ab9dd7563487cbe94f81e5711
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202212312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202201010000-202212312100.nc
+  hashes:
+    binhash: 1298735f365ba880636b7446e338f24b
+    md5: aca39a812834b2de6c2151e48ef082f6
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202302112100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202302112100.nc
+  hashes:
+    binhash: 78fb29b51d19f6a5180bae180c0307b6
+    md5: feb5726f434c39309434ee4124751e68
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202303092100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202303092100.nc
+  hashes:
+    binhash: b7c8cb697cef91b6aca334d46aa7f2e3
+    md5: f6ba8831e486393791a68813521e8447
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202305102100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202305102100.nc
+  hashes:
+    binhash: 7767a019287de65adeba0ba6374cf1c2
+    md5: 252ccfca638de9b7283ca09a2227db87
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202306292100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202306292100.nc
+  hashes:
+    binhash: 39ef590353c042a60b0a994885ddcce1
+    md5: 5d07effdd887044589f0d29fa94da884
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307102100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307102100.nc
+  hashes:
+    binhash: 8cd9f1a8a9210ad7e70aa7469703a6df
+    md5: 4cb95042ae53acf0baada7abf69d5ec1
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307112100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307112100.nc
+  hashes:
+    binhash: 43fdc9c8c6a7f93244a3d2444acc1535
+    md5: 969d2d21b73ddbf52777435af38cbfa7
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307132100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307132100.nc
+  hashes:
+    binhash: c8f8fc6e56e8d4d26ae70558f480d40e
+    md5: 1222908aa435e7f19e8f63d871ee6924
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307212100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307212100.nc
+  hashes:
+    binhash: e252dacefadc89a5a5e836eaf0ff5945
+    md5: 279cb7d775497ea28b3118cf256432d3
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202307312100.nc
+  hashes:
+    binhash: 738b6c0992b5a7cb68c61e72457cc13f
+    md5: 80cd3a5a5094f4eb984f5cda6f26cb00
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202308032100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202308032100.nc
+  hashes:
+    binhash: e6115006bb684b743128db99f1c5fe8a
+    md5: 080b3e33781abf312cbf4f692618e8e4
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202308042100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202308042100.nc
+  hashes:
+    binhash: 583a2eaa8cf6b189594942bcc11be363
+    md5: 61c0aaaf25165afbcef9d67b346a5554
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202308122100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202308122100.nc
+  hashes:
+    binhash: 786945d1357ae99200b638cce41c8fe0
+    md5: bf1451ec8d84f4398fb96ea91bcb4e56
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309012100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309012100.nc
+  hashes:
+    binhash: 95dc2fa95c60d01aa992e864e5c33cb6
+    md5: b9ffcb26316633d8e66ebfd5e27465b2
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309022100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309022100.nc
+  hashes:
+    binhash: 885b78a7b899f5b415a38f516e1bbedf
+    md5: 743dcfa79ccce903e410576e8e15c8ba
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309052100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309052100.nc
+  hashes:
+    binhash: 1bbaf472d3af6c839497d9d460610c38
+    md5: 206b8a10e8d1aa64979750160180f2a7
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309282100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202309282100.nc
+  hashes:
+    binhash: 6cd578884776d5a9e10d2e13866fcdd7
+    md5: 5830e9f83a78a44e301fb9214916ea79
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310052100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310052100.nc
+  hashes:
+    binhash: 0e61d0469f957b9eb32a6a882c19dd44
+    md5: 8251c513bca0f100ea8ac70e04b2607e
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310192100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310192100.nc
+  hashes:
+    binhash: b66c29eb1f8e82193d386e9fea846ee8
+    md5: 9f2752bb7147c0833daeb31459ef6ce2
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310292100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310292100.nc
+  hashes:
+    binhash: de10e212bb3f99d133766cf8069835da
+    md5: 00771eb75d20793eeee81311433ac73f
+psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310302100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/psl/gr/latest/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202301010000-202310302100.nc
+  hashes:
+    binhash: c4c1ffb57527ac0c93a3e42f25744e83
+    md5: 5fafd22f3d27f72ef520b9f03f777069

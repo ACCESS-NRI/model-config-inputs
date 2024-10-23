@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+dust.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/forcing/global.1deg/2022.02.24/dust.nc
+  hashes:
+    binhash: 27b85ba44177e8fdeea765179841c73c
+    md5: b66d8d72cd49801a74da90b211e8dd21
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/forcing/global.1deg/2022.02.24/manifest.yaml
+  hashes:
+    binhash: 1e6912a3e3e37c0b2b7b1b667d462031
+    md5: 19636c377958453476e3eab170b42e68

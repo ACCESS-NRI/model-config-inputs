@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+grid_spec.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/grids/mosaic/global.1deg/2024.05.08/grid_spec.nc
+  hashes:
+    binhash: a2c6813be9a75777ff6318170e5985ad
+    md5: 709268cd891e6f0e827f6de0249f1a3d

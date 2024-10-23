@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+rmp_jrar_to_cict_CONSERV.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/remapping_weights/JRA55/global.025deg/2020.05.30/rmp_jrar_to_cict_CONSERV.nc
+  hashes:
+    binhash: ffc4e1c77ac35ab9748bf8dbd3a1029f
+    md5: 2e8cf1844fe7a1156ef47170a6eb5ef1
