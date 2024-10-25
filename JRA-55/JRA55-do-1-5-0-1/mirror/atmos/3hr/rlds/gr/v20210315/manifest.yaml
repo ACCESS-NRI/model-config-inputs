@@ -1,8 +1,0 @@
-format: yamanifest
-version: 1.0
----
-rlds_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202001010130-202012312230.nc:
-  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hr/rlds/gr/v20210315/rlds_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202001010130-202012312230.nc
-  hashes:
-    binhash: 1b6a130a88e3b3e8eb83821a0d7ff3d1
-    md5: 34fd34b0ef71e39de5c7b672088771d3

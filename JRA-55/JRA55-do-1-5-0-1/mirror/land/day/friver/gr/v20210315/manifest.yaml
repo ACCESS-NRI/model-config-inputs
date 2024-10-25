@@ -1,8 +1,0 @@
-format: yamanifest
-version: 1.0
----
-friver_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_20200101-20201231.nc:
-  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/land/day/friver/gr/v20210315/friver_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_20200101-20201231.nc
-  hashes:
-    binhash: af204152a080ff7f98494630237d5076
-    md5: 9afec64d8952b3fdcbcb5e987362a739

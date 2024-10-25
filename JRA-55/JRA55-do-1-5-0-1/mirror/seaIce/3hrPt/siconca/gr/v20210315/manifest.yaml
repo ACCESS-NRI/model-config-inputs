@@ -1,8 +1,0 @@
-format: yamanifest
-version: 1.0
----
-siconca_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202001010000-202012312100.nc:
-  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/seaIce/3hrPt/siconca/gr/v20210315/siconca_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202001010000-202012312100.nc
-  hashes:
-    binhash: 304c3a9e74cecfb9d04de7aead65a75e
-    md5: 2e605fe96d5cb7730ec1990135754ba5

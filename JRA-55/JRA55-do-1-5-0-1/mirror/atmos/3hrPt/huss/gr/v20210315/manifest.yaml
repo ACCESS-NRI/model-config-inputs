@@ -1,8 +1,0 @@
-format: yamanifest
-version: 1.0
----
-huss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202001010000-202012312100.nc:
-  fullpath: /g/data/vk83/configurations/inputs/JRA-55/JRA55-do-1-5-0-1/mirror/atmos/3hrPt/huss/gr/v20210315/huss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-5-0-1_gr_202001010000-202012312100.nc
-  hashes:
-    binhash: 103450a40315aa1fc61f79ca3f5056d3
-    md5: ce8133d5363f4a768a43dbd58e7a8c3f
