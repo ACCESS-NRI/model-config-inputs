@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+FEMIP_model_median_iron_2016_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2021.06.07/FEMIP_model_median_iron_2016_fillmiss.nc
+  hashes:
+    binhash: 5ec9969fee40589a5083b438657de476
+    md5: b81d7ee79a6ca30bfd2e6ccc49874267
+manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2021.06.07/manifest.yaml
+  hashes:
+    binhash: d4cedbfa7b7a2c8311a7cc7434cf0edb
+    md5: e13cc39a1bc39f54342444bb1fbe899c

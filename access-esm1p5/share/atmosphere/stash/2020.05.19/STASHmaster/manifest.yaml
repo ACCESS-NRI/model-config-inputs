@@ -1,0 +1,38 @@
+format: yamanifest
+version: 1.0
+---
+.STASHmaster_A.swp:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/.STASHmaster_A.swp
+  hashes:
+    binhash: 60d15938356838580832d4f08f3ae113
+    md5: 6b1d1fc06139ee4c5826fb9ebbb11be6
+STASHmaster_A:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHmaster_A
+  hashes:
+    binhash: 4f75001536d84c87362b607aa42c4f61
+    md5: 74cbbb76edfbd9f7c4b928609c00cd64
+STASHmaster_A.original:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHmaster_A.original
+  hashes:
+    binhash: c7d3efdc2ca645724064afc4f7e655f6
+    md5: ed1004d9aca8d29baba143ea12defbb7
+STASHmaster_O:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHmaster_O
+  hashes:
+    binhash: 763bf187687a18a505264b4b79d40153
+    md5: 5a65d77c62d55e3b62e35ad9662d32a9
+STASHmaster_S:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHmaster_S
+  hashes:
+    binhash: 6d6eb7e1e0f21e635e532202f7b8d462
+    md5: 85ff5d563968cf24d1be595b05b4e52d
+STASHmaster_W:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHmaster_W
+  hashes:
+    binhash: 919a2c8987bd593c78153ff323efeb51
+    md5: 1e4391ea1f6234b33c33168bd7089d06
+STASHsections_A:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHsections_A
+  hashes:
+    binhash: 9401083e4199439b77254fc490b6597d
+    md5: 8525fd107dbea6184db74089f1d55fd9

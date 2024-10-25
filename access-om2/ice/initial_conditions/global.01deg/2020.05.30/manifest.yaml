@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+i2o.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions/global.01deg/2020.05.30/i2o.nc
+  hashes:
+    binhash: 629d52261991b0416d0657c8f320e41d
+    md5: a118ccf1a07bf31676e038e3c2b6c964
+monthly_sstsss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions/global.01deg/2020.05.30/monthly_sstsss.nc
+  hashes:
+    binhash: b3f7ea92fc45f2c7f7a8f3a2b128be32
+    md5: e00d77cf7b519d9bbcfc8bea2e34ef8f
+o2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions/global.01deg/2020.05.30/o2i.nc
+  hashes:
+    binhash: 18846a13e8d18c2478d060870ca55e95
+    md5: a08c3c2c2f7668732f64347adc6c20cb
+u_star.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions/global.01deg/2020.05.30/u_star.nc
+  hashes:
+    binhash: b0fa2f57ceef0fd228656d6f22e7cf57
+    md5: e34bf0c92d0585cfc2d90de32af35e43

@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+monthly_sstsss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ice/climatology/global.1deg/2020.05.19/monthly_sstsss.nc
+  hashes:
+    binhash: 49aab10f25c58a9a0ffa5617847050ff
+    md5: 323d4c605f83f4d7d3126da70153c2ed

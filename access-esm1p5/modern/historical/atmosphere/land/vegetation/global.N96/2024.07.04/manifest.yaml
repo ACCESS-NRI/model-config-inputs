@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+cableCMIP6_LC_1850-2015.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/historical/atmosphere/land/vegetation/global.N96/2024.07.04/cableCMIP6_LC_1850-2015.nc
+  hashes:
+    binhash: fc03d315746c6a0b254a7632dc28295c
+    md5: 78ddfbdc9d9551cf6c6c39fe734716a4

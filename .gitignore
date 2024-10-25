@@ -1,0 +1,8 @@
+# Ignore EVERYTHING
+*
+# Allow traversal of directories
+!*/
+# And allow the leaf manifest.yamls
+!manifest.yaml
+# and the .gitignore
+!.gitignore

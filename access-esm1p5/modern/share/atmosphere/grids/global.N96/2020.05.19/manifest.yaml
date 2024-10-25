@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.mask:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/grids/global.N96/2020.05.19/qrparm.mask
+  hashes:
+    binhash: 6d189a763e3418d2cf61581eded5522e
+    md5: f497c7827bd22ef0b98f1d1af776866d

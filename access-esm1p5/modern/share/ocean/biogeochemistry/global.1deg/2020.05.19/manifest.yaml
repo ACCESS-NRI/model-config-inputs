@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+dust.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ocean/biogeochemistry/global.1deg/2020.05.19/dust.nc
+  hashes:
+    binhash: 89983106fff4813c347b2e98a8f62f52
+    md5: bfbbea8ac46a932d0ec8631afbfc2ae2
+ocmip2_press_monthly_om1p5_bc.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ocean/biogeochemistry/global.1deg/2020.05.19/ocmip2_press_monthly_om1p5_bc.nc
+  hashes:
+    binhash: d4b3605e8765d477b02a55d6ae21feac
+    md5: 2e71cbb78c052e06e3df20f862928da2

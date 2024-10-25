@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ozone_1849_2015_ESM1.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/historical/atmosphere/forcing/global.N96/2021.06.22/ozone_1849_2015_ESM1.anc
+  hashes:
+    binhash: d0f4f5fa148594a325854548f84b82eb
+    md5: b85f5374d1b89cf23cff05b6c35c4d0f

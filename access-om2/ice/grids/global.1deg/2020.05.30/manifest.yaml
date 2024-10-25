@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+grid.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/grids/global.1deg/2020.05.30/grid.nc
+  hashes:
+    binhash: 9098fba9f0126f4a4dc9a585497e1d9d
+    md5: 1213e346055ee073fe33dc12578d99c6
+kmt.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/grids/global.1deg/2020.05.30/kmt.nc
+  hashes:
+    binhash: 81051a2f9916d661153726cac9862e2b
+    md5: a5a7b4be90ec06044588b623d555c4ad

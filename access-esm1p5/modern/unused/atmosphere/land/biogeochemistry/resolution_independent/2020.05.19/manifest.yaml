@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+pftlookup_csiro_v16_17tiles.csv:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/atmosphere/land/biogeochemistry/resolution_independent/2020.05.19/pftlookup_csiro_v16_17tiles.csv
+  hashes:
+    binhash: 11d767e5ad7ec257406d6904cabcd57a
+    md5: 8a0fd917ed5f20bb055decef119d394e
+pftlookup_csiro_v16_17tiles_spinup.csv:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/atmosphere/land/biogeochemistry/resolution_independent/2020.05.19/pftlookup_csiro_v16_17tiles_spinup.csv
+  hashes:
+    binhash: 4d85c1859bea21a86c209a471ca9a462
+    md5: 043997298518f6d819f49634e8948be4
+poolcnpInTumbarumba.csv:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/atmosphere/land/biogeochemistry/resolution_independent/2020.05.19/poolcnpInTumbarumba.csv
+  hashes:
+    binhash: 519109317b47545e99b945b263c75a55
+    md5: 6a4ee7bbb2e7bd074be9d036bf40d9e2

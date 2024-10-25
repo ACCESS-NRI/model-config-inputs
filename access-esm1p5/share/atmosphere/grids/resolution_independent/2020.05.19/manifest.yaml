@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+vertlevs_G3:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/grids/resolution_independent/2020.05.19/vertlevs_G3
+  hashes:
+    binhash: 67eeeb98a7de5eee305f026a20482cc7
+    md5: 58ca02de69b16bd59771c81e06c4c21a

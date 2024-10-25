@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.01deg/2022.02.24/README
+  hashes:
+    binhash: 12a153140f9ac816f440f10fb976e1d0
+    md5: 7a538416d16e83d05b063607d30ce5f6
+i2o.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.01deg/2022.02.24/i2o.nc
+  hashes:
+    binhash: 5a30ea7f2fa8b24b355f6c66cc1b5d1e
+    md5: c06055d70383aec3de3573b97f57c7fc
+o2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.01deg/2022.02.24/o2i.nc
+  hashes:
+    binhash: 99969dbba257c500b572f8f2d7cd7654
+    md5: 83081ee7dd0abd61ef8bc76a4832f885

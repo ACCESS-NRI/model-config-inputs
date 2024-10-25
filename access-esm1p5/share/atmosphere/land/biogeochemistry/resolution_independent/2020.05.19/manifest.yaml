@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+modis_phenology_csiro.txt:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/land/biogeochemistry/resolution_independent/2020.05.19/modis_phenology_csiro.txt
+  hashes:
+    binhash: a86ffb366359d6d353c6f385789185a1
+    md5: a7b89d25cff82cf13cf812a98ad3a029
+pftlookup_csiro_v16_17tiles_wtlnds.csv:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/land/biogeochemistry/resolution_independent/2020.05.19/pftlookup_csiro_v16_17tiles_wtlnds.csv
+  hashes:
+    binhash: 7b29e253f569372abb0a5f2769b58a3d
+    md5: 109d0702afd2cb0a66bf141faccaee30

@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+volcts_18502000ave.dat:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/atmosphere/forcing/resolution_independent/2020.05.19/volcts_18502000ave.dat
+  hashes:
+    binhash: 34b64995370a775e276c7a270aa659a7
+    md5: 47bd369c750be55d706ab60c78bc7aee

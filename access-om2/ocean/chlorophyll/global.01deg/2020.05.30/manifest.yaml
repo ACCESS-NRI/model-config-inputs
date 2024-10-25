@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+chl.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/chlorophyll/global.01deg/2020.05.30/chl.nc
+  hashes:
+    binhash: 636069ff9b90513d567527dbd6cab317
+    md5: 8cc506303102f2faad01b8ffb5268bf5

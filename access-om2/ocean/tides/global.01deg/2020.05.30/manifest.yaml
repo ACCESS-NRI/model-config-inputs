@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+roughness_amp.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/tides/global.01deg/2020.05.30/roughness_amp.nc
+  hashes:
+    binhash: c6f847c4f0ce8610d2e16f47e2a8c898
+    md5: f13792f9f45097086da030ff83035f27
+roughness_cdbot.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/tides/global.01deg/2020.05.30/roughness_cdbot.nc
+  hashes:
+    binhash: d9e19e92c13f73fc174be92ac59d219b
+    md5: a690972610c4d6c20388f44bde3e9837
+tideamp.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/tides/global.01deg/2020.05.30/tideamp.nc
+  hashes:
+    binhash: 654a960d1eb55a632277517485d2a494
+    md5: 92a791452244947a7a393e8ff489c5bb

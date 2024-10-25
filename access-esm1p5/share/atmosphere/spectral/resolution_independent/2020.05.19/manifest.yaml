@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+spec3a_lw_hadgem1_6on:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/spectral/resolution_independent/2020.05.19/spec3a_lw_hadgem1_6on
+  hashes:
+    binhash: 278569974348c9583fe0a2a9e1828ffd
+    md5: 9ff85916dbb36ba6679b954d16387aee
+spec3a_sw_hadgem1_6on:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/spectral/resolution_independent/2020.05.19/spec3a_sw_hadgem1_6on
+  hashes:
+    binhash: 149899ecc54ed754ab8c6f05cb99f140
+    md5: 0e74c13cf3333132f38d8c5c52e1c7eb

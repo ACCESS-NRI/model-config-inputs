@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ocean_temp_salt.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/initial_conditions/global.025deg/2020.10.22/ocean_temp_salt.res.nc
+  hashes:
+    binhash: 2388fb8b08048db283777c0aa685249a
+    md5: 1797b25e6339595a320076080145fd5a

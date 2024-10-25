@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+Ndep_1849_2015.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/historical/atmosphere/land/biogeochemistry/global.N96/2021.06.22/Ndep_1849_2015.anc
+  hashes:
+    binhash: 70379cea8570223286b661347b720b39
+    md5: ff75533e9f52d92c42ac3556b4ec1fed

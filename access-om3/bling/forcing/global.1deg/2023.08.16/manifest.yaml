@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.txt:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/forcing/global.1deg/2023.08.16/README.txt
+  hashes:
+    binhash: 293aabb4d99ac205e90046cfe585b977
+    md5: 01e3be4d619af6fd0724705063f2c586
+Soluble_Fe_Flux_PI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/forcing/global.1deg/2023.08.16/Soluble_Fe_Flux_PI.nc
+  hashes:
+    binhash: ca73258efe3a3153ef4a5569bce32638
+    md5: d52c7823f222af983d085d38f91603df

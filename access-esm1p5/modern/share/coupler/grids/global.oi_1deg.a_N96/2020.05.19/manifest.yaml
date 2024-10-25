@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+areas.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/grids/global.oi_1deg.a_N96/2020.05.19/areas.nc
+  hashes:
+    binhash: 74a0105eb80df5993bef82be279536ee
+    md5: 1aac9e2f82d96176f7b87ba1efc8784e
+grids.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/grids/global.oi_1deg.a_N96/2020.05.19/grids.nc
+  hashes:
+    binhash: dd60e450879fe3d1bc8697179b2bb68e
+    md5: 2348de62f5fe4d55ec849f79e5d027fd
+masks.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/grids/global.oi_1deg.a_N96/2020.05.19/masks.nc
+  hashes:
+    binhash: 9372991dd00c8f0d9a2aeb97fb36d1f1
+    md5: 0a12503901fd3d595bc25b5d3008f9d3
