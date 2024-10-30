@@ -1,0 +1,38 @@
+format: yamanifest
+version: 1.0
+---
+rmp_cice_to_um1t_CONSERV_FRACNNEI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_cice_to_um1t_CONSERV_FRACNNEI.nc
+  hashes:
+    binhash: 10999c39f61114a78b187ec0f98cd3f6
+    md5: a8129dba5b3a7f70a5bc2fbf7f0e4f68
+rmp_cice_to_um1u_CONSERV_FRACNNEI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_cice_to_um1u_CONSERV_FRACNNEI.nc
+  hashes:
+    binhash: 1d0f36698633414416f8e744c88e2746
+    md5: 6fc856e7c2014e20903a01cdd61f4f2c
+rmp_cice_to_um1v_CONSERV_FRACNNEI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_cice_to_um1v_CONSERV_FRACNNEI.nc
+  hashes:
+    binhash: 059755d03c22fc3f8d05af551a2f8efb
+    md5: a2a7d940a9eaab59ec8fa49154116a64
+rmp_um1t_to_cice_CONSERV_DESTAREA.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_um1t_to_cice_CONSERV_DESTAREA.nc
+  hashes:
+    binhash: 32ae62df22794a672138d9b1e4f78dd5
+    md5: 25be6489585df07097d4b6009bf23ec2
+rmp_um1t_to_cice_CONSERV_FRACNNEI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_um1t_to_cice_CONSERV_FRACNNEI.nc
+  hashes:
+    binhash: 79c6f6f8817db2cf95dc815fcd84bc3f
+    md5: 269086623444b48d0cd481e69d4bdc5f
+rmp_um1u_to_cice_CONSERV_FRACNNEI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_um1u_to_cice_CONSERV_FRACNNEI.nc
+  hashes:
+    binhash: 130343da4a880b8d9f3e210eec37a556
+    md5: 58ea836bf1e12d5fc21460763b02548f
+rmp_um1v_to_cice_CONSERV_FRACNNEI.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/coupler/remapping_weights/global.oi_1deg.a_N96/2020.05.19/rmp_um1v_to_cice_CONSERV_FRACNNEI.nc
+  hashes:
+    binhash: 89de238897ba6f06a4c9a1bcefe4ebc8
+    md5: 3bf9569f34b657f2ecab8ef5c93e7659

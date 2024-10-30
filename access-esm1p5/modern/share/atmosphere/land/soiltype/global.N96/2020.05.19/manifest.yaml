@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.soil_igbp_vg:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/land/soiltype/global.N96/2020.05.19/qrparm.soil_igbp_vg
+  hashes:
+    binhash: 51560dde970f7123a7250cc6bdc8f3ef
+    md5: 26ce57f462dd574fe49f290ab7877112

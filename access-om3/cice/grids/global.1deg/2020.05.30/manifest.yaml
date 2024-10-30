@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+grid.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.1deg/2020.05.30/grid.nc
+  hashes:
+    binhash: a6196e451821252c1598c86aa961e51b
+    md5: 1213e346055ee073fe33dc12578d99c6

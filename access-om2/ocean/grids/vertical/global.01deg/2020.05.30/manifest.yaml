@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ocean_vgrid.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/grids/vertical/global.01deg/2020.05.30/ocean_vgrid.nc
+  hashes:
+    binhash: 1d44582b3ffd2f708e0b708ae172ae43
+    md5: 31d7de8345a0bab0ee004915aa36027a

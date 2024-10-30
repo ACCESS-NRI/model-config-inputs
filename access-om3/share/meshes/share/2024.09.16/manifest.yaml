@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+JRA55do-datm-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.09.16/JRA55do-datm-ESMFmesh.nc
+  hashes:
+    binhash: 3aa7bd11a69390ed8739af63e41462fd
+    md5: f583b0fc505afc28f1d7c949a715cccb
+JRA55do-drof-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.09.16/JRA55do-drof-ESMFmesh.nc
+  hashes:
+    binhash: fa1322dbc0ab951527b165f8327c7b5b
+    md5: 3b46260b8c14d12925cf70f82da6658e

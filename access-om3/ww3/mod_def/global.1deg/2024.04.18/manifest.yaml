@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+mod_def.ww3:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/ww3/mod_def/global.1deg/2024.04.18/mod_def.ww3
+  hashes:
+    binhash: 73f83a698fa3e4e4f550f52d09bc4705
+    md5: 5242d76ab7e3a38e2b1aaccc82c287aa

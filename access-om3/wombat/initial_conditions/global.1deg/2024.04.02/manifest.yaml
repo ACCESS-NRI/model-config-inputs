@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+GLODAPv2.2016b.NO3_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/GLODAPv2.2016b.NO3_fillmiss.nc
+  hashes:
+    binhash: ae70284ca4d9849e83de9ff5c30a2d61
+    md5: c5afb27948688743858ef966be81ec2e
+GLODAPv2.2016b.PI_TCO2_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/GLODAPv2.2016b.PI_TCO2_fillmiss.nc
+  hashes:
+    binhash: 6237599e013cc432a62db14c768e9b8b
+    md5: 0aa9f4a37ff5f01cc180d85305815829
+GLODAPv2.2016b.TAlk_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/GLODAPv2.2016b.TAlk_fillmiss.nc
+  hashes:
+    binhash: b73c5a628d1a5f3a2818c3061e3fddd4
+    md5: b84783902f2bc82711496cca49e78a16
+GLODAPv2.2016b.TCO2_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/GLODAPv2.2016b.TCO2_fillmiss.nc
+  hashes:
+    binhash: 39208f747b5bd9792579ede649126eb0
+    md5: 9f8ba1f96551df518e86e510a765311e
+GLODAPv2.2016b.oxygen_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/GLODAPv2.2016b.oxygen_fillmiss.nc
+  hashes:
+    binhash: 765d3d8d4d92fd4c98f25a1ca2e8a914
+    md5: 1abf34fa578d0a589615d5e9a0e465ac
+init_ocean_wombatlite.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/init_ocean_wombatlite.res.nc
+  hashes:
+    binhash: d90040503452b58e11de5af77f5d8c2c
+    md5: 1648193a63179513a705541d5f5f508f

@@ -1,0 +1,38 @@
+format: yamanifest
+version: 1.0
+---
+Alk.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/Alk.nc
+  hashes:
+    binhash: 28c8d56d6bb2a664683430be14806bc4
+    md5: eed848fda5ffec0b1bcb63c118981acc
+Preind_DIC.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/Preind_DIC.nc
+  hashes:
+    binhash: c69e8c7e30ef94c287b6247f6b8000c0
+    md5: 5f0017c64a6c0d1f07021b1dc22de74b
+README.txt:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/README.txt
+  hashes:
+    binhash: 5d3cde1bbeccc5e09c77af5c6f144e16
+    md5: b279793f510da0f663c39dc5a67b6a3e
+init_ocean_cobalt.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/init_ocean_cobalt.res.nc
+  hashes:
+    binhash: 04c325dc5a8a3a20720ca060f98c7b31
+    md5: 4e0fa0c5f1c5a344d472873f1d675e02
+init_ocean_cobalt_phyto_biomass.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/init_ocean_cobalt_phyto_biomass.res.nc
+  hashes:
+    binhash: 0a3fd6a7ccbc1c5259b187cbeb7d24c4
+    md5: d4abae814fd88c7071399330ac829658
+woa13_all_o_annual_01.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/woa13_all_o_annual_01.nc
+  hashes:
+    binhash: a77fcfdaa7bb7e3a531f8f16251fd91e
+    md5: bf5668431d9d4894c7ae1129dac410c6
+woa13_all_p_annual_01.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/bling/initial_conditions/global.1deg/2023.08.16/woa13_all_p_annual_01.nc
+  hashes:
+    binhash: 4721077696917f7b3e6f17b0636f8562
+    md5: c25c77690ed1265ba7a3ad6430eb7413

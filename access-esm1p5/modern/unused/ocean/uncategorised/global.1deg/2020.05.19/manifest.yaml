@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+basin_mask.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/uncategorised/global.1deg/2020.05.19/basin_mask.nc
+  hashes:
+    binhash: 62e637395d6ab59c811527df23ae662b
+    md5: 20fd8740f24ca95c7c086343077e9c0d
+geothermal_heating.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/uncategorised/global.1deg/2020.05.19/geothermal_heating.nc
+  hashes:
+    binhash: 4e885ba5d89e1d4baadb49045ea99ae7
+    md5: 381cb231d8d059576adca0c2bea9c030

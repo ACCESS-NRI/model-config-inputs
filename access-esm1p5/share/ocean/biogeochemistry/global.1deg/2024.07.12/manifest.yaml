@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+bgc_param.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/ocean/biogeochemistry/global.1deg/2024.07.12/bgc_param.nc
+  hashes:
+    binhash: 69340d523fddf842e3e7a030eb139111
+    md5: 9defb35e7a7181e9170a6ae57a4d3348

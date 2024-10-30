@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+grid_spec.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ocean/grids/mosaic/global.1deg/2020.05.19/grid_spec.nc
+  hashes:
+    binhash: 20468cf509d14ec15c908f7fbd8b3de5
+    md5: b9adc1e552201aa3abc6efb72786ec93

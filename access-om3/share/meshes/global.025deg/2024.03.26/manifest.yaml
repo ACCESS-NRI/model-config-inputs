@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+access-om2-025deg-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.025deg/2024.03.26/access-om2-025deg-ESMFmesh.nc
+  hashes:
+    binhash: 31b003c141116da81eb9578b30a0b61d
+    md5: c006851eea2a64e881c41f3e9426e4ac
+access-om2-025deg-nomask-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.025deg/2024.03.26/access-om2-025deg-nomask-ESMFmesh.nc
+  hashes:
+    binhash: e221216e03543adc8234cbef35623765
+    md5: db5407804d759435c6846d2d2c661a6e

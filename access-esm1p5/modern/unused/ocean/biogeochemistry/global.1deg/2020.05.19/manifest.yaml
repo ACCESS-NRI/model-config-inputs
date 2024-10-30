@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+cfc_auscom.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/biogeochemistry/global.1deg/2020.05.19/cfc_auscom.nc
+  hashes:
+    binhash: 40a89985989346cd1b0063eb7d17de6d
+    md5: 38660c8a5de3e3b63d2ae7ba5020d515
+co2_obs.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/biogeochemistry/global.1deg/2020.05.19/co2_obs.nc
+  hashes:
+    binhash: 89bc93814a75c95ff764fb470d1bb0dd
+    md5: bfc3011737ab384d770b937b269e50fc
+ocmip2_abiotic_c14_atm_hist_om3_bc-1-9999.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/biogeochemistry/global.1deg/2020.05.19/ocmip2_abiotic_c14_atm_hist_om3_bc-1-9999.nc
+  hashes:
+    binhash: f4e07f84b143c236629430de02a6db04
+    md5: e91a04235ab63ef060d0c6e350ed9581
+ocmip2_fice_monthly_om1p5_bc.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/biogeochemistry/global.1deg/2020.05.19/ocmip2_fice_monthly_om1p5_bc.nc
+  hashes:
+    binhash: 60f4723017d75ebe8a5bc5fe0f37ad1d
+    md5: c0ed75eef44962dbe6fc9f61dbd228a9
+ocmip2_siple_co2_atm_am2_bc-1-9999.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/biogeochemistry/global.1deg/2020.05.19/ocmip2_siple_co2_atm_am2_bc-1-9999.nc
+  hashes:
+    binhash: 9d5602127fc1378b5da4340574d3e4e3
+    md5: bf1db4228eeacb676da968073b8c5848
+ocmip2_xkw_monthly_om1p5_bc.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/unused/ocean/biogeochemistry/global.1deg/2020.05.19/ocmip2_xkw_monthly_om1p5_bc.nc
+  hashes:
+    binhash: 39f04199eedf0e3a6c638d890795311e
+    md5: 348a035bed83e280bb0a1de0066947fc

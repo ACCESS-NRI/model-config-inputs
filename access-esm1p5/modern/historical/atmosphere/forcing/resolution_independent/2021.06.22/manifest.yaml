@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+TSI_CMIP6_ESM_v2:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/historical/atmosphere/forcing/resolution_independent/2021.06.22/TSI_CMIP6_ESM_v2
+  hashes:
+    binhash: 32f787c9ffdf8902cf642fe218ff76d5
+    md5: 15aa13632aa616dcf079b152a5cbd120
+volcts_cmip6.dat:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/historical/atmosphere/forcing/resolution_independent/2021.06.22/volcts_cmip6.dat
+  hashes:
+    binhash: a041386af6706dc7cb9e96816bf8f234
+    md5: 9fa4ef9fbc7c86cebd22980e73347f67

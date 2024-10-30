@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+grid_spec.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/grids/mosaic/global.01deg/2020.05.30/grid_spec.nc
+  hashes:
+    binhash: c3f48cfe9a3e7dfe99e386ff692514f0
+    md5: cb5674cf1d2be64b3c5c1eac948e51d7
+ocean_hgrid.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/grids/mosaic/global.01deg/2020.05.30/ocean_hgrid.nc
+  hashes:
+    binhash: 17070da7b784c523b49d287ec4ade88c
+    md5: c6d7acf7fe7d6df5d5b72ebf37d11f90
+ocean_mosaic.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/grids/mosaic/global.01deg/2020.05.30/ocean_mosaic.nc
+  hashes:
+    binhash: 6b62f2c9291d0b10f199261e062e9c2f
+    md5: 1263df68b94e7a256be52283df611e94
