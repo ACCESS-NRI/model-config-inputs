@@ -11,8 +11,3 @@ JRA55do-drof-ESMFmesh.nc:
   hashes:
     binhash: fa1322dbc0ab951527b165f8327c7b5b
     md5: 3b46260b8c14d12925cf70f82da6658e
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.09.16/manifest.yaml
-  hashes:
-    binhash: e5976b3d6197e26bc08012d29f9728f5
-    md5: 2bc8c2f251b480a3a997cd8b2d4f4527

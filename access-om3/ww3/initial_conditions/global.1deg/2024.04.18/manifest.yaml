@@ -1,11 +1,6 @@
 format: yamanifest
 version: 1.0
 ---
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-om3/ww3/initial_conditions/global.1deg/2024.04.18/manifest.yaml
-  hashes:
-    binhash: cb53e27e650ef677702f0f51dabaedf4
-    md5: e7275dce634b60a74b859d4a0f9217db
 restart.ww3:
   fullpath: /g/data/vk83/configurations/inputs/access-om3/ww3/initial_conditions/global.1deg/2024.04.18/restart.ww3
   hashes:

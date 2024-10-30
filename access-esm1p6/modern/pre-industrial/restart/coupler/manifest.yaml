@@ -11,11 +11,6 @@ i2a.nc-01001231:
   hashes:
     binhash: 5cd86d9c3715498d7a16d8c2bc0ce39c
     md5: 87e48c0403e304fe20d21cb277dcc07a
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/coupler/manifest.yaml
-  hashes:
-    binhash: 1a3a44a2f0698c3e5f10c006b257aac1
-    md5: 92fe53451572992ee11892028e78a704
 o2i.nc-01001231:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/coupler/o2i.nc-01001231
   hashes:

@@ -31,8 +31,3 @@ init_ocean_wombatlite.res.nc:
   hashes:
     binhash: d90040503452b58e11de5af77f5d8c2c
     md5: 1648193a63179513a705541d5f5f508f
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.1deg/2024.04.02/manifest.yaml
-  hashes:
-    binhash: 391e3b40d23a581db3d28c51f639a7e1
-    md5: ba48160143a98e75cc02f8d1d3daf93d

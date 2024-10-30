@@ -11,11 +11,6 @@ csiro_bgc_sediment.res.nc-01001231:
   hashes:
     binhash: 2e4a43505ac11d1103c81b8a0896df5e
     md5: c19814b8cd24d34c1d0f6ede4b94426c
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/ocean/manifest.yaml
-  hashes:
-    binhash: b24017136f629d1f1be123dab30f36e5
-    md5: dbeafd3535903345fa419352ca65eb7c
 ocean_age.res.nc-01001231:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/ocean/ocean_age.res.nc-01001231
   hashes:

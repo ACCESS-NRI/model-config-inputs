@@ -11,8 +11,3 @@ access-om2-1deg-nomask-ESMFmesh.nc:
   hashes:
     binhash: 4b1cc45032afeaf93b4894937639f5b9
     md5: 9b7120a42b5cb587492e7c31791eb549
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.1deg/2024.01.25/manifest.yaml
-  hashes:
-    binhash: b141061113237e1c114bdd6b94044298
-    md5: ead5b4d3f03cbf009b41053bc21f634e

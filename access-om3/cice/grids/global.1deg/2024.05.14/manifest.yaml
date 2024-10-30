@@ -11,8 +11,3 @@ kmt.nc:
   hashes:
     binhash: 670a7fb52cdc440673304d9a775b3dac
     md5: 4dae75252ac93467f10ea26e833e13d2
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.1deg/2024.05.14/manifest.yaml
-  hashes:
-    binhash: dff65060c4bc91003e1ae864ef7e41b5
-    md5: 66c0cfb8eedceb221ab78d5cd3c4fabf

@@ -21,11 +21,6 @@ input_ice.nml:
   hashes:
     binhash: 16368ceef01af8c2f44ee3c73ae054cb
     md5: e2d6d0541795dd3eeae54cda28ecba96
-manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/ice/manifest.yaml
-  hashes:
-    binhash: 47983ed8072a728c2f7f7040ecc6e739
-    md5: e8636838c0b8a7605513ab2049c909ad
 mice.nc-01001231:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/ice/mice.nc-01001231
   hashes:
