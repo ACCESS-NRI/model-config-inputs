@@ -16,7 +16,7 @@ module use "$yamf_module_path"
 module load "$yamf_module_name"
 
 # This command finds all the leaf directories: see https://unix.stackexchange.com/questions/68577/find-directories-that-do-not-contain-subdirectories/203991#203991
-dir_without_subdir=$(find "$start_dir" -type d -links 2 ! -iwholename "*.git*" ! -empty)
+dir_without_subdir=$(find "$start_dir" -type d -links 2 ! -ipath "*.git*" ! -empty)
 
 for dir in $dir_without_subdir; do
   echo "Working on $dir:"
