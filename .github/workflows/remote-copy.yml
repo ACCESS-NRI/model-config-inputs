@@ -187,6 +187,14 @@ jobs:
         # and then one locally on the runner to copy the list of files from the remote.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+
+          # Create intermediate directories since we can't use `rsync`s `--mkpath` on some deployment targets
+          if [ -d "${{ inputs.source }}" ]; then
+            mkdir -p "${{ inputs.target }}"
+          else  # we can assume we are transferring a file
+            mkdir -p $(dirname "${{ inputs.target }}")
+          fi
+
           rsync --recursive --out-format="${{ inputs.target }}/%n" \
               ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
               ${{ inputs.source }} ${{ inputs.target }} \
