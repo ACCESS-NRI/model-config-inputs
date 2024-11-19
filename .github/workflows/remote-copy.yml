@@ -195,14 +195,18 @@ jobs:
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
 
+          # Determine whether the transfer is of directories or a file.
           # Create intermediate directories since we can't use `rsync`s `--mkpath` on some deployment targets
+          # Also set RSYNC_OUT_FORMAT - this is used to get the absolute path of the file(s) transferred via rsync
           if [ -d "${{ inputs.source }}" ]; then
             mkdir -p "${{ inputs.target }}"
+            RSYNC_OUT_FORMAT='${{ inputs.target }}/%n'  # the target dir + files
           else  # we can assume we are transferring a file
             mkdir -p $(dirname "${{ inputs.target }}")
+            RSYNC_OUT_FORMAT='${{ inputs.target }}'  # the target file
           fi
 
-          rsync --recursive --out-format="${{ inputs.target }}/%n" \
+          rsync --recursive --out-format="$RSYNC_OUT_FORMAT" \
               ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
               ${{ inputs.source }} ${{ inputs.target }} \
             | grep --invert-match '/$' \
