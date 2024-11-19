@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+./basin_mask.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ocean/basins/global.1deg/2020.05.19/basin_mask.nc
+  hashes:
+    binhash: 98462c5ebc1edda0f42ca61be74801e6
+    md5: 20fd8740f24ca95c7c086343077e9c0d
