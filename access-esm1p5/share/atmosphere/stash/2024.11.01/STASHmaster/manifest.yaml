@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+./STASHmaster_A:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2024.11.01/STASHmaster/STASHmaster_A
+  hashes:
+    binhash: 8824ec1b804085ece05ebfe7a92c18cc
+    md5: cf6317cb10867acc54d4893388b1cb81
+./STASHsections_A:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2024.11.01/STASHmaster/STASHsections_A
+  hashes:
+    binhash: 54c3d83f4f1bf0df8403174944517901
+    md5: 8525fd107dbea6184db74089f1d55fd9
