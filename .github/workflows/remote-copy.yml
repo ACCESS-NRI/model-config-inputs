@@ -258,6 +258,21 @@ jobs:
             ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }}
           echo "paths=$(cat ${{ env.LOCAL_MANIFEST_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
 
+      - name: Commit Updated Manifests to ${{ github.repository }}
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          eval $(gpg-agent --daemon)
+          $(gpgconf --list-dirs libexecdir)/gpg-preset-passphrase \
+            --passphrase '${{ secrets.GH_ACTIONS_BOT_GPG_PASSPHRASE }}' \
+            --preset '${{ secrets.GH_ACTIONS_BOT_GPG_KEYGRIP }}'
+          cd "${{ vars.CONFIGS_INPUT_DIR }}" || echo "::error::Can't CD into vars.CONFIGS_INPUT_DIR to commit" && exit 2
+          git add .
+          git commit -m "Updated manifests as part of ${{ env.RUN_URL }}"
+          git push
+          EOT
+
   copy-to-tape-gadi:
     name: Copy To Tape On ${{ inputs.remote-environment }}
     runs-on: ubuntu-latest
