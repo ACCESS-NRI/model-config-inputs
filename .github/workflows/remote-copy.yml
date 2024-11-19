@@ -10,6 +10,10 @@ on:
         options:
           - Gadi
           - Gadi Prerelease
+      note:
+        type: string
+        required: false
+        description: Note describing the reason for the change
       source:
         type: string
         required: true
@@ -56,6 +60,9 @@ jobs:
       - name: Log inputs
         run: |
           echo "::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
+          if [[ "${{ inputs.note }}" != "" ]]; then
+            echo "::notice::Note from ${{ github.actor }}: '${{ inputs.note }}'"
+          fi
           echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite ${{ inputs.target }}"
 
       - name: Verify inputs
