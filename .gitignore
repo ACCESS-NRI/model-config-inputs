@@ -4,5 +4,6 @@
 !*/
 # And allow the leaf manifest.yamls
 !manifest.yaml
+!.manifest.yaml
 # and the .gitignore
 !.gitignore
