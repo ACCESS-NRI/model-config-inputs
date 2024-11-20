@@ -230,7 +230,7 @@ jobs:
         env:
           REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
           LOCAL_MANIFEST_FILE_LIST_PATH: ./manifests-copied.log
-          MANIFEST_FILE_NAME: manifest.yaml
+          MANIFEST_FILE_NAME: .manifest.yaml
         # Generate manifests for files copied over in the earlier rsync job.
         # Similar to the copy step, we generate a list of manifest paths created on the remote,
         # then copy that to the runner locally so we can set it as output.
