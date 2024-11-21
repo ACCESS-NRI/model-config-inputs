@@ -17,11 +17,11 @@ on:
       source:
         type: string
         required: true
-        description: Remote absolute path to configuration input source
+        description: Remote absolute path to configuration input source file or directory
       target:
         type: string
         required: true
-        description: Remote absolute path to configuration input destination
+        description: Remote absolute path to configuration input destination directory
       overwrite-target:
         type: boolean
         required: true
@@ -69,12 +69,8 @@ jobs:
         run: |
           errors=false
 
-          if [ -z "${{ inputs.source }}"]; then
-            echo "::error::No 'source' input given, can't copy anything."
-            errors=true
-          fi
-          if [ -z "${{ inputs.target }}"]; then
-            echo "::error::No 'target' input given, can't copy to anywhere."
+          if [[ "$(basename "${{ inputs.source }}")" == "$(basename "${{ inputs.target }}")" ]]; then
+            echo "::error::Attempted to copy a file into a file (destination must be a directory) or copy a directory into one with the same name (common rsync error)"
             errors=true
           fi
           if [ -z "${{ inputs.target-acl-spec }}" ]; then
@@ -194,15 +190,14 @@ jobs:
         # and then one locally on the runner to copy the list of files from the remote.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-
           # Create intermediate directories since we can't use `rsync`s `--mkpath` on some deployment targets
-          if [ -d "${{ inputs.source }}" ]; then
-            mkdir -p "${{ inputs.target }}"
-          else  # we can assume we are transferring a file
-            mkdir -p $(dirname "${{ inputs.target }}")
-          fi
+          mkdir -p "${{ inputs.target }}"
 
-          rsync --recursive --out-format="${{ inputs.target }}/%n" \
+          # The output of the rsync command will be a list of transferred absolute paths, for further processing
+          RSYNC_OUT_FORMAT="$(readlink -f "${{ inputs.target }}")/%n"
+
+          # Transfer the source to the target, and pipe a space-separated list of destination file paths
+          rsync --recursive --out-format="$RSYNC_OUT_FORMAT" \
               ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
               ${{ inputs.source }} ${{ inputs.target }} \
             | grep --invert-match '/$' \
