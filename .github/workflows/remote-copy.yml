@@ -262,7 +262,12 @@ jobs:
           $(gpgconf --list-dirs libexecdir)/gpg-preset-passphrase \
             --passphrase '${{ secrets.GH_ACTIONS_BOT_GPG_PASSPHRASE }}' \
             --preset '${{ secrets.GH_ACTIONS_BOT_GPG_KEYGRIP }}'
-          cd "${{ vars.CONFIGS_INPUT_DIR }}" || echo "::error::Can't CD into vars.CONFIGS_INPUT_DIR to commit" && exit 2
+
+          if ! cd "${{ vars.CONFIGS_INPUT_DIR }}"; then
+            echo "::error::Can't CD into vars.CONFIGS_INPUT_DIR to commit"
+            exit 2
+          fi
+
           git add .
           git commit -m "Updated manifests as part of ${{ env.RUN_URL }}"
           git push
