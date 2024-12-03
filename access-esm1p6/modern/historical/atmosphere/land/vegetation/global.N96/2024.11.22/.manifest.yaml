@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/land/vegetation/global.N96/2024.11.22/README.md
+  hashes:
+    binhash: a39ecc9b75af362b54c930dd2d08252b
+    md5: fe97bdc64c4fd7def5e91a4fecd4499f
