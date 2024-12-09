@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.ash:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orographic_formdrag/qrparm.ash
+  hashes:
+    binhash: cb92878218ff03546349cc2d372877e8
+    md5: 8a65bc2e743129f97d11fb0628434351
+qrparm.ash.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orographic_formdrag/qrparm.ash.nc
+  hashes:
+    binhash: 41d02a7df13da2e7b4292dda8dfa2e74
+    md5: 50ba8082a5551663658918cdac11c692

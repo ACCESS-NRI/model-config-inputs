@@ -1,0 +1,43 @@
+format: yamanifest
+version: 1.0
+---
+da384a.d51840:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/da384a.d51840
+  hashes:
+    binhash: 4f9cc1e3662ea8838e6eacd3f1a36f41
+    md5: d742fbf0cbb144c305bbc05acc38911b
+db149_issue52:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/db149_issue52
+  hashes:
+    binhash: 1e125e149d05d1b8d0b3521547663953
+    md5: b1ae2779574d0aa85a10f9b809b10495
+db149a.da19810902_00:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/db149a.da19810902_00
+  hashes:
+    binhash: 36f8b1e06e22ef85c69a9e7293fae813
+    md5: 61f4d710d8c943845a903747b3b91615
+de208a.da19840901_00:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/de208a.da19840901_00
+  hashes:
+    binhash: 286b15de1f05c5bcc4c2b230fbbaca0f
+    md5: fe43ef80a1cc8879321d8297aeaaefa4
+de208a.da20000101_00_redated:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/de208a.da20000101_00_redated
+  hashes:
+    binhash: 0e5d6892ecf8908ccb5c43e443d43c33
+    md5: 9f76b7b3b051eb31f51e2e5badb6dde1
+de208a.da20110901_00_redated:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/de208a.da20110901_00_redated
+  hashes:
+    binhash: e3cf2a499e294f6e0ffc91ff839e815f
+    md5: d9ce462fc89ae0975c33282c0e6cae85
+vegfrac52:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/vegfrac52
+  hashes:
+    binhash: af226f6cdcf9665332420fe72a41429b
+    md5: 27c8f53ec67d5269bd60cf135d6d79e4
+vegfunc_13:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/vegfunc_13
+  hashes:
+    binhash: a5670b0a42566a9e7e077ad406604761
+    md5: 4c79cb82074bb5d60d849074bbc40f58

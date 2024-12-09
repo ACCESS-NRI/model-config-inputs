@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.sulpdms:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/classic_aerosol/lana/qrclim.sulpdms
+  hashes:
+    binhash: 10148690e6b3bc88093c5a41cdb3f63b
+    md5: cfd22ca27ef15391cf2c9aaa998644d9
+qrclim.sulpdms.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/classic_aerosol/lana/qrclim.sulpdms.nc
+  hashes:
+    binhash: 962586d7faa3ce0c383ce78d299db7bc
+    md5: da26e906c639b72723d81dac74a50238

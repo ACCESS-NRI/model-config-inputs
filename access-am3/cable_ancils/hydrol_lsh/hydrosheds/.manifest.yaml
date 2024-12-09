@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.hydtop:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/hydrol_lsh/hydrosheds/qrparm.hydtop
+  hashes:
+    binhash: a00c8245f87ea0217694d535b521a984
+    md5: 33c30b038d8cbd2868e219ad5ae5edec
+qrparm.hydtop.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/hydrol_lsh/hydrosheds/qrparm.hydtop.nc
+  hashes:
+    binhash: f49742e6df00b350bdeac199f1983dcb
+    md5: 5aa9d85d0fdc769fe77c354f944c2c57

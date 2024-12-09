@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+landfrac_new.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/landfrac_new.nc
+  hashes:
+    binhash: 545ced6441596faffcd4b9fd22b9215b
+    md5: 865fedba5bd159f24a7d8d0cbee99695
+landfrac_old.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/landfrac_old.nc
+  hashes:
+    binhash: 302d1bb571d938c2e5cc2bd6fa22f0e6
+    md5: 6e4344a2c7139c68ab691164fa7c7076
+mask_new.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/mask_new.nc
+  hashes:
+    binhash: 58d5cfb2277c49d819121a133cf46f32
+    md5: 03d6d5ee69d1f03b938bb90bbc5b12ac
+mask_old.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/mask_old.nc
+  hashes:
+    binhash: ceb27acf73f53d9cccbea3db7a0f888e
+    md5: 0dad6db3fac7ab0de43268a6306ed48a

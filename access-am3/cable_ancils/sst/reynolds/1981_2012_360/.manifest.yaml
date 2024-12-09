@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.sst:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/sst/reynolds/1981_2012_360/qrclim.sst
+  hashes:
+    binhash: 169d22087dab65efdb6a7fa39acb3014
+    md5: 92973694b07c0b291eaad23adc437a1e
+qrclim.sst.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/sst/reynolds/1981_2012_360/qrclim.sst.nc
+  hashes:
+    binhash: 48a90a15ad943a40df1474383ffdaa22
+    md5: 48d7539f8b85a87f95a0611536b483c2

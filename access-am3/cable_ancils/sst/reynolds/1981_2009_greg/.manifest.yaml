@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.sst.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/sst/reynolds/1981_2009_greg/qrclim.sst.nc
+  hashes:
+    binhash: 6c99807d410d1153f01d0f3a59d2cafb
+    md5: 1ac6d4eb91647f869a796c3e4d6d1f72

@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.rivseq:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/rivers_trip/sequence/etopo5/qrparm.rivseq
+  hashes:
+    binhash: 88996e5ed4a0d72242bd665dd8b124b4
+    md5: 3d4f739626101311fa838c74200922f3
+qrparm.rivseq.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/rivers_trip/sequence/etopo5/qrparm.rivseq.nc
+  hashes:
+    binhash: 681062d66f1054c89b51df49266435a8
+    md5: 912f8c142087072a53cab27eef41656f

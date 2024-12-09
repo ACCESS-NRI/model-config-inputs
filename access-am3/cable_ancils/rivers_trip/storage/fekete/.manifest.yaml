@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.rivstor:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/rivers_trip/storage/fekete/qrclim.rivstor
+  hashes:
+    binhash: b12eae95c906d366c1b1b9d8d3b82b0c
+    md5: 20ce68add5c0fbbe630d77adce8c2222
+qrclim.rivstor.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/rivers_trip/storage/fekete/qrclim.rivstor.nc
+  hashes:
+    binhash: 704941b0402d5738a09a765a9ca079d5
+    md5: b4d926745ebefcb587f6a698405a1d7d

@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.veg.func:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/vegetation/func_type_modis/qrparm.veg.func
+  hashes:
+    binhash: 2cfe5292e62bb225d086ae1c7356e394
+    md5: 1a221e5bfd50e69d5bbe67b65fbd2f87
+qrparm.veg.func.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/vegetation/func_type_modis/qrparm.veg.func.nc
+  hashes:
+    binhash: 4dd21a7d70be9ba07fafb414f987b0f6
+    md5: ba6dee26c306ed9d7e7aba65d00e7fe0

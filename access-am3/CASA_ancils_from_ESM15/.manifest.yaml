@@ -1,0 +1,198 @@
+format: yamanifest
+version: 1.0
+---
+CpoolLabile:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolLabile
+  hashes:
+    binhash: e097f6624b00f92227421875897975ab
+    md5: 4e26c68e2293b7526910dfd2a314eaab
+CpoolLeaf:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolLeaf
+  hashes:
+    binhash: bd32f4f66b755b4150b7f11b0ff152f0
+    md5: 395f0273a1289f0aa1c36f9c98026b6f
+CpoolLitterCwd:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolLitterCwd
+  hashes:
+    binhash: 2204bb55fd912bfabcba14afa9af79f5
+    md5: d6cd17334f46096484b43471f781b735
+CpoolLitterMtb:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolLitterMtb
+  hashes:
+    binhash: e9c84fca52d4e9603ca7e9eb78ccc30a
+    md5: d0091f2b16377e6ddfb6666fed33374f
+CpoolLitterStr:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolLitterStr
+  hashes:
+    binhash: c325fe272573cc5a8d47a651ad5ddc61
+    md5: b0c81a01cf91d96a559f92b4ab24fecb
+CpoolRoot:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolRoot
+  hashes:
+    binhash: c0ed4120c4273acc8331f2db7159b820
+    md5: 059417d064bb68ae75012a367d05ce42
+CpoolSoilMic:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolSoilMic
+  hashes:
+    binhash: 9e6609ece6cfef02a400ef2ec8982641
+    md5: 073d474fe923785b25a22356f26dabfe
+CpoolSoilPass:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolSoilPass
+  hashes:
+    binhash: 7f5d1af602bb75026ab82399620d9fee
+    md5: 39a49285b4ee5f00f93538651d19e1d0
+CpoolSoilSlow:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolSoilSlow
+  hashes:
+    binhash: 15996bdb628dca6e8bf9156c40b66542
+    md5: e737e8455a17b60829e136a83ce933a5
+CpoolWood:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/CpoolWood
+  hashes:
+    binhash: 723963d85c5b5a5745ca6e3749e9a68e
+    md5: 02977970ba5a109edc3604e7c30f2b46
+Ndeposition:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/Ndeposition
+  hashes:
+    binhash: 21df2211e12f25d1919a14e61325fd12
+    md5: 753a051d5dfe0c599e1c56599ff1fb4c
+Nfixation:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/Nfixation
+  hashes:
+    binhash: 2979b8f351c6cb849176816fcca0d79e
+    md5: 831a8bd345f4378e7597242ef579627d
+NpoolLeaf:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolLeaf
+  hashes:
+    binhash: f026980dfe58972f27e6b6c20f803e93
+    md5: 81e25a0f5420430173e3f83038dc4c4b
+NpoolLitterCwd:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolLitterCwd
+  hashes:
+    binhash: 6f53084f8e6cca7250b286ffd3171f5c
+    md5: e2d0ca65f846492cbce718d73a51d420
+NpoolLitterMtb:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolLitterMtb
+  hashes:
+    binhash: ab9a643b796befe6fc5960d3b4f44750
+    md5: 6d318dff4d6b3e4f05559e16caf77683
+NpoolLitterStr:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolLitterStr
+  hashes:
+    binhash: 0bb3e913c9b25e9e75914810b89992dd
+    md5: bd94984b674e0941a5da1b8930d4de49
+NpoolRoot:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolRoot
+  hashes:
+    binhash: ac9d4456f0b6341cde4172ed1055e96c
+    md5: 2b4438d1ba1800e4946b58904facb57b
+NpoolSoilMic:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolSoilMic
+  hashes:
+    binhash: 57df51ff7f264b2e1d239975e5c4e3f5
+    md5: 66a94d23ce507e95907e7bfac350e43f
+NpoolSoilMin:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolSoilMin
+  hashes:
+    binhash: 87c2b8a9233ce58a0ffc876afe3bae84
+    md5: 57aea5b0cd74c18738f10688ef63c214
+NpoolSoilPass:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolSoilPass
+  hashes:
+    binhash: 4774ba94d8c4aa0a1b72d4167f6717ee
+    md5: 2879d599f35e4965fce99bbfca27698a
+NpoolSoilSlow:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolSoilSlow
+  hashes:
+    binhash: 0ca101f340df7e9e68586b207423ec7e
+    md5: 72c7fb09c9bfa4998c27fd6e91e1668d
+NpoolWood:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/NpoolWood
+  hashes:
+    binhash: 8f37b52ba0bebdee1f7df1da24936e4f
+    md5: a294d0d6f1328c47fb6c6200857fd7d0
+Pdust:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/Pdust
+  hashes:
+    binhash: b0eb2301266e35ba2b6c61faeae3b428
+    md5: dde86600bfa8a7e13d35cb296367a7a6
+PpoolLeaf:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolLeaf
+  hashes:
+    binhash: 9312a4915385f49907e037adbbfee574
+    md5: bd37f6ff2120e75b1d5498470a032bd6
+PpoolLitterCwd:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolLitterCwd
+  hashes:
+    binhash: e6f4d2b46e34971b6d5473d6855fe3fa
+    md5: 0a55f8c1b79f71c8883c99f816e9122e
+PpoolLitterMtb:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolLitterMtb
+  hashes:
+    binhash: 8995481fdd0804e85183e2371fca71c4
+    md5: 04137498a9cd88bebe39e627b3f8babe
+PpoolLitterStr:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolLitterStr
+  hashes:
+    binhash: 95476654f332b2af04b64d80127a7f34
+    md5: 09bc0e1a31844c254d8bffc81fbf9a49
+PpoolRoot:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolRoot
+  hashes:
+    binhash: e86366bf763b7bc805c81ab06e39fff1
+    md5: bf8aa0989678b1581d28dfedfdb7df5f
+PpoolSoilLabile:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolSoilLabile
+  hashes:
+    binhash: a12cf89583fefa997f407c75e7c69839
+    md5: 2cc0b2a9792e90b899d6f30de51cffcc
+PpoolSoilMic:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolSoilMic
+  hashes:
+    binhash: 7d2c78ee0e2ec95242989eb196aaa751
+    md5: 8caf0f809348eb429db411c51657388f
+PpoolSoilOcc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolSoilOcc
+  hashes:
+    binhash: a0828186aff251d7394ba0bd02d15852
+    md5: 75d2e54bad87f7f36fb1709035fd8223
+PpoolSoilPass:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolSoilPass
+  hashes:
+    binhash: f4c45ea1333a47496d15b254d0df10d5
+    md5: 383f73b58a0af3894f0f10cabb4b372d
+PpoolSoilSlow:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolSoilSlow
+  hashes:
+    binhash: c616fb5b886b20e6ac0312869ee82a4d
+    md5: 990e37c058db7208790d387dd26e6c41
+PpoolSoilSorb:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolSoilSorb
+  hashes:
+    binhash: 7dc1a395cd833a34f10f1272e3023861
+    md5: 874f18645c6317d4a34cb20a2610a2d8
+PpoolWood:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/PpoolWood
+  hashes:
+    binhash: 0a785c956ee911d70486ebb5c4656853
+    md5: 159f51a7bd72251dee67c1f003caa943
+Pweathering:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/Pweathering
+  hashes:
+    binhash: 029381539a6a20fbc1716985f5ecb92d
+    md5: 9b34adb2c4bba311cf6ae4142e5a00aa
+SoilOrder:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/SoilOrder
+  hashes:
+    binhash: 0430e31941a265356ac590e397f8d154
+    md5: 33f6a011b61605f9825c1d2c4e415367
+glai:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/glai
+  hashes:
+    binhash: 8a268ba27792eb051b0e2d5ef38020a9
+    md5: 8f5ce6f6af038d699e2d2a0b5f903930
+phenphase:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CASA_ancils_from_ESM15/phenphase
+  hashes:
+    binhash: bfe52883cd8540a3a2f5002560a91429
+    md5: 06633a52c082c667cccc9ba266f59f56

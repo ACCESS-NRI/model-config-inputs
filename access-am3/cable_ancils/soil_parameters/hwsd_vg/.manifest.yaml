@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.soil:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/soil_parameters/hwsd_vg/qrparm.soil
+  hashes:
+    binhash: 7ef2709591b7473a5d1c3444f1a43cd8
+    md5: 0ed657b36d651a6be39ddc000ad0d4e0
+qrparm.soil.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/soil_parameters/hwsd_vg/qrparm.soil.nc
+  hashes:
+    binhash: 04d0a94be6b7b4423960c55abb571d3d
+    md5: 17f798650404d7bcfedb0360b1c0835c
+soil_hydrology.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/soil_parameters/hwsd_vg/soil_hydrology.nc
+  hashes:
+    binhash: 30899fd08ae3a4f1a567656d3a08f2fd
+    md5: 1b6fbb66767bb27f41d85dd91af3d20b
+soil_hydrology.nc.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/soil_parameters/hwsd_vg/soil_hydrology.nc.nc
+  hashes:
+    binhash: d33835b4a3ce57900606641fec5f558c
+    md5: d21d8a2c19250650584cee56eb21cb19

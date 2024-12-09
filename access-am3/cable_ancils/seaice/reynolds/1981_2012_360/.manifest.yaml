@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.seaice:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/seaice/reynolds/1981_2012_360/qrclim.seaice
+  hashes:
+    binhash: 0f11cedbdd7962525308fd11c1cf76e9
+    md5: 71e342495e2b1c560911f3c2451ba03c
+qrclim.seaice.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/seaice/reynolds/1981_2012_360/qrclim.seaice.nc
+  hashes:
+    binhash: a9e436b60d85b918f1bf070128f56acd
+    md5: 6fbdffe53af0f5bc407018b5318f2be8

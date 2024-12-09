@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.sea:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/general_sea/GlobColour/qrclim.sea
+  hashes:
+    binhash: 4032ff31037d64287ff68a5cd581b4be
+    md5: 0878038df026f22ae32e75d7a5b95d7f
+qrclim.sea.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/general_sea/GlobColour/qrclim.sea.nc
+  hashes:
+    binhash: 33aa54992580dee1285c2956c3d6e2bf
+    md5: 7cd00fcc89dc593c154637d937d19934

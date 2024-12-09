@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.orog_mean:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orography/gmted_ramp2/qrparm.orog_mean
+  hashes:
+    binhash: 135c1423d66cfdbac1490ad747e2f467
+    md5: c884d5365a72919b2a2f0d63b83f92fb
+qrparm.orog_mean.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orography/gmted_ramp2/qrparm.orog_mean.nc
+  hashes:
+    binhash: c61ef0add6b7dac73c83deadba8909ea
+    md5: 143b2932cbe921665392a6d26312dd43
+qrparm.orog_radiation_parameters:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orography/gmted_ramp2/qrparm.orog_radiation_parameters
+  hashes:
+    binhash: 61fe703cfb9bda8952d95561e604e2c4
+    md5: faf12ba2f26e37989e98464afaee857c
+qrparm.orog_radiation_parameters.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orography/gmted_ramp2/qrparm.orog_radiation_parameters.nc
+  hashes:
+    binhash: 08f982354e5f2439493d052a13cac72b
+    md5: d8b48f685fc555214e26568eb3b3dfcf
+qrparm.orog_wavedrag:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orography/gmted_ramp2/qrparm.orog_wavedrag
+  hashes:
+    binhash: 1b4b6b2659ee0960e4d2e3578d55fcb9
+    md5: de4c5155b7734aa5d663d275180aa697
+qrparm.orog_wavedrag.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/orography/gmted_ramp2/qrparm.orog_wavedrag.nc
+  hashes:
+    binhash: 03646f989bc256a3fbe20ba33fc85b1d
+    md5: f49e5d649138bdb050196db9cf6407d5

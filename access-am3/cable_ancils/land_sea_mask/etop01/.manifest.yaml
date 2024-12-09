@@ -1,0 +1,43 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.landfrac:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.landfrac
+  hashes:
+    binhash: 17c4b5a36f15f6272d0a7656a9500f9c
+    md5: 395058c8ca4c07132a8da9f11a4a31a1
+qrparm.landfrac.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.landfrac.nc
+  hashes:
+    binhash: 9646c34d9a58155ff3d4937b08245c3b
+    md5: a158f2549a79439dd3ced6391a2d2dd4
+qrparm.mask:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.mask
+  hashes:
+    binhash: 37ab4909a275ae24af5d63f67442af29
+    md5: 3a21b52953644eb35039d1ff0bd01b12
+qrparm.mask.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.mask.nc
+  hashes:
+    binhash: a1575cc73318c91cf4571c96661da451
+    md5: d395806d86c0ebe31f751103ad878b60
+qrparm.mask_sea:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.mask_sea
+  hashes:
+    binhash: d235a3a87b611ac008c6c03b86cfc685
+    md5: b853edc71375411ca45c04f23b0ecbdd
+qrparm.mask_sea.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.mask_sea.nc
+  hashes:
+    binhash: d34327720f8c9a3ec21e58923cc5d3e3
+    md5: cee3652a2852debf1218a0a42e126208
+qrparm.mask_sea_nolakes:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.mask_sea_nolakes
+  hashes:
+    binhash: bdcee732fc4dbdf7c5ab00c668935d88
+    md5: b853edc71375411ca45c04f23b0ecbdd
+qrparm.mask_sea_nolakes.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/land_sea_mask/etop01/qrparm.mask_sea_nolakes.nc
+  hashes:
+    binhash: dde56bc0e1cac8927afc63cbaec93e02
+    md5: cee3652a2852debf1218a0a42e126208

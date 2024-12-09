@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.soil.dust:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/soil_dust/hwsd/qrparm.soil.dust
+  hashes:
+    binhash: b23761cb8049a5a66dcfc3ce2d3b5c96
+    md5: f06c6dfe1c5ba19093c4ae200954af92
+qrparm.soil.dust.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/soil_dust/hwsd/qrparm.soil.dust.nc
+  hashes:
+    binhash: c21ece3b9f0d241561fb9226e939ca86
+    md5: 9a92f932a75eb5aa09f6f54bd370f29d

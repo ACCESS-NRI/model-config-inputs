@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.veg.frac:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/vegetation/fractions_cci/qrparm.veg.frac
+  hashes:
+    binhash: b6f017ef42fa29a843d513cc921a4ad9
+    md5: 4151aca8f0edf4f486a9aa7a05e4e716
+qrparm.veg.frac.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/cable_ancils/vegetation/fractions_cci/qrparm.veg.frac.nc
+  hashes:
+    binhash: f5e73e0c7e5497e84db58e45edc24445
+    md5: c68686a8fb0da8c4c6db8e9b16ee577b
