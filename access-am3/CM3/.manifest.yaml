@@ -31,6 +31,11 @@ de208a.da20110901_00_redated:
   hashes:
     binhash: e3cf2a499e294f6e0ffc91ff839e815f
     md5: d9ce462fc89ae0975c33282c0e6cae85
+dl594a.astart:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/dl594a.astart
+  hashes:
+    binhash: f09deda7fbe48eda0bec8773db87e47e
+    md5: 22e34d45f1698188d9b7abb4aa30610c
 vegfrac52:
   fullpath: /g/data/vk83/configurations/inputs/access-am3/CM3/vegfrac52
   hashes:
