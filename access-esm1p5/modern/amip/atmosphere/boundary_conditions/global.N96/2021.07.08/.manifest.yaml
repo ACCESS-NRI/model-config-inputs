@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+amip_seaice_n96_greg.pp:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/amip/atmosphere/boundary_conditions/global.N96/2021.07.08/amip_seaice_n96_greg.pp
+  hashes:
+    binhash: 2f38b49e224d301510912954d97a2264
+    md5: dee51bc6417e99297d70e557ac52632a
+amip_sst_n96_greg.pp:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/amip/atmosphere/boundary_conditions/global.N96/2021.07.08/amip_sst_n96_greg.pp
+  hashes:
+    binhash: 39ef4b9e1e751dfc8efdfbfe6f3d5920
+    md5: 47368fc3565d554200b0f1fe78e79416
