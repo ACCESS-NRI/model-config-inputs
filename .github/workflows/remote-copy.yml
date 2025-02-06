@@ -300,16 +300,16 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
           now=$(date +%Y_%m_%d_%H_%M)
 
-          mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now
-
           for file in ${{ needs.copy-to-remote.outputs.files }} ${{ needs.copy-to-remote.outputs.manifests }}; do
-            file_relative_to_target=${file#${{ inputs.target }}/}
-            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target'"
-            dirs_after_target=$(dirname $file_relative_to_target)
-            if [[ "$dirs_after_target" != "." ]]; then
-              mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$(dirname $file_relative_to_target)
-            fi
-            mdss -P ${{ vars.PROJECT_CODE }} put -r $file ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_target
+            file_relative_to_config_dir=${file#${{ vars.CONFIGS_INPUT_DIR }}/}
+            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_config_dir'"
+
+            # Create all intermediate directories before putting the file
+            intermediate_dirs=$(dirname $file_relative_to_config_dir)
+            mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$intermediate_dirs
+
+            # Copy the file itself to tape
+            mdss -P ${{ vars.PROJECT_CODE }} put $file ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_config_dir
           done
 
           echo "Output:"
