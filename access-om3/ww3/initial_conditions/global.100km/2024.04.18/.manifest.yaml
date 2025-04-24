@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+restart.ww3:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/ww3/initial_conditions/global.100km/2024.04.18/restart.ww3
+  hashes:
+    binhash: 1c4811600847e181e08265d695bc7c22
+    md5: e0043b57b4de97a7df82dafa4c7a1a9f

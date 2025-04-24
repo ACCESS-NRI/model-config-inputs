@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+FEMIP_model_median_iron_2016_fillmiss.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/global.100km/2021.06.07/FEMIP_model_median_iron_2016_fillmiss.nc
+  hashes:
+    binhash: 5ec9969fee40589a5083b438657de476
+    md5: b81d7ee79a6ca30bfd2e6ccc49874267

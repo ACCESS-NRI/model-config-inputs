@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+salt_sfc_restore.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/surface_salt_restoring/global.25km/2020.05.30/salt_sfc_restore.nc
+  hashes:
+    binhash: 9062cd8b7396da7bce54bfb2726f7806
+    md5: 434b4bdb323d17e9714d02519627fea2
