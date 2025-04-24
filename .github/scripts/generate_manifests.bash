@@ -21,12 +21,12 @@ dir_without_subdir=$(find "$start_dir" -type d -links 2 ! -ipath "*.git*" ! -emp
 for dir in $dir_without_subdir; do
   echo "Working on $dir:"
   # Find all the files that we want to turn into manifests
-  files=$(find "$dir" -maxdepth 1 -type f ! -name "manifest.yaml" -printf '%f ')
+  files=$(find "$dir" -maxdepth 1 -type f ! -name ".manifest.yaml" -printf '%f ')
   if [ -n "$files" ]; then
       # If there are some files, add them using yamf
       cd "$dir" || exit 2
       # shellcheck disable=SC2086
-      yamf add -n manifest.yaml $files
+      yamf add -n .manifest.yaml $files
       cd - || exit 2
   fi
 done
