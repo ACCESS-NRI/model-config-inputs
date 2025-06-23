@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ssw_atten_depth.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/share/ocean/shortwave_penetration/global.1deg/2025.06.23/ssw_atten_depth.nc
+  hashes:
+    binhash: f932355b4f6c0197c095a4ea3f94f0ab
+    md5: d195ac0cd1e3bdc5bf42476bf300169e
