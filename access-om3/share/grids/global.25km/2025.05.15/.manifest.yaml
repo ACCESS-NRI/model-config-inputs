@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+topog.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.25km/2025.05.15/topog.nc
+  hashes:
+    binhash: f0b530f0e5531c708035a31f908164b2
+    md5: d51a26354790eab768b648d88ccfb464
