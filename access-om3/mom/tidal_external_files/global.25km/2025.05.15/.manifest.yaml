@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+bottom_roughness.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.25km/2025.05.15/bottom_roughness.nc
+  hashes:
+    binhash: 2cea3acdc0c370f4ea0115fb79db35cb
+    md5: 061dec8e4022c0dadccd10db8d31c567
+tideamp.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.25km/2025.05.15/tideamp.nc
+  hashes:
+    binhash: 8c97c3eb8e655c900e34658d289a2b31
+    md5: dc4b570589028ce3d09d55d64a7153f5
