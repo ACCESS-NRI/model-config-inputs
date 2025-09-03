@@ -302,16 +302,16 @@ jobs:
 
           for file in ${{ needs.copy-to-remote.outputs.files }} ${{ needs.copy-to-remote.outputs.manifests }}; do
             file_relative_to_config_dir=${file#${{ vars.CONFIGS_INPUT_DIR }}/}
-            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_config_dir'"
+            echo "Moving '$file' to '${{ vars.TAPE_ROOT_DIR }}/${{ vars.ENVIRONMENT_TYPE }}/$now/$file_relative_to_config_dir'"
 
             # Create all intermediate directories before putting the file
             intermediate_dirs=$(dirname $file_relative_to_config_dir)
-            mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/$now/$intermediate_dirs
+            mdss -P ${{ vars.PROJECT_CODE }} mkdir -p ${{ vars.TAPE_ROOT_DIR }}/${{ vars.ENVIRONMENT_TYPE }}/$now/$intermediate_dirs
 
             # Copy the file itself to tape
-            mdss -P ${{ vars.PROJECT_CODE }} put $file ${{ vars.TAPE_ROOT_DIR }}/$now/$file_relative_to_config_dir
+            mdss -P ${{ vars.PROJECT_CODE }} put $file ${{ vars.TAPE_ROOT_DIR }}/${{ vars.ENVIRONMENT_TYPE }}/$now/$file_relative_to_config_dir
           done
 
           echo "Output:"
-          mdss -P ${{ vars.PROJECT_CODE }} ls -R ${{ vars.TAPE_ROOT_DIR }}/$now
+          mdss -P ${{ vars.PROJECT_CODE }} ls -R ${{ vars.TAPE_ROOT_DIR }}/${{ vars.ENVIRONMENT_TYPE }}/$now
           EOT
