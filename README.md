@@ -2,15 +2,15 @@
 
 ## Overview
 
-This repo is used for remote modification of model configuration inputs and storage of their metadata. 
+This repo is used for remote modification of model configuration inputs and storage of their metadata.
 
-Since model configuration inputs are so large, we can't store them directly on git. But we can store metadata about them, which gives a view into when and how configuration inputs have changed. This metadata can also be consumed by other projects. 
+Since model configuration inputs are so large, we can't store them directly on git. But we can store metadata about them, which gives a view into when and how configuration inputs have changed. This metadata can also be consumed by other projects.
 
 ## Usage
 
-This repository is not committed to directly - think of it more as a representation of what released model configuration inputs are currently on Gadi. 
+This repository is not committed to directly - think of it more as a representation of what released model configuration inputs are currently on Gadi.
 
-But, we do have a workflow for adding/updating the actual model configuration inputs on Gadi here: https://github.com/ACCESS-NRI/model-config-inputs/actions/workflows/remote-copy.yml. This is used by regular users to move configurations from shared spaces into the locked-down Release area of `vk83` on Gadi, or the less restrictive Prerelease area of `vk83`. 
+But, we do have a workflow for adding/updating the actual model configuration inputs on Gadi here: https://github.com/ACCESS-NRI/model-config-inputs/actions/workflows/remote-copy.yml. This is used by regular users to move configurations from shared spaces into the locked-down Release area of `vk83` on Gadi, or the less restrictive Prerelease area of `vk83`.
 ### Using the Workflow
 
 The workflow has the following inputs:
@@ -29,16 +29,19 @@ The workflow has the following inputs:
 
 ##### Source and Target Use the Same `basename`
 
-*Problem*: `source` is `/scratch/tm70/inputs/access-om2/2025.06.00` and `target` is `/g/data/vk83/configurations/inputs/access-om2/2025.06.00`, the workflow will fail. 
+*Problem*: `source` is `/scratch/tm70/inputs/access-om2/2025.06.00` and `target` is `/g/data/vk83/configurations/inputs/access-om2/2025.06.00`, the workflow will fail.
 
 *Explanation*: This is a common rsync error (which we use under the hood) - It would lead to a directory structure of `/g/data/vk83/configurations/inputs/access-om2/2025.06.00/2025.06.00`, which probably isn't what you want.
 
-*Solution*: Drop the `2025.06.00` directory from the `target`, so it is `/g/data/vk83/configurations/inputs/access-om2`. This will lead to the expected directory structure of `g/data/vk83/configurations/inputs/access-om2/2025.06.00`. 
+*Solution*: Drop the `2025.06.00` directory from the `target`, so it is `/g/data/vk83/configurations/inputs/access-om2`. This will lead to the expected directory structure of `g/data/vk83/configurations/inputs/access-om2/2025.06.00`.
 
 ##### Target Is A File
 
 *Problem*: `source` is `/scratch/tm70/inputs/access-om2/2025.06.00/some.nc` and `target` is `/g/data/vk83/configurations/inputs/access-om2/2025.06.00/some.nc`, the workflow will fail.
 
-*Explanation*: This means that you are attempting to copy a file *into* an already-existing file. 
+*Explanation*: This means that you are attempting to copy a file *into* an already-existing file.
 
 *Solution*: Drop the `some.nc` file from the `target`, so it is `/g/data/vk83/configurations/inputs/access-om2/2025.06.00`. This will lead to the expected directory structure of `g/data/vk83/configurations/inputs/access-om2/2025.06.00/some.nc`.
+
+> [!NOTE]
+> If this is desired behavior for Prereleases, then `overwrite-target` must be `true`
