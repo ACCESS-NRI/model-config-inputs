@@ -255,7 +255,7 @@ jobs:
 
       - name: Commit Updated Manifests to ${{ github.repository }}
         # TODO: For future remote-environments, we would have to alter the structure of model-config-inputs to be demarcated by target at the root level. For now, only allow Gadi to commit.
-        if: inputs.remote-environment == 'Gadi'
+        if: inputs.remote-environment == 'Gadi Release'
         env:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
