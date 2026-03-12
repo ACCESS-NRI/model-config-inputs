@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ocean_mask_table:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/processor_masks/global.025deg/2129.48x60/2026.03.11/ocean_mask_table
+  hashes:
+    binhash: ced7905db7bb34b0d70c44cb0bd1b0c0
+    md5: ce790e0f0446f6d862d41abbfa801200

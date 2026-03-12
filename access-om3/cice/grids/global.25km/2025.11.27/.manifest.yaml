@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+kmt.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.25km/2025.11.27/kmt.nc
+  hashes:
+    binhash: eb989f5ba7c3c3bae2551daefe151698
+    md5: 64bc07e338d1a5d4bc2364f49e77fb96

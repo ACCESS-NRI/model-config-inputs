@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+mask_table.1038.63x56:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.25km/2025.11.27/mask_table.1038.63x56
+  hashes:
+    binhash: 287bde7a4b2ce1902be3e9de2d111668
+    md5: 5211afd6388db65a67067967abe57b7f
+topog.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.25km/2025.11.27/topog.nc
+  hashes:
+    binhash: 6e15c0bea662cdb8f7df8d75af70ad3a
+    md5: 3a1d6b02a276985b038ddaafac909083

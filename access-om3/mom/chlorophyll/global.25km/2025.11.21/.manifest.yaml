@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+chl_globcolour_monthly_clim.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/chlorophyll/global.25km/2025.11.21/chl_globcolour_monthly_clim.nc
+  hashes:
+    binhash: f30a3f69bee2f2174596d238e1de822e
+    md5: 269f4492ae65f6ef9dd6e2a59f2bff4b

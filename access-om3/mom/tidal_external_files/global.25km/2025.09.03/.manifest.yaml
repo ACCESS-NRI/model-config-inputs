@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+tideamp.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.25km/2025.09.03/tideamp.nc
+  hashes:
+    binhash: 0b69afaa564866597b1232be5ec00dad
+    md5: 1aa1db4e7b14f0486d3546b9bc2a035a

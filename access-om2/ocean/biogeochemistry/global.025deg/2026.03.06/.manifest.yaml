@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ocean_wombatlite.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.025deg/2026.03.06/ocean_wombatlite.res.nc
+  hashes:
+    binhash: 4fb96ee53a71ca3e77d7356bdd3a3129
+    md5: 61250f8a2b1d40233d8ffeb922005cd5

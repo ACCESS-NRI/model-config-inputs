@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+SFe_Hamiltonetal2020_monthly_clim.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/share/ocean/biogeochemistry/global.1deg/2025.09.22/SFe_Hamiltonetal2020_monthly_clim.nc
+  hashes:
+    binhash: 77097b886b17f0942923ef591fca924f
+    md5: 28da8ae49dd0d484783b684e3406b338

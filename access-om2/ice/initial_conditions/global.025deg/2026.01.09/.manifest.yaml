@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+i2o.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ice/initial_conditions/global.025deg/2026.01.09/i2o.nc
+  hashes:
+    binhash: ee5d0e60e2d463fa1de6905267a855e7
+    md5: 405802259ab71f788f47b28e2d88a6df

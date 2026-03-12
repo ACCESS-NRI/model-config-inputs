@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+access-om3-25km-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.25km/2025.11.27/access-om3-25km-ESMFmesh.nc
+  hashes:
+    binhash: 772cf9c667ca5e67a3d2870890e2ea55
+    md5: 0ae5ab11f801a02f2537fb7e1ec02674

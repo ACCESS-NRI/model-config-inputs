@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+SFe_Hamiltonetal2020_monthly_clim.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.01deg/2026.03.06/SFe_Hamiltonetal2020_monthly_clim.nc
+  hashes:
+    binhash: f06d8d17648ac2edca3630e2a15c90fe
+    md5: 753cc5d2d781fb4fd3eb47a63d8efebe
+ocean_wombatlite.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.01deg/2026.03.06/ocean_wombatlite.res.nc
+  hashes:
+    binhash: 42cf43fe1b17f52fffd7d5e1dbb8199d
+    md5: 4250b755cf9ea88db5c5f306782d6909
