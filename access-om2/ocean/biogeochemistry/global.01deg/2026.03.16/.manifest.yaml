@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+CO2_gm_1750-2024.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.01deg/2026.03.16/CO2_gm_1750-2024.nc
+  hashes:
+    binhash: e82ccb682065b5fb4a7b109c69f67fe9
+    md5: c0f8e2b14c4d2f1834275f4d0a465181
