@@ -1,6 +1,11 @@
 format: yamanifest
 version: 1.0
 ---
+CO2_gm_1750-2024.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.025deg/2026.01.09/CO2_gm_1750-2024.nc
+  hashes:
+    binhash: 8a5783ba59cfde5d96985271325459e6
+    md5: dd22e4854951c677d65eb1fbedb7de23
 SFe_Hamiltonetal2020_monthly_clim.nc:
   fullpath: /g/data/vk83/configurations/inputs/access-om2/ocean/biogeochemistry/global.025deg/2026.01.09/SFe_Hamiltonetal2020_monthly_clim.nc
   hashes:
