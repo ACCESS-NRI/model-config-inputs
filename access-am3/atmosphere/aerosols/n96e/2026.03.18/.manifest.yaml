@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.sulpdms:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.03.18/qrclim.sulpdms
+  hashes:
+    binhash: d1b8123bb47a344ca35a45536404f944
+    md5: cfd22ca27ef15391cf2c9aaa998644d9
