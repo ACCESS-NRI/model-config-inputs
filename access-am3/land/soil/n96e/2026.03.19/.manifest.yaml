@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+qrparm.soil:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/soil/n96e/2026.03.19/qrparm.soil
+  hashes:
+    binhash: 11bebee2a45636694d90c7e4e4340a81
+    md5: 0ed657b36d651a6be39ddc000ad0d4e0
+qrparm.soil.dust:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/soil/n96e/2026.03.19/qrparm.soil.dust
+  hashes:
+    binhash: 01977289c8298768e34c4c2301d6041c
+    md5: f06c6dfe1c5ba19093c4ae200954af92
+qrparm.soil.dust.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/soil/n96e/2026.03.19/qrparm.soil.dust.nc
+  hashes:
+    binhash: f87735bf77a3d3c849a5f94b22656ea9
+    md5: 9a92f932a75eb5aa09f6f54bd370f29d
+qrparm.soil.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/soil/n96e/2026.03.19/qrparm.soil.nc
+  hashes:
+    binhash: 8b65432d2948d0f3f2c7d6c3af54d921
+    md5: 17f798650404d7bcfedb0360b1c0835c
+qrparm.soil_roughness:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/soil/n96e/2026.03.19/qrparm.soil_roughness
+  hashes:
+    binhash: 2bc10687c3a9c8108c79376183efe830
+    md5: 5ee069cea840ddcf55e85e1c3e07e796
+qrparm.soil_roughness.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/soil/n96e/2026.03.19/qrparm.soil_roughness.nc
+  hashes:
+    binhash: a7a577b5f2e26307bd94d95eb92a90b1
+    md5: d89dcded52a9289c1848779a22076eb7
