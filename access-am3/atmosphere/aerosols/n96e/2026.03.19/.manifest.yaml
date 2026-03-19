@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+mmro3_monthly_CMIP6_1849-2015_N96_edited-ancil_2anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.03.19/mmro3_monthly_CMIP6_1849-2015_N96_edited-ancil_2anc
+  hashes:
+    binhash: 17976c53c17492b257fae2148b4fbf9e
+    md5: b54d69e2469c531d5ecf2438dd4f73d1
+qrclim.aerosols85.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.03.19/qrclim.aerosols85.nc
+  hashes:
+    binhash: b4764a679aa35da022d1013d59ec46ec
+    md5: 12d3e752289401226f3de80630f8ca2a
+qrclim.sulpdms:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.03.19/qrclim.sulpdms
+  hashes:
+    binhash: fb590b77bbbee0b0b485f014b38167a7
+    md5: fcc53a5145d4b272effb1497da17344b
+qrclim.sulpdms.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.03.19/qrclim.sulpdms.nc
+  hashes:
+    binhash: 47bce2f28d7258d84b9dd030365e07da
+    md5: 237fdd098518aa01cfd2c0b576303d0b

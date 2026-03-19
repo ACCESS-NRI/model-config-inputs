@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.sea:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.03.19/qrclim.sea
+  hashes:
+    binhash: 0e283ca3bfc8d7c84f02824cf76cd06d
+    md5: 0878038df026f22ae32e75d7a5b95d7f
+qrclim.sea.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.03.19/qrclim.sea.nc
+  hashes:
+    binhash: 4cdf63f5902a92145281cbc5635b5ae7
+    md5: 7cd00fcc89dc593c154637d937d19934
+qrclim.seaice:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.03.19/qrclim.seaice
+  hashes:
+    binhash: 74583e8c8cd9075eb53451130064ec42
+    md5: 71e342495e2b1c560911f3c2451ba03c
+qrclim.seaice.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.03.19/qrclim.seaice.nc
+  hashes:
+    binhash: 9421abce692bff999be39d05fd20fb4b
+    md5: 6fbdffe53af0f5bc407018b5318f2be8
+qrclim.sst:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.03.19/qrclim.sst
+  hashes:
+    binhash: 95764e316d1a6494ea5d1df1a5650c93
+    md5: 92973694b07c0b291eaad23adc437a1e
+qrclim.sst.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.03.19/qrclim.sst.nc
+  hashes:
+    binhash: a268d8198eb5740850437da6ce4b84ce
+    md5: 48d7539f8b85a87f95a0611536b483c2
