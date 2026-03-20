@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.rivstor:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/2026.03.19/qrclim.rivstor
+  hashes:
+    binhash: 62949a6e429e6d37e55415aeaf88eb2b
+    md5: 20ce68add5c0fbbe630d77adce8c2222
+qrclim.rivstor.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/2026.03.19/qrclim.rivstor.nc
+  hashes:
+    binhash: 16edf11ba41bf4a1d093f2db9d329079
+    md5: b4d926745ebefcb587f6a698405a1d7d
+qrparm.rivseq:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/2026.03.19/qrparm.rivseq
+  hashes:
+    binhash: 8759d75fee73b66effb68b8f37421cfd
+    md5: 3d4f739626101311fa838c74200922f3
+qrparm.rivseq.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/2026.03.19/qrparm.rivseq.nc
+  hashes:
+    binhash: 1019541ea6843d89f5e9aa4b928d6837
+    md5: 912f8c142087072a53cab27eef41656f
