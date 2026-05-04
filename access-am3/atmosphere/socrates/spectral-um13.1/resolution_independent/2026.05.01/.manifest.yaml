@@ -1,0 +1,28 @@
+format: yamanifest
+version: 1.0
+---
+mcica_data:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.1/resolution_independent/2026.05.01/mcica_data
+  hashes:
+    binhash: fd882da1f3701129a487abc33ee90eb9
+    md5: ffde3d6f9969be21fcd3552d4369d056
+sp_lw_ga9:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.1/resolution_independent/2026.05.01/sp_lw_ga9
+  hashes:
+    binhash: 35595638cc130c77e9b9f7d1e1786d88
+    md5: e6ebaeede2189adab1d5841742a4af3d
+sp_lw_ga9_k:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.1/resolution_independent/2026.05.01/sp_lw_ga9_k
+  hashes:
+    binhash: 817e9fdc8b78a987f497460f00416405
+    md5: 60b00ba22a55b4c05226955da4aa05bb
+sp_sw_ga9:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.1/resolution_independent/2026.05.01/sp_sw_ga9
+  hashes:
+    binhash: d1571047a87992c1d4f3806089c35075
+    md5: c61e39578837b801ee619a4e48fb063c
+sp_sw_ga9_k:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.1/resolution_independent/2026.05.01/sp_sw_ga9_k
+  hashes:
+    binhash: cc387faa148dc538b9b2815996f8d90a
+    md5: 753e801822ed898db089d8c69d8bb051
