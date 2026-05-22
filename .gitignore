@@ -5,5 +5,9 @@
 # And allow the leaf manifest.yamls
 !manifest.yaml
 !.manifest.yaml
+# As well as the READMEs...
+!README
+!README.md
+!README.txt
 # and the .gitignore
 !.gitignore
