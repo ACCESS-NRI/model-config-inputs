@@ -271,7 +271,7 @@ jobs:
           fi
 
           git add .
-          git commit -m "Updated manifests as part of ${{ env.RUN_URL }}"
+          git commit -m "Updated manifests and READMEs as part of ${{ env.RUN_URL }}"
           git push
           EOT
 
