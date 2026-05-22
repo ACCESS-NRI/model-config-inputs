@@ -1,0 +1,7 @@
+# Tue Mar 12 20:09:13 AEDT 2024
+
+cp /g/data/ik11/inputs/access-om2/input_20230515_025deg_topog/mom_025deg/ocean_mask_table /g/data/vk83/experiments/inputs/access-om2/ocean/processor_masks/global.025deg/1456.48x40/2023.05.15/.
+
+md5sum /g/data/vk83/experiments/inputs/access-om2/ocean/processor_masks/global.025deg/1456.48x40/2023.05.15/ocean_mask_table
+
+7a2fcdfbb9b331161c7d8874e2b7e6f9  /g/data/vk83/experiments/inputs/access-om2/ocean/processor_masks/global.025deg/1456.48x40/2023.05.15/ocean_mask_table

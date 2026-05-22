@@ -1,0 +1,11 @@
+# Mon Mar  4 12:37:47 AEDT 2024
+
+cp /g/data/ik11/inputs/access-om2/input_bgc_20220224/mom_01deg/* /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/.
+
+d2333bd22f0e81b25813e0e931a5b099  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/bgc_param.nc
+025b09a23736884238ad97911add38d9  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/co2_iaf.nc
+fddafe42079d98930aa141cc75a575aa  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/co2_ryf.nc
+b68d3a81fa72c0f32464db7451aa0050  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/csiro_bgc.res.nc
+3aacb6bc85d316c62c88576364ffd012  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/csiro_bgc_sediment.res.nc
+9ccca80e85a2ae6f54448fc36f78fd8f  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/dust.nc
+5cbd0c16285a5aeec94fcf9891325f13  /g/data/vk83/experiments/inputs/access-om2/ocean/biogeochemistry/global.01deg/2022.02.24/README

@@ -1,0 +1,40 @@
+This directory contains data that is derived from JRA55-do (JRA-55 based surface 
+data set for driving ocean-sea ice models). 
+
+We are in the process of writing a terms of use of this dataset, in the meantime 
+refer to the JRA55-do license in /g/data1/ua8/JRA55-do/Terms_of_Use.txt
+
+The Repeat Year Forcing (RYF) data (also known as Repeat Annual Forcing (RAF)), is
+part of an effort to produce a single year of meteorological forcing data that can
+be used to spin-up an ocean model with as few biases as possible. This is analagous
+to the Core II Normal Year Forcing (CNYF).
+
+The repeat year is the May 1 - April 31 period mapped onto a single year. April
+to December is joined to the end of the January to May to create a single year with
+a discontinuity at April 31/May 1. This minimises the shock the model experiences
+as it is a calm period of the annual climate cycle.
+
+Three "years" were identified by examining common climate metrics. These are 1984/85,
+1990/91 and 2003/2004.
+
+When a year contained a leap day on the 29th of February the corresponding April 31
+was removed to create a 365 day year.
+
+The code used to accomplish this is here:
+
+https://github.com/aidanheerdegen/make_ryf/commit/968edae060b7021128442ef0e0bb46db91170fc0
+
+
+Aidan Heerdegen (aidan.heerdegen@anu.edu.au)
+
+Thu Jul  6 15:10:08 AEST 2017
+
+
+
+RYF1990/91 for v1-4 was generated via
+
+https://github.com/aekiss/make_ryf/tree/c2afffb8af79ef4bb242f9c948640f50972caf7d
+
+Andrew Kiss (andrew.kiss@anu.edu.au)
+
+Fri Apr 17 21:20:33 AEST 2020

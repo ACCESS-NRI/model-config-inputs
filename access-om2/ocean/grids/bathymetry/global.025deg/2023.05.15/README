@@ -1,0 +1,9 @@
+# Tue Mar 12 20:07:28 AEDT 2024
+
+cp /g/data/ik11/inputs/access-om2/input_20230515_025deg_topog/mom_025deg/topog.nc /g/data/vk83/experiments/inputs/access-om2/ocean/grids/bathymetry/global.025deg/2023.05.15/    
+cp /g/data/ik11/inputs/access-om2/input_20230515_025deg_topog/mom_025deg/ocean_mask.nc /g/data/vk83/experiments/inputs/access-om2/ocean/grids/bathymetry/global.025deg/2023.05.15/
+
+md5sum /g/data/vk83/experiments/inputs/access-om2/ocean/grids/bathymetry/global.025deg/2023.05.15/*
+
+ee07436042b71df2938726854be5a9aa  /g/data/vk83/experiments/inputs/access-om2/ocean/grids/bathymetry/global.025deg/2023.05.15/ocean_mask.nc
+fa71dfdf4a91198d651d657bcf9aadb6  /g/data/vk83/experiments/inputs/access-om2/ocean/grids/bathymetry/global.025deg/2023.05.15/topog.nc

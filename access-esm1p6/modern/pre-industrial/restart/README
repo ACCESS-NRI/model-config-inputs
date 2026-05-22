@@ -1,0 +1,5 @@
+cp -R /g/data/vk83/configurations/inputs/access-esm1p5/modern/pre-industrial/restart/* .
+cd ocean
+python /g/data/tm70/ds0092/model/config/esm16_preindustrial+concentrations/make_wombatlite_restart.py
+mv ocean_wombatlite.res.nc ocean_wombatlite.res.nc-01001231
+ln -s ocean_wombatlite.res.nc-01001231 ocean_wombatlite.res.nc

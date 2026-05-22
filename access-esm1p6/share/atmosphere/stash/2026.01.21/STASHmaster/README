@@ -1,0 +1,5 @@
+The STASHmaster_A file is modified to contain all the CABLE items from prefix.PRESM_A
+
+See https://github.com/ACCESS-NRI/access-esm1.6-configs/issues/102
+
+Also corrected level code, https://github.com/ACCESS-NRI/access-esm1.6-configs/issues/390

@@ -1,0 +1,4 @@
+Copied from /g/data/access/payu/access-esm/restart/amip
+
+Matches the result of 
+python ~access/apps/pythonlib/umfile_utils/um_fields_subset.py -x 95,171,172,173,174,176,177,178,179,180,181,184,185,186,187,188,189,192,250,413,414,415,416,33001,33002 -i /g/data/p73/archive/CMIP6/ACCESS-ESM1-5/AM-09/restart/atm/AM-09.astart-19780101 -o output_file

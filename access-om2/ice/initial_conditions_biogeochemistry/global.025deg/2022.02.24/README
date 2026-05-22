@@ -1,0 +1,8 @@
+# Mon Mar  4 13:43:17 AEDT 2024
+
+cp /g/data/ik11/inputs/access-om2/input_bgc_20220224/cice_025deg/* /g/data/vk83/experiments/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.025deg/2022.02.24/
+
+md5sum /g/data/vk83/experiments/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.025deg/2022.02.24/*.nc
+
+6c9cd3d727d90a10968cdc8ffc8ac4a2  /g/data/vk83/experiments/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.025deg/2022.02.24/i2o.nc
+886880e0fb07089b89265176083debaf  /g/data/vk83/experiments/inputs/access-om2/ice/initial_conditions_biogeochemistry/global.025deg/2022.02.24/o2i.nc

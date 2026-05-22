@@ -1,0 +1,7 @@
+# Tue Mar 12 20:14:49 AEDT 2024
+
+cp /g/data/ik11/inputs/access-om2/input_20230515_025deg_topog/cice_025deg/kmt.nc /g/data/vk83/experiments/inputs/access-om2/ice/grids/global.025deg/2023.05.15
+
+md5sum /g/data/vk83/experiments/inputs/access-om2/ice/grids/global.025deg/2023.05.15/kmt.nc
+
+2e9743de8f4cb868d9802db8c8e6e9ca  /g/data/vk83/experiments/inputs/access-om2/ice/grids/global.025deg/2023.05.15/kmt.nc

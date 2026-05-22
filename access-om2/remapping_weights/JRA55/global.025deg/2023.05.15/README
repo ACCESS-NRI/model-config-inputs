@@ -1,0 +1,10 @@
+# Tue Mar 12 19:56:20 AEDT 2024
+
+cp /g/data/ik11/inputs/access-om2/input_20230515_025deg_topog/common_025deg_jra55/rmp_jra55_cice_* /g/data/vk83/experiments/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/.                       
+
+md5sum /g/data/vk83/experiments/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/*.nc
+
+a5ab556badacc038c034ce088745a511  /g/data/vk83/experiments/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/rmp_jra55_cice_1st_conserve.nc
+d9da8f0e91f3ba5e2699ddb42930a09a  /g/data/vk83/experiments/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/rmp_jra55_cice_2nd_conserve.nc
+8379069a00d376c3723c7bd821af2a42  /g/data/vk83/experiments/inputs/access-om2/remapping_weights/JRA55/global.025deg/2023.05.15/rmp_jra55_cice_patch.nc
+
