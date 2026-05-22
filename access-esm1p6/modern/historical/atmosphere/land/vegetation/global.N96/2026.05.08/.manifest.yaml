@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+LUH3_cable_thinning_frac_from_bioh_1850-2023_v2.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/land/vegetation/global.N96/2026.05.08/LUH3_cable_thinning_frac_from_bioh_1850-2023_v2.nc
+  hashes:
+    binhash: f1fdb2086513600bebfc3fb1ff18293e
+    md5: 4fe37dc3a0222f63f657ae5dad9643a7
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/land/vegetation/global.N96/2026.05.08/README
+  hashes:
+    binhash: eb608a4932649110c12914f4c7dec9cf
+    md5: 0adcc929a753c4a0f45bb70c31342fdb

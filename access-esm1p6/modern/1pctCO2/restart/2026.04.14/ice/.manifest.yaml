@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+cice_in.nml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/1pctCO2/restart/2026.04.14/ice/cice_in.nml
+  hashes:
+    binhash: e00a07def353b20d46bbfbb035527c26
+    md5: f27d1348905f57fd090b3add437f7d49
+ice.restart_file:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/1pctCO2/restart/2026.04.14/ice/ice.restart_file
+  hashes:
+    binhash: 9c6a50c05be62de2d790c84f77629d7f
+    md5: f0a1ee6e588b837fcef0ac0f422d982d
+iced.0201-01-01-00000.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/1pctCO2/restart/2026.04.14/ice/iced.0201-01-01-00000.nc
+  hashes:
+    binhash: 43bcec97dd36741dd1b9e79e11802529
+    md5: cf123e9d743f8e42e48e87bcb2e24d90
+mice.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/1pctCO2/restart/2026.04.14/ice/mice.nc
+  hashes:
+    binhash: 53b7b356226767a94cb30eb35e8f8f64
+    md5: 24bbc43d34761c6d88c8b8a9bea733da

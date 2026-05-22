@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/1pctCO2/restart/2026.04.14/README
+  hashes:
+    binhash: 04396b7ff1f8310eba7dce97e934f183
+    md5: 5cadb0843270358dfc3e3cad145c376c

@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+Ndep_1850_cmip7_v2_0.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/atmosphere/land/biogeochemistry/global.N96/2026.03.27/Ndep_1850_cmip7_v2_0.anc
+  hashes:
+    binhash: 45eaf5be27698857c2aae59ee8ab12b9
+    md5: e60be5a1c6f12797f0c18c2cf7c42f23
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/atmosphere/land/biogeochemistry/global.N96/2026.03.27/README
+  hashes:
+    binhash: b0a77791af7ff44c7ae20bf616557707
+    md5: 9ef6a0d4f65dc6a2fcbdc174df8e091e

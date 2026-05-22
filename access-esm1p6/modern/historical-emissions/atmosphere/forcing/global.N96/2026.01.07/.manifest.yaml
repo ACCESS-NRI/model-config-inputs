@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+CO2_fluxes_1849_2023_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical-emissions/atmosphere/forcing/global.N96/2026.01.07/CO2_fluxes_1849_2023_cmip7.anc
+  hashes:
+    binhash: 30fcb13482c01b65d7122b788aeb8164
+    md5: 5cdc9df341e9f14a8c28930f0f61b6b6

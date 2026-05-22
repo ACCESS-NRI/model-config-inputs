@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+cable_vegfunc_N96.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/land/vegetation/global.N96/2025.08.29/cable_vegfunc_N96.anc
+  hashes:
+    binhash: a3264254e656d49eabb828adb861c93f
+    md5: d36f7104db31c372fbbf1cdc90a4e4f4

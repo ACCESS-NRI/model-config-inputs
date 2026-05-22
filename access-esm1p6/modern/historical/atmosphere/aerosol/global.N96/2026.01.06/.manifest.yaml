@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+BC_1849_2023_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/aerosol/global.N96/2026.01.06/BC_1849_2023_cmip7.anc
+  hashes:
+    binhash: c5ce9bdbd5bc7a53495fb06ccbbd5bd6
+    md5: 1f5905bdfcbda0c0611759edc3bc6eff
+Bio_1849_2023_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/aerosol/global.N96/2026.01.06/Bio_1849_2023_cmip7.anc
+  hashes:
+    binhash: f500982a87f69247c3272281d8b87d79
+    md5: 4833f61b70851198aacb73ab3297a846
+OCFF_1849_2023_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/aerosol/global.N96/2026.01.06/OCFF_1849_2023_cmip7.anc
+  hashes:
+    binhash: 449b218265a03566458459ff0e5758cd
+    md5: 04394cfbeba09f463929406065fb5d14
+scycl_1849_2023_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/aerosol/global.N96/2026.01.06/scycl_1849_2023_cmip7.anc
+  hashes:
+    binhash: 532153e267ee06b4a6c93e10500ffd46
+    md5: 9ed52e5de4e55f10baeec1b35c75d1a8

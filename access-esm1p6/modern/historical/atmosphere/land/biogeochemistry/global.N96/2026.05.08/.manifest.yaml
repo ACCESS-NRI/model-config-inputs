@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/land/biogeochemistry/global.N96/2026.05.08/README
+  hashes:
+    binhash: 85a8c7f1ab03fff8351f82eadaf0037f
+    md5: f33d774fee714edc57d05d92acdb1bb4
+access-esm16_wood_prod_initial_1850_20PgC.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/land/biogeochemistry/global.N96/2026.05.08/access-esm16_wood_prod_initial_1850_20PgC.nc
+  hashes:
+    binhash: 7f0bf4a5492c81eff69eb25859cc90db
+    md5: 845c15552a720966971c16b14d73dd04

@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+volcts_cmip7.dat:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/forcing/resolution_independent/2025.12.01/volcts_cmip7.dat
+  hashes:
+    binhash: 0a36e587f17b1b9bef4b3bbe9d4731dc
+    md5: 89a3d931712da3805369894e068280b3

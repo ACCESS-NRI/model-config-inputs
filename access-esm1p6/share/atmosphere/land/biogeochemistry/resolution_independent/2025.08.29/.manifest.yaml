@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+modis_phenology_csiro_13evergreen.txt:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/land/biogeochemistry/resolution_independent/2025.08.29/modis_phenology_csiro_13evergreen.txt
+  hashes:
+    binhash: 301907643ca1dfecfdcecd5f65dfd5e6
+    md5: c8f344d7371949fb6aac7f71e1e003d6

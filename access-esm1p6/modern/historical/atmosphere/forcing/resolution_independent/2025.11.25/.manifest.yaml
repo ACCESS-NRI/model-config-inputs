@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+TSI_CMIP7_ESM:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/forcing/resolution_independent/2025.11.25/TSI_CMIP7_ESM
+  hashes:
+    binhash: 6aa7e61e4ae674e1782dda9046f4331e
+    md5: 635295693e07ae1079753d0835a6ad07

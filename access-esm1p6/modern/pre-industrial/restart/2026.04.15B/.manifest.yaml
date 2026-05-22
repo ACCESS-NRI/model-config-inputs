@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/2026.04.15B/README
+  hashes:
+    binhash: 0a117c0e49c3948dee1081bf27f3aa70
+    md5: e3b50691ad681b9dae04dc097ec528b9

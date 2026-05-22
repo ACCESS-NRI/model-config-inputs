@@ -1,0 +1,108 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/.manifest.yaml
+  hashes:
+    binhash: 8de6fbdfecca00d1952ff0fdc8b9ea4a
+    md5: 70b3bc4a83914600aac55d7a5f2dbbc4
+X01001218:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01001218
+  hashes:
+    binhash: 31ad5018def8692ff4fd1c147251717d
+    md5: 7293caa27798d235bd5520eede9700fb
+X01002207:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01002207
+  hashes:
+    binhash: 5a15975e876b56375fd56d4058c31ddc
+    md5: 448daeebba685950d0c347d0493b5fc4
+X01003236:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003236
+  hashes:
+    binhash: 15113460723c9cbb80d47fd816f9fe7f
+    md5: 71a2288ee0a7d0fc89dafe95653c128a
+X01003237:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003237
+  hashes:
+    binhash: e90b9e7718ba31b7318f9b10820b8d10
+    md5: 4efd39ac9a917525bbc35146d6770e3b
+X01003254:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003254
+  hashes:
+    binhash: a118be515a8e248fd7f671dded21768b
+    md5: 1b5f7755f752c2ee2086ac6eba886ca3
+X01003255:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003255
+  hashes:
+    binhash: 123cd6ecc51b1ab879ba0b463695b0a8
+    md5: f23a78b048f0cb52ed0e2beb57f00fa8
+X01003274:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003274
+  hashes:
+    binhash: 74c2f9ab3626013fa887be54621ff2f6
+    md5: 032190f23c926eb47199da6e1f054bf1
+X01003275:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003275
+  hashes:
+    binhash: 3ce8c2a5e46c4acdc8c5dda83806b81e
+    md5: 120694f3d078b9ade033b56217e9ed85
+X01003276:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003276
+  hashes:
+    binhash: d4e27033f83091ab5828d12b38cafd49
+    md5: 61afb6eb4e76efb2171c56d02742e9ad
+X01003277:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003277
+  hashes:
+    binhash: f3c7ee4d380b4945fdfdfa7fb1be6170
+    md5: d8cced93214dd8e84c0c9d06259412ab
+X01003278:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003278
+  hashes:
+    binhash: 234f48372415f86d7fcf1ee48e92bd43
+    md5: 032190f23c926eb47199da6e1f054bf1
+X01003279:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003279
+  hashes:
+    binhash: cd4742ce8f909c30aa079873a3dcb544
+    md5: 120694f3d078b9ade033b56217e9ed85
+X01003280:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003280
+  hashes:
+    binhash: 5b94b44b27c245d032a7f4d6f39def9f
+    md5: 61afb6eb4e76efb2171c56d02742e9ad
+X01003281:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003281
+  hashes:
+    binhash: 5ccbe8c93e97f377c381f2892267c0bc
+    md5: d8cced93214dd8e84c0c9d06259412ab
+X01003286:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01003286
+  hashes:
+    binhash: b3a5d3577f1e64fe502d4cb55a3495fe
+    md5: 062ab130605e4771a89b2a300a6154bf
+X01005207:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01005207
+  hashes:
+    binhash: 23abda824c98f9ccb3107ea0528a89c0
+    md5: 3d1ccb47257c379b909e8d6098ab95a0
+X01005208:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01005208
+  hashes:
+    binhash: 9e7c792aa9aa34e871a09a0f31344bbb
+    md5: 8685052394200b839f115a667e7890ff
+X01005222:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01005222
+  hashes:
+    binhash: 8ff456c8104c3d8080375c3dc288edb9
+    md5: 3edd8e46166dbed4102c329991a7a497
+X01005223:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01005223
+  hashes:
+    binhash: 4055c7d1461e9c586f4bd75c384c2b56
+    md5: 4633fea316272fd71cd823881d100c14
+X01010206:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01010206
+  hashes:
+    binhash: 0f0fe82f1108c9d3da2c9c03ed3b6e30
+    md5: 7d5e82e70a2f3936743eb957462d41aa

@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+CO2_fluxes_flat10.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10/atmosphere/forcing/global.N96/2025.12.05/CO2_fluxes_flat10.anc
+  hashes:
+    binhash: 8d28ef6d4d6ea713e151eaf33a0e461f
+    md5: 5d9cb863f696ef2035bce6b68764df6b

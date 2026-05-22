@@ -1,0 +1,48 @@
+format: yamanifest
+version: 1.0
+---
+.STASHmaster_A.swp:
+  fullpath: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/share/atmosphere/stash/2025.12.19/STASHmaster/.STASHmaster_A.swp
+  hashes:
+    binhash: 2a4039bf6e288c75f026b19405346dde
+    md5: 6b1d1fc06139ee4c5826fb9ebbb11be6
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/.manifest.yaml
+  hashes:
+    binhash: 9228e2651c279b63add26620ee73d6d7
+    md5: 88b462289b3c6cec8dfc9c97771261d4
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/README
+  hashes:
+    binhash: b83a0a9996df33aa034983d989696061
+    md5: 68d47be694979b827a9f68088d8d5800
+STASHmaster_A:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/STASHmaster_A
+  hashes:
+    binhash: 5cb00fc6f6d0a235522ab8cd8176e340
+    md5: 808dac1f259bf3e3fb468462ccbbee81
+STASHmaster_A.original:
+  fullpath: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/share/atmosphere/stash/2025.12.19/STASHmaster/STASHmaster_A.original
+  hashes:
+    binhash: 31220775fc23ba93bfe0bd76f035259c
+    md5: ed1004d9aca8d29baba143ea12defbb7
+STASHmaster_O:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/STASHmaster_O
+  hashes:
+    binhash: 19606c7f321baddeed74d3ae7a2d7fd6
+    md5: 5a65d77c62d55e3b62e35ad9662d32a9
+STASHmaster_S:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/STASHmaster_S
+  hashes:
+    binhash: 17313250832ceddf9d771766b925ec7f
+    md5: 85ff5d563968cf24d1be595b05b4e52d
+STASHmaster_W:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/STASHmaster_W
+  hashes:
+    binhash: 7d0f5c2837a4570522cf6cc5c94a02fe
+    md5: 1e4391ea1f6234b33c33168bd7089d06
+STASHsections_A:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/STASHmaster/STASHsections_A
+  hashes:
+    binhash: 7cf9456d4d36eafd1ace4e9f127c91b6
+    md5: 8525fd107dbea6184db74089f1d55fd9

@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ozone_1849_2023_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/forcing/global.N96/2026.03.03/ozone_1849_2023_cmip7.anc
+  hashes:
+    binhash: 836ab6769fe6d7109edcfa111b41493f
+    md5: 9acc7eacb5d77eba93a0751113db4e32

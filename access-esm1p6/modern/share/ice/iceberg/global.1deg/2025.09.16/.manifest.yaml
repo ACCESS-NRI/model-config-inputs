@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+lice_discharge_iceberg.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/share/ice/iceberg/global.1deg/2025.09.16/lice_discharge_iceberg.nc
+  hashes:
+    binhash: 474e9879714bfece42672880bc854729
+    md5: 6257b68d0a6704e99c16ded8d65f9096

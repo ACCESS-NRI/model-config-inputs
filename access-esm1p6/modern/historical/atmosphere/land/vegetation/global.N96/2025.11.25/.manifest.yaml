@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ACCESS_vegfrac_LUH3_states_withAusPFTs_1850-2023_v7-transposed.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/atmosphere/land/vegetation/global.N96/2025.11.25/ACCESS_vegfrac_LUH3_states_withAusPFTs_1850-2023_v7-transposed.nc
+  hashes:
+    binhash: 47e5d30c68d865d0037a760f37f46ad5
+    md5: 91e2f9f2ac9e7e6ed308cd414ee78ef2
