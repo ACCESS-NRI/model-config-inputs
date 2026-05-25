@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.seaice:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.05.25/qrclim.seaice
+  hashes:
+    binhash: 4f8362307c99683b5ce5477448ecefb5
+    md5: 948b0d333b86c5bcfac5234638fcb665
