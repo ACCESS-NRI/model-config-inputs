@@ -6,3 +6,8 @@ qrclim.seaice:
   hashes:
     binhash: 4f8362307c99683b5ce5477448ecefb5
     md5: 948b0d333b86c5bcfac5234638fcb665
+qrclim.sst:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n96e/2026.05.25/qrclim.sst
+  hashes:
+    binhash: 381254057343a8c35eca663565d77c83
+    md5: 9c9de43554fa0972b113bdf4c263bd95
