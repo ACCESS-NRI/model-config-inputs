@@ -1,0 +1,8 @@
+Copied from
+/scratch/p66/jxs599/access-esm/archive/Ndep2-PI-CNP-emissions-dev-preindustrial+emissions-14-04-26-cfcbc3a9/restart199
+(/g/data/p73/archive/CMIP7/ACCESS-ESM1-6/production/Ndep2-PI-CNP-emissions/restart199/)
+
+Year changed to 1850
+
+Initial 20PgC wood product inserted into the atmosphere restart using scripts equivalent to those in
+https://github.com/ACCESS-NRI/access-esm1.6-configs/pull/741
