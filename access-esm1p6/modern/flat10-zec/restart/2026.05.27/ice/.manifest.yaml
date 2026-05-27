@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+cice_in.nml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/ice/cice_in.nml
+  hashes:
+    binhash: 8126530e8629895a993801eae674cede
+    md5: f27d1348905f57fd090b3add437f7d49
+ice.restart_file:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/ice/ice.restart_file
+  hashes:
+    binhash: 5dae463cc04aa9a4d49e634ca41fff66
+    md5: 52df988bc6652cd6832b594cc3a09e52
+iced.0301-01-01-00000.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/ice/iced.0301-01-01-00000.nc
+  hashes:
+    binhash: c31d7f52bc5bb0c05edd52d953320f85
+    md5: b1e4baa21bb816f7e401561c7edffbdd
+mice.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/ice/mice.nc
+  hashes:
+    binhash: 2c8eb792c037605f41159a96cd0c1fb9
+    md5: c225552d0d83b27eef4581a6a939abce

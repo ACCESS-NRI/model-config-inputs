@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/README
+  hashes:
+    binhash: b84636818d3a40b5f17805b812cf66dd
+    md5: ba5341c7f0968bff6b818f4ebc4f6351

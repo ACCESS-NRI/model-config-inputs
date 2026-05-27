@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+restart_dump.astart:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/atmosphere/restart_dump.astart
+  hashes:
+    binhash: fada49d0f60cdfbe70bf6e56d9028df1
+    md5: 2bd79d7f9a47c3613015950378092f3b
+um.res.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/atmosphere/um.res.yaml
+  hashes:
+    binhash: 99dbf915c08a623c94808cb6a68e4321
+    md5: 731f0a9e3d19375f1eac9449a0f891f3

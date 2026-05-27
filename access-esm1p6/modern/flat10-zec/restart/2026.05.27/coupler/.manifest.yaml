@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+a2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/coupler/a2i.nc
+  hashes:
+    binhash: b86e57a9e3f42b2517604343d0825409
+    md5: b1f55ab8ad68164da7a00089800c1437
+i2a.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/coupler/i2a.nc
+  hashes:
+    binhash: 7e02c2378078e5fec8d8b95e83dc5dad
+    md5: f922929ee54d3ca5a400e4fda595c66f
+o2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/coupler/o2i.nc
+  hashes:
+    binhash: 947beb9524964ae86ea81316689ae844
+    md5: ae0be5cdf503eda6c0cb99b89c45878e
