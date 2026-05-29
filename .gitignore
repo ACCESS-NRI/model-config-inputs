@@ -9,5 +9,6 @@
 !README
 !README.md
 !README.txt
+!README_template.md
 # and the .gitignore
 !.gitignore
