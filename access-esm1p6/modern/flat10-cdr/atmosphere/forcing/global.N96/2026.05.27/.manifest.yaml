@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+CO2_fluxes_flat10CDR.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-cdr/atmosphere/forcing/global.N96/2026.05.27/CO2_fluxes_flat10CDR.anc
+  hashes:
+    binhash: 58e0bcd6e2b0e00717d39f5b7fd3a06d
+    md5: c107bbe9d20ff1c9d790eb4182ef7b3f
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-cdr/atmosphere/forcing/global.N96/2026.05.27/README
+  hashes:
+    binhash: 07f251ce2ebf5773a7643b3c3e1aeffb
+    md5: 8030744cfc53ac6dabacb50094fa7246

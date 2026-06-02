@@ -1,0 +1,46 @@
+# Flat10-CDR CO2 flux
+
+## Contact(s)
+
+Name: Spencer Wong
+
+Email: spencer.wong@anu.edu.au
+
+Institution: ACCESS-NRI
+
+## Data Access and Sharing
+
+### Licensing/restrictions
+
+CC-BY-4.0
+
+### Other locations
+
+N/A
+
+### Links/relationships
+
+This dataset uses a value of 2.2802997e-09 kg/m2/s to represent 10GtC/year. This value is copied from the flat10 emissions ancillary (/g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10/atmosphere/forcing/global.N96/2025.12.05/CO2_fluxes_flat10.anc) and rounded to 7 decimals.
+
+
+### Recommended citation
+
+https://doi.org/10.5194/gmd-17-8141-2024
+
+## Data and Files
+
+### File List
+
+```
+CO2_fluxes_flat10CDR.anc                    CO2 emissions ancillary file
+```
+
+### Data Specific Information
+
+CO2_fluxes_flat10CDR.anc contains gridded time varying CO2 fluxes to the atmosphere in kg(CO2)/m2/s, for use in the CMIP7 esm-flat10-cdr experiment. Emissions evolve following the specification in https://doi.org/10.5194/gmd-17-8141-2024 (Table 1). Total emissions initially decline linearly from 10GtC/year to -10GtC/year over 100 years, remain flat at -10GtC/year for 100 years, and swap to 0 emissions for the remaining years. A 200 year period of zero emissions has been chosen here. During the interpolation, emissions values change between years but remain constant within each year.
+
+This dataset starts at year 301 to match the starting year in the restart file (/g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27) selected for the esm-flat10-cdr experiment.
+
+## Methodological information
+
+This file was generated with commit f745597 of https://github.com/ACCESS-NRI/CMIP7-Input/pull/130, using the arguments "--year-start 301 --nyear-zero 200".
