@@ -45,3 +45,9 @@ The workflow has the following inputs:
 
 > [!NOTE]
 > If this is desired behavior for Prereleases, then `overwrite-target` must be `true`
+
+## Provenance
+
+All model configuration inputs should include README files that provide provenance and other critical information so that users can understand the origin and purpose of the input data files.
+
+See [the templates README](./templates/README.md) for more detail.
