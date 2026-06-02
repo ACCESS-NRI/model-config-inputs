@@ -26,8 +26,14 @@ are used in our model configurations and related experiments.
 ### How to use
 
 To use the template, copy it to the directory where your model config
-input data is located. Rename it to README.md so that it is automatically
-correctly displayed when viewed in the GitHub repository.
+input data is located. 
+
+> [!TIP]
+> You can copy the file from `/g/data/vk83/configurations/inputs/templates` on `gadi`, [download it directly from GitHub](https://raw.githubusercontent.com/ACCESS-NRI/model-config-inputs/refs/heads/main/templates/README_template.md), or [copy it into your paste buffer](https://github.blog/changelog/2021-09-20-quickly-copy-the-contents-of-a-file-to-the-clipboard/) from the [GitHub page](https://github.com/ACCESS-NRI/model-config-inputs/blob/main/README_template.md)
+
+Rename it to README.md so that it will be automatically
+correctly displayed when viewed in the GitHub repository after
+the workflow has run.
 
 All text surrounded by square brackets, e.g. [Like this], should be
 replaced with values that are appropriate for the dataset. Also replace
@@ -97,3 +103,4 @@ is not limited to:
 - packages
 - notebooks
 - software used to process the data
+
