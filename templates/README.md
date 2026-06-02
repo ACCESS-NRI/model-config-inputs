@@ -76,6 +76,11 @@ that are, or may seem, very similar.
 
 If derived from another data source include the list of sources.
 
+### Recommended citation
+
+If the data has a DOI or associated reference and there is a recommended
+citation format then insert here. Otherwise insert "N/A".
+
 #### File list
 
 List all files, or folders as appropriate, contained in the data set. 
