@@ -64,7 +64,7 @@ access for anyone without an account on the HPC system.
 
 #### Links/relationships
 
-Relationships to other data sets provides more rich context with
+Relationships to other data sets provide more rich context with
 minimal effort, and can help eliminate confusion between datasets
 that are, or may seem, very similar. 
 
@@ -74,7 +74,7 @@ If derived from another data source include the list of sources.
 
 List all files, or folders as appropriate, contained in the data set. 
 Detail any relationship between files or a description of the dataset
-structure. If there are multiple versions of a dataset detail what 
+structure. If there are multiple versions of a dataset, detail what 
 was updated, when and why. 
 
 #### Data specific information

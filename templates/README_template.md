@@ -14,7 +14,7 @@ Institution: ACCESS-NRI
 
 ### Licensing/restrictions
 
-[List any licenses and or restrictions placed on the data]
+[List any licenses and/or restrictions placed on the data]
 
 ### Other locations
 
@@ -22,7 +22,7 @@ Institution: ACCESS-NRI
 
 ### Links/relationships
 
-[Detail and links/relationships to other data sets]
+[Detail any links/relationships to other data sets]
 
 ### Recommended citation
 
