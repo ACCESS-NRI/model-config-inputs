@@ -57,6 +57,9 @@ more information about the data. Typically this would be an ACCESS-NRI
 staff member, but not exclusively. However you must get their agreement
 before naming another person as data custodian.
 
+When data custodian is a member of ACCESS-NRI the Institution field should 
+be ACCESS-NRI.
+
 #### Licensing/restrictions
 
 ACCESS-NRI uses [CC-By-4.0](https://spdx.org/licenses/CC-BY-4.0.html) 

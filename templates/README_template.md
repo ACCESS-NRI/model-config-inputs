@@ -8,7 +8,7 @@ Name: [Name of data custodian]
 
 Email: [Email of data custodian]
 
-Institution: ACCESS-NRI
+Institution: [Institution of data custodian]
 
 ## Data Access and Sharing
 
