@@ -4,10 +4,15 @@
 
 ### Background
 
-All model configuration input data directories should contain a README
+All model configuration input data directories should contain a README.md
 file with a description of the data files contained therein. This 
 description should include provenance, licensing references and 
 technical information where available.
+
+All README.md files are automatically tracked and pushed to this repository
+when data is copied using the supplied workflows. This means there is
+tracked and publicly visible information about the input files that
+are used in our model configurations and related experiments. 
 
 The file [README_template.md](./README_template.md) is a template that
 represents best practice for a README of this kind. It is inspired from
@@ -18,26 +23,20 @@ The template is written in [Markdown](https://www.markdownguide.org/),
 a free and open format that allows for some minimal formatting and 
 linking while remaining readable without rendering.
 
-All README.md files are automatically tracked and pushed to this repository
-when data is copied using the supplied workflows. This means there is
-tracked and publicly visible information about the input files that
-are used in our model configurations and related experiments. 
-
 ### How to use
 
 To use the template, copy it to the directory where your model config
 input data is located. 
 
 > [!TIP]
-> You can copy the file from `/g/data/vk83/configurations/inputs/templates` on `gadi`, [download it directly from GitHub](https://raw.githubusercontent.com/ACCESS-NRI/model-config-inputs/refs/heads/main/templates/README_template.md), or [copy it into your paste buffer](https://github.blog/changelog/2021-09-20-quickly-copy-the-contents-of-a-file-to-the-clipboard/) from the [GitHub page](https://github.com/ACCESS-NRI/model-config-inputs/blob/main/README_template.md)
+> You can copy the file from `/g/data/vk83/configurations/inputs/templates` on `gadi`, [download it directly from GitHub](https://raw.githubusercontent.com/ACCESS-NRI/model-config-inputs/refs/heads/main/templates/README_template.md), or [copy it into your paste buffer](https://github.blog/changelog/2021-09-20-quickly-copy-the-contents-of-a-file-to-the-clipboard/) from the [GitHub page](https://github.com/ACCESS-NRI/model-config-inputs/blob/main/templates/README_template.md)
 
 Rename it to README.md so that it will be automatically
 correctly displayed when viewed in the GitHub repository after
 the workflow has run.
 
 All text surrounded by square brackets, e.g. [Like this], should be
-replaced with values that are appropriate for the dataset. Also replace
-the square brackets, e.g.
+replaced, including the brackets, with values that are appropriate for the dataset, e.g.
 
     This readme file was generated on [YYYY-MM-DD] by [NAME]
 
@@ -45,7 +44,7 @@ would become
 
     This readme file was generated on 2026-06-17 by Jessie Blogs.
 
-If the field/section is not relevant to the data set use the value N/A
+If the field/section is not relevant to the dataset use the value N/A
 to signify this.
 
 Otherwise there are descriptions below with more detail where required,
@@ -83,7 +82,7 @@ citation format then insert here. Otherwise insert "N/A".
 
 #### File list
 
-List all files, or folders as appropriate, contained in the data set. 
+List all files, or folders as appropriate, contained in the dataset. 
 Detail any relationship between files or a description of the dataset
 structure. If there are multiple versions of a dataset, detail what 
 was updated, when and why. 
