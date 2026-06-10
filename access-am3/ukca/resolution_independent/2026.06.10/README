@@ -1,0 +1,25 @@
+This readme file was generated on 2026.06.10 by Lachlan Whyborn
+
+UKCA Chemistry/Radiation Interaction Configuration
+Contact(s)
+Name: Lachlan Whyborn
+Email: lachlan.whyborn@anu.edu.au
+Institution: ACCESS-NRI
+
+Data Access and Sharing
+Licenses/restrictions placed on the data: The Met Office Software License for Non-Commercial Use
+Links to other publicly accessible locations of the data: N/A
+Links/relationships to ancillary data sets: N/A.
+Was data derived from another source? No
+Recommended citation for this dataset: N/A
+
+Data and Files:
+File List: nml_ac_lw nml_ac_sw nml_an_lw nml_an_sw nml_cr_lw nml_cr_sw RADAER_pcalc.ukca
+Relationship between files, or a description of the file structure: N/A
+Are there multiple versions of the dataset? Yes. Current version is GA7.1.
+
+Data Specific Information
+Namelists which describe how chemical species in the atmosphere interact with radiation e.g. reflection/absorption, scattering. These files are independent of resolution.
+
+Methodological information
+Copied directly from UKMO source on /g/data/access.

@@ -1,0 +1,43 @@
+format: yamanifest
+version: 1.0
+---
+RADAER_pcalc.ukca:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/RADAER_pcalc.ukca
+  hashes:
+    binhash: a97a6b23f8de939ac49e5fb94c924b41
+    md5: 693476b4c4e7548154a83a53d0879ab4
+README:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/README
+  hashes:
+    binhash: 97124de273c359103ef6d90c03b9f09a
+    md5: 9856b603b62c3450ae7a98d37ae93e67
+nml_ac_lw:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/nml_ac_lw
+  hashes:
+    binhash: af3b6fd53139707c2adbdab60785a0f2
+    md5: 90fbbb2cbf540428d925fe6de8c2c1e3
+nml_ac_sw:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/nml_ac_sw
+  hashes:
+    binhash: 653ace5c7c98c15920405131ddd50a26
+    md5: c9a3a953d0830944230ee015e196e200
+nml_an_lw:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/nml_an_lw
+  hashes:
+    binhash: c187b02f6e0e45295986d18907885512
+    md5: 35588ece9338a0129cbcde076d6cc6e3
+nml_an_sw:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/nml_an_sw
+  hashes:
+    binhash: 7a0ccfeec826486c3d82bcf02a52f5a2
+    md5: 70d7b03aaba86f6cf57b084c62091449
+nml_cr_lw:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/nml_cr_lw
+  hashes:
+    binhash: e40bd296fa9d59e697ded2e3ce2a1af5
+    md5: f265ddd82758955c5c248f535a980b43
+nml_cr_sw:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/resolution_independent/2026.06.10/nml_cr_sw
+  hashes:
+    binhash: 0ebf4197eb04dafef3a551ae4c62e14c
+    md5: c575abc4fe3b4ff345d01b0da7f3cfc6
