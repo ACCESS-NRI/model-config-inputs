@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+restart_dump.astart:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/restart/2026.06.11/atmosphere/restart_dump.astart
+  hashes:
+    binhash: a5723eba651086d361832502bd8d41e5
+    md5: 42b92406662efa1b192abfcc937f5c6f
+um.res.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/historical/restart/2026.06.11/atmosphere/um.res.yaml
+  hashes:
+    binhash: 6e34549dfdb181e45549802ac36a8b8b
+    md5: 78f26c60a2e2e0336c7acec9bfecd7bf
