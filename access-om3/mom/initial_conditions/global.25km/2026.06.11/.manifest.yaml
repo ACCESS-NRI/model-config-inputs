@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+woa23_ts_01_mom.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/initial_conditions/global.25km/2026.06.11/woa23_ts_01_mom.nc
+  hashes:
+    binhash: b34a17bcd1cd302dbe979f5998eaa4c8
+    md5: 431026a4e796d72192660ea53180f734
