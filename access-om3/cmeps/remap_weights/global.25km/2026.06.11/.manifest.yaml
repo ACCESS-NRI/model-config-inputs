@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+access-om3-25km-rof-remap-weights.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cmeps/remap_weights/global.25km/2026.06.11/access-om3-25km-rof-remap-weights.nc
+  hashes:
+    binhash: b7cca5b32091fece61712abf9f713c4a
+    md5: 7741d866680196624d84fba69000062c
