@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+wombatlite_ic.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/initial_conditions/share/2026.05.07/wombatlite_ic.nc
+  hashes:
+    binhash: 7d5328cd1de7472c6836f9e967e6e238
+    md5: b06bb6902d518887a30fb6154989c7ea
