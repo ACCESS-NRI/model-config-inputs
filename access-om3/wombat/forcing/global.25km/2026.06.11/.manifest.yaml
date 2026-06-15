@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+SFe_Hamiltonetal2020_monthly_clim.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/forcing/global.25km/2026.06.11/SFe_Hamiltonetal2020_monthly_clim.nc
+  hashes:
+    binhash: f5a7e6e38516a0f0427ed96c783fcc05
+    md5: e36d85227cd1b0f504ad2350b54deb25
