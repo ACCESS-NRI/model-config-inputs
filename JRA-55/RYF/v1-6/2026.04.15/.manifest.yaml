@@ -1,0 +1,63 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/.manifest.yaml
+  hashes:
+    binhash: 077745ba4d926d254f9833b363b35e13
+    md5: 632d31868595745ad452de7a781a9b5f
+RYF.friver.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.friver.1990_1991.nc
+  hashes:
+    binhash: 09550ac6d5c2dd55950f188f57473ecd
+    md5: beb16730c02db9a730f69dfdc843b774
+RYF.huss.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.huss.1990_1991.nc
+  hashes:
+    binhash: 405973c78715f0229800515d3c5641d4
+    md5: 1b184b232a31382443e5818bb623a9cb
+RYF.licalvf.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.licalvf.1990_1991.nc
+  hashes:
+    binhash: 4215bb026f1651b0a38bb359ffde9812
+    md5: 1d9233a590fb94d052196cdd5245a585
+RYF.prra.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.prra.1990_1991.nc
+  hashes:
+    binhash: b3d6923936b78a42f3ced485d1dc944a
+    md5: a03d5b51f44fb9fcad5036a0b7d408d0
+RYF.prsn.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.prsn.1990_1991.nc
+  hashes:
+    binhash: 2186b8e6f5ac2f055c76feae275fac0d
+    md5: 914dcf6080c0fc9b9d46bf7082a4c0be
+RYF.psl.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.psl.1990_1991.nc
+  hashes:
+    binhash: cf11f0382c3c256c6c70cb5ad23c4a4e
+    md5: 98206e380baf0f229b2983f569f9b0e0
+RYF.rlds.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.rlds.1990_1991.nc
+  hashes:
+    binhash: 8ef7649e46845d1f50d5c3039a336d10
+    md5: 6e9242d3a02c1ee768337dcab710de39
+RYF.rsds.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.rsds.1990_1991.nc
+  hashes:
+    binhash: ff58f2282c2ac2989bbae5ce5cb17b15
+    md5: 5f9721311ff7ac4908ca79a9d9cfa5fd
+RYF.tas.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.tas.1990_1991.nc
+  hashes:
+    binhash: 9448feec5416d22c70668dfed3b96a64
+    md5: 5fdf6d3b0369f1b50138013101c288a6
+RYF.uas.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.uas.1990_1991.nc
+  hashes:
+    binhash: 91aab3178fd13839f3f5a572c3c9f34f
+    md5: 264a82753021ba094b54cc0cfae4f3ec
+RYF.vas.1990_1991.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.vas.1990_1991.nc
+  hashes:
+    binhash: db95d15e2b6d3dc5aba176ffd96bd440
+    md5: bd0ccd8ef7f639ca77b6705f0d6d1fcb
