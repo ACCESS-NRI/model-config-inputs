@@ -6,3 +6,8 @@ JRA55do-datm-ESMFmesh.nc:
   hashes:
     binhash: a94de44546b145640eb49467b7b3da1f
     md5: 0ecb68f878b91b8adc90838e2c413914
+JRA55do-drof-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2026.01.21/JRA55do-drof-ESMFmesh.nc
+  hashes:
+    binhash: 780e2ab02c4560e247c96bba2817ccc5
+    md5: bf62c4e7786ddfbe56d61b3074d5d16d
