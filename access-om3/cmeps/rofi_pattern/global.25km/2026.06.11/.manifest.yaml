@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+access-om3-25km-rofi-climatology.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cmeps/rofi_pattern/global.25km/2026.06.11/access-om3-25km-rofi-climatology.nc
+  hashes:
+    binhash: 806b0e1406fb2dad983ab833d4c443e0
+    md5: d7df26857f71671fbbb2609d20759fc8
