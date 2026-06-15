@@ -1,6 +1,11 @@
 format: yamanifest
 version: 1.0
 ---
+CO2_gm_1750-2024.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/forcing/global.25km/2026.06.11/CO2_gm_1750-2024.nc
+  hashes:
+    binhash: 18238e3bbe24df2a25eba03cd0ea04eb
+    md5: 9efa3166d44658a6bb60b8f48c3420af
 SFe_Hamiltonetal2020_monthly_clim.nc:
   fullpath: /g/data/vk83/configurations/inputs/access-om3/wombat/forcing/global.25km/2026.06.11/SFe_Hamiltonetal2020_monthly_clim.nc
   hashes:
