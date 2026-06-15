@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/README.md
+  hashes:
+    binhash: 653b32f6a0e7d1ef357a222a3374e105
+    md5: 8a22b81151c2035a4e56311249f00ef6
