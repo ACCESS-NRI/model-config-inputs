@@ -6,3 +6,8 @@ ocean_hgrid.nc:
   hashes:
     binhash: 208d644ac7ff3c5e15fec67916149ce4
     md5: 68cd47daf6d579da0aa57d2fd04f33da
+topog.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.25km/2026.06.11/topog.nc
+  hashes:
+    binhash: 07e12389842cf90097c309feec169a40
+    md5: 183fd394bad0c3e29bf8123caca6f36e
