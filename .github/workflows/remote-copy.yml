@@ -162,7 +162,14 @@ jobs:
               errors=true
             fi
 
+            unset IFS
+
             for source_path in $sources; do
+               if [[ "$source_path" != /* ]]; then
+                 echo "::error::Source '$source_path' must be an absolute path."
+                 errors=true
+               fi
+
               if [[ "$(basename "$source_path")" == "$(basename "$target_rel")" ]]; then
                 echo "::error::Entry '$entry' would copy a file into a file or a directory into one with the same name (common rsync error)."
                 errors=true

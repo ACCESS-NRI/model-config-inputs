@@ -26,7 +26,12 @@ jobs:
       - name: Read input.yaml fields
         id: fields
         run: |
-          echo "description=$(yq '.description' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
+          # description could be a multiline field, so we need to heredoc it when appending it to GITHUB_OUTPUT
+          {
+            echo 'description<<EOF'
+            yq -r '.description' ${{ env.INPUT_YAML_PATH }}
+            echo 'EOF'
+          } >> $GITHUB_OUTPUT
           echo "target=$(yq '.target' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
           echo "type=$(yq '.type' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
           echo "cold_storage=$(yq '."cold-storage"' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
