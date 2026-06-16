@@ -1,0 +1,11 @@
+description: |
+  These inputs are being moved because I feel like it!
+target: Gadi
+type: Prerelease
+cold-storage: false
+overwrite: false
+inputs:
+  # Note that the source is an absolute path accessible to the service user
+  # Note that the target is a relative path to the given targets inputs directory,
+  # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
+  /scratch/tm70/tg0447/test: .test/2026.06.00
