@@ -8,6 +8,7 @@ on:
   push: *trigger_config
 jobs:
   validate-inputs:
+    name: Validate
     runs-on: ubuntu-latest
     env:
       INPUT_YAML_PATH: .github/manifests/input.yml
@@ -39,6 +40,7 @@ jobs:
           exit 2
 
   call-remote-copy:
+    name: Copy
     needs:
       - validate-inputs
     uses: ./.github/workflows/remote-copy.yml
