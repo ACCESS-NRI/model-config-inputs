@@ -148,6 +148,7 @@ jobs:
               continue
             fi
 
+            # This splits a space-separated 'SOURCE TARGET' into an absolute source, and target relative to the configuration inputs directory.
             sources="${entry% *}"
             target_rel="${entry##* }"
 
