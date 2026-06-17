@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/amip/atmosphere/boundary_conditions/global.N96/2026.04.21/README.md
+  hashes:
+    binhash: a6777925655ea7186cbff335eb5dcb76
+    md5: 59efa2cc131bd848e74af056903d896d
+seaice_amip_n96_gregorian.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/amip/atmosphere/boundary_conditions/global.N96/2026.04.21/seaice_amip_n96_gregorian.anc
+  hashes:
+    binhash: 314ff6455fe503ec1e97c987439b859b
+    md5: e96784e440971724c45d508a3b7cef9d
+sst_amip_n96_gregorian.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/amip/atmosphere/boundary_conditions/global.N96/2026.04.21/sst_amip_n96_gregorian.anc
+  hashes:
+    binhash: 3ee293fdf34bba673f5d02d984f10947
+    md5: 0a396a15a78800f78b5108dce5e0c1d2
