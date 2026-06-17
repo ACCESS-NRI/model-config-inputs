@@ -1,0 +1,93 @@
+name: PR
+on:
+  pull_request: &trigger_config
+    branches:
+      - main
+    paths:
+      - .github/manifests/input.yml
+  push: *trigger_config
+jobs:
+  validate-inputs:
+    name: Validate
+    runs-on: ubuntu-latest
+    env:
+      INPUT_YAML_PATH: .github/manifests/input.yml
+      INPUT_YAML_SCHEMA_PATH: .github/manifests/input.schema.json
+      INPUT_YAML_SCHEMA_VERSION: draft-2019-09
+    outputs:
+      description: ${{ steps.fields.outputs.description }}
+      target: ${{ steps.fields.outputs.target }}
+      type: ${{ steps.fields.outputs.type }}
+      cold-storage: ${{ steps.fields.outputs.cold_storage }}
+      overwrite-target: ${{ steps.fields.outputs.overwrite_target }}
+      inputs: ${{ steps.fields.outputs.inputs }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Validate input.yaml schema
+        uses: GrantBirki/json-yaml-validate@3ff75979f3b21171f2e8a44705f0ff4bed30bbc0 # v5.0.0
+        with:
+          mode: fail
+          files: ${{ env.INPUT_YAML_PATH }}
+          json_schema: ${{ env.INPUT_YAML_SCHEMA_PATH }}
+          json_schema_version: ${{ env.INPUT_YAML_SCHEMA_VERSION }}
+          yaml_as_json: true
+          ajv_strict_mode: false
+          use_gitignore: false
+
+      - name: Read input.yaml fields
+        id: fields
+        run: |
+          # description could be a multiline field, so we need to heredoc it when appending it to GITHUB_OUTPUT
+          {
+            echo 'description<<EOF'
+            yq -r '.description' ${{ env.INPUT_YAML_PATH }}
+            echo 'EOF'
+          } >> $GITHUB_OUTPUT
+          echo "target=$(yq '.target' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
+          echo "type=$(yq '.type' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
+          echo "cold_storage=$(yq '."cold-storage"' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
+          echo "overwrite_target=$(yq '.overwrite' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
+          echo "inputs=$(yq -r '.inputs | to_entries | map("\(.key) \(.value)") | join(",")' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
+
+  call-remote-copy:
+    name: Copy
+    needs:
+      - validate-inputs
+    uses: ./.github/workflows/remote-copy.yml
+    with:
+      remote: ${{ needs.validate-inputs.outputs.target }}
+      type: ${{ needs.validate-inputs.outputs.type }}
+      note: ${{ needs.validate-inputs.outputs.description }}
+      input: ${{ needs.validate-inputs.outputs.inputs }}
+      overwrite-target: ${{ fromJson(needs.validate-inputs.outputs.overwrite-target) }}
+      store-on-tape: ${{ fromJson(needs.validate-inputs.outputs.cold-storage) }}
+      dry-run: ${{ github.event_name == 'pull_request' }}
+    secrets: inherit
+
+  comment-on-pr:
+    name: Comment
+    needs:
+      - validate-inputs
+      - call-remote-copy
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write  # for commenting on the PR with dry-run results
+    steps:
+      - name: Output Dry Run To PR
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          comment_body=$(cat <<'EOF'
+          DRY RUN: Files that would be copied to ${{ needs.validate-inputs.outputs.target }} ${{ needs.validate-inputs.outputs.type }}:
+
+          ```
+          ${{ needs.call-remote-copy.outputs.dry-run-copies }}
+          ```
+          EOF
+          )
+
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --repo ${{ github.repository }} \
+            --body "$comment_body"

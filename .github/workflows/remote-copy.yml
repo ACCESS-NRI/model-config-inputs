@@ -1,34 +1,40 @@
 name: Config Inputs Remote Copy
-run-name: "${{ inputs.remote-environment }} Config Input Copy to ${{ inputs.target }}"
+run-name: "${{ inputs.remote }} ${{ inputs.type }} Config Input Copy"
 on:
   workflow_dispatch:
     inputs:
-      remote-environment:
+      remote:
         type: choice
         required: true
-        description: The Github Environment for the given remote
+        description: The HPC that will have it's configurations moved
         options:
-          - Gadi Release
-          - Gadi Prerelease
+          - Gadi
+      type:
+        type: choice
+        required: true
+        description: The type of configuration inputs
+        options:
+          - Release
+          - Prerelease
       note:
         type: string
         required: false
         description: Note describing the reason for the change
-      source:
+      input:
         type: string
         required: true
-        description: Remote absolute path to configuration input source file or directory
-      target:
-        type: string
-        required: true
-        description: Remote absolute path to configuration input destination directory
+        description: |
+          Comma-separated list of 'SOURCE... TARGET' pairs.
+          SOURCE is an absolute path to a file/directory accessible to the service user.
+          TARGET is a directory relative to the configurations input directory on the HPC for a type.
+          Eg. /path/to/copy/access-esm1p5/something access-esm1p5/something/2026.05
       overwrite-target:
         type: boolean
         required: true
         description: Overwrite the remote target if it already exists
       target-acl-spec:
         type: string
-        required: true
+        required: false
         # Default to no write for everyone except tm70_ci
         # TODO: This default will probably not work for other `remote-environment`s
         default: >-
@@ -48,7 +54,70 @@ on:
         required: true
         default: true
         description: Also store target on the remotes cold storage service
-
+      dry-run:
+        type: boolean
+        required: false
+        default: false
+        description: |
+          Run the associated commands without actually copying the files
+  workflow_call:
+    inputs:
+      remote:
+        type: string
+        required: true
+        description: The HPC that will have it's configurations moved
+      type:
+        type: string
+        required: true
+        description: The type of configuration inputs
+      note:
+        type: string
+        required: false
+        description: Note describing the reason for the change
+      input:
+        type: string
+        required: true
+        description: |
+          Comma-separated list of 'SOURCE... TARGET' pairs.
+          SOURCE is an absolute path to a file/directory accessible to the service user.
+          TARGET is a directory relative to the configurations input directory on the HPC for a type.
+          Eg. /path/to/copy/access-esm1p5/something access-esm1p5/something/2026.05
+      overwrite-target:
+        type: boolean
+        required: true
+        description: Overwrite the remote target if it already exists
+      target-acl-spec:
+        type: string
+        required: false
+        # Default to no write for everyone except tm70_ci
+        # TODO: This default will probably not work for other `remote-environment`s
+        default: >-
+          u::rwx,
+          u:tm70_ci:rwx,
+          g::r-x,
+          m::rwx,
+          o::---,
+          d:u::rwx,
+          d:u:tm70_ci:rwx,
+          d:g::r-x,
+          d:m::rwx,
+          d:o::---
+        description: ACL spec to be passed to `setfacl -m` for the given target
+      store-on-tape:
+        type: boolean
+        required: true
+        default: true
+        description: Also store target on the remotes cold storage service
+      dry-run:
+        type: boolean
+        required: false
+        default: false
+        description: |
+          Run the associated commands without actually copying the files
+    outputs:
+      dry-run-copies:
+        description: Newline-separated list of files copied in 'SOURCE -> TARGET' format
+        value: ${{ jobs.copy-to-remote-dry-run.outputs.copies }}
 jobs:
   setup:
     name: Setup
@@ -59,20 +128,56 @@ jobs:
     steps:
       - name: Log inputs
         run: |
-          echo "::notice::Copy on ${{ inputs.remote-environment }} from '${{ inputs.source }}' to '${{ inputs.target }}' with ACLs '${{ inputs.target-acl-spec }}'"
+          echo "::notice::Copy on ${{ inputs.remote }} ${{ inputs.type }}: '${{ inputs.input }}' with ACLs '${{ inputs.target-acl-spec }}'"
           if [[ "${{ inputs.note }}" != "" ]]; then
             echo "::notice::Note from ${{ github.actor }}: '${{ inputs.note }}'"
           fi
-          echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite ${{ inputs.target }}"
+          echo "::${{ inputs.overwrite-target && 'warning' || 'notice' }}::This operation ${{ inputs.overwrite-target && 'WILL' || 'will not' }} overwrite the target"
 
       - name: Verify inputs
         run: |
           errors=false
+          pairs='${{ inputs.input }}'
+          IFS=,
 
-          if [[ "$(basename "${{ inputs.source }}")" == "$(basename "${{ inputs.target }}")" ]]; then
-            echo "::error::Attempted to copy a file into a file (destination must be a directory) or copy a directory into one with the same name (common rsync error)"
-            errors=true
-          fi
+          for entry in $pairs; do
+            entry=$(echo "$entry" | xargs)
+            if [[ -z "$entry" ]]; then
+              echo "::error::Empty source/target entry found in 'input'."
+              errors=true
+              continue
+            fi
+
+            # This splits a space-separated 'SOURCE TARGET' into an absolute source, and target relative to the configuration inputs directory.
+            sources="${entry% *}"
+            target_rel="${entry##* }"
+
+            if [[ "$sources" == "$entry" || -z "$sources" || -z "$target_rel" ]]; then
+              echo "::error::Invalid source/target entry '$entry'. Expected 'SOURCE TARGET'."
+              errors=true
+              continue
+            fi
+
+            if [[ "$target_rel" = /* ]]; then
+              echo "::error::Target '$target_rel' must be relative to the remote configurations input directory."
+              errors=true
+            fi
+
+            unset IFS
+
+            for source_path in $sources; do
+               if [[ "$source_path" != /* ]]; then
+                 echo "::error::Source '$source_path' must be an absolute path."
+                 errors=true
+               fi
+
+              if [[ "$(basename "$source_path")" == "$(basename "$target_rel")" ]]; then
+                echo "::error::Entry '$entry' would copy a file into a file or a directory into one with the same name (common rsync error)."
+                errors=true
+              fi
+            done
+          done
+
           if [ -z "${{ inputs.target-acl-spec }}" ]; then
             echo "::notice::No 'ACL' input given, not setting the ACLs explicitly."
           fi
@@ -148,13 +253,98 @@ jobs:
             exit 1
           fi
 
-  copy-to-remote:
-    name: Copy To ${{ inputs.remote-environment }}
+  copy-to-remote-dry-run:
+    name: Copy To ${{ inputs.remote }} ${{ inputs.type }} - Dry Run
+    if: inputs.dry-run
     runs-on: ubuntu-latest
     needs:
       - setup
       - test-acl
-    environment: ${{ inputs.remote-environment }}
+    environment: ${{ inputs.remote }} ${{ inputs.type }}
+    outputs:
+      copies: ${{ steps.dry-run.outputs.copies }}
+    steps:
+      - name: Setup SSH
+        id: ssh
+        uses: access-nri/actions/.github/actions/setup-ssh@main
+        with:
+          private-key: ${{ secrets.SSH_KEY }}
+          hosts: |
+            ${{ secrets.SSH_HOST }}
+            ${{ secrets.SSH_HOST_DATA }}
+
+      - name: Verify Remote Target
+        run: |
+          pairs='${{ inputs.input }}'
+          IFS=,
+
+          for entry in $pairs; do
+            entry=$(echo "$entry" | xargs)
+            sources="${entry% *}"
+            target_rel="${entry##* }"
+            target="${{ vars.CONFIGS_INPUT_DIR }}/$target_rel"
+
+            if [[ -z "$sources" || -z "$target_rel" || "$sources" == "$entry" ]]; then
+              echo "::error::Invalid source/target entry '$entry'."
+              exit 1
+            fi
+          done
+
+      - name: Rsync Source to Target - Dry Run
+        id: dry-run
+        env:
+          REMOTE_RSYNC_OUTPUTS_FILE: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-dry-run-${{ github.run_id }}-${{ github.run_attempt }}.log
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
+          pairs='${{ inputs.input }}'
+          IFS=,
+
+          echo "::notice::Dry run output below:"
+
+          for entry in $pairs; do
+            entry=$(echo "$entry" | xargs)
+            sources="${entry% *}"
+            target_rel="${entry##* }"
+            target="${{ vars.CONFIGS_INPUT_DIR }}/$target_rel"
+
+            # Even in dry-run mode, we need to create intermediate directories so rsync's receiver can chdir into the target!
+            mkdir -p "$target"
+
+            rsync_output=$(rsync --dry-run --recursive \
+              --out-format="/%f -> $(realpath "$target")/%n" \
+              $sources $target
+            )
+
+            echo "rsync_output for entry '$entry':"
+            echo "$rsync_output"
+
+            echo "$rsync_output" >> ${{ env.REMOTE_RSYNC_OUTPUTS_FILE }}
+
+            # Removing the empty target directory post-dry-run-rsync
+            rmdir --ignore-fail-on-non-empty --parents "$target"
+          done
+          EOT
+
+          {
+            echo 'copies<<EOF'
+            ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }} -i ${{ steps.ssh.outputs.private-key-path }} \
+              cat ${{ env.REMOTE_RSYNC_OUTPUTS_FILE }}
+            echo 'EOF'
+          } >> $GITHUB_OUTPUT
+
+  copy-to-remote:
+    name: Copy To ${{ inputs.remote }} ${{ inputs.type }}
+    if: ${{ ! inputs.dry-run }}
+    runs-on: ubuntu-latest
+    needs:
+      - setup
+      - test-acl
+    environment: ${{ inputs.remote }} ${{ inputs.type }}
+    concurrency:
+      # We don't want to copy multiple at the same time, especially during the commit step
+      group: ${{ inputs.remote }}-${{ inputs.type }}-config-input-copy
+      cancel-in-progress: false
+      queue: max
     outputs:
       # Space-separated list of paths copied to the target
       files: ${{ steps.copy.outputs.paths }}
@@ -172,50 +362,81 @@ jobs:
 
       - name: Verify Remote Target
         run: |
-          if [[ "${{ startsWith(inputs.target, vars.CONFIGS_INPUT_DIR) }}" == "false" ]]; then
-            echo "::error::Remote target '${{ inputs.target }}' doesn't look like a configurations input directory."
-            exit 1
-          fi
+          pairs='${{ inputs.input }}'
+          IFS=,
+
+          for entry in $pairs; do
+            entry=$(echo "$entry" | xargs)
+            sources="${entry% *}"
+            target_rel="${entry##* }"
+            target="${{ vars.CONFIGS_INPUT_DIR }}/$target_rel"
+
+            if [[ -z "$sources" || -z "$target_rel" || "$sources" == "$entry" ]]; then
+              echo "::error::Invalid source/target entry '$entry'."
+              exit 1
+            fi
+          done
 
       - name: Rsync Source to Target
         id: copy
         # output:
         #   paths: space-separated list of files copied
         env:
-          REMOTE_RSYNC_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-files-${{ github.run_id }}.log
+          REMOTE_RSYNC_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-files-${{ github.run_id }}-${{ github.run_attempt }}.log
           LOCAL_RSYNC_FILE_LIST_PATH: ./files-copied.log
         # In this step, we rsync the files from the source to the target, capturing the list of files copied.
-        # We also remove the empty directories copied, and make it space-separated.
+        # We keep the remote log as one destination path per line, then make it space-separated for output.
         # There are two rsync steps, one for the rsyncing of source to target,
         # and then one locally on the runner to copy the list of files from the remote.
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          # Create intermediate directories since we can't use `rsync`s `--mkpath` on some deployment targets
-          mkdir -p "${{ inputs.target }}"
+          pairs='${{ inputs.input }}'
+          IFS=,
 
-          # The output of the rsync command will be a list of transferred absolute paths, for further processing
-          RSYNC_OUT_FORMAT="$(readlink -f "${{ inputs.target }}")/%n"
+          for entry in $pairs; do
+            entry=$(echo "$entry" | xargs)
+            sources="${entry% *}"
+            target_rel="${entry##* }"
+            target="${{ vars.CONFIGS_INPUT_DIR }}/$target_rel"
 
-          # Transfer the source to the target, and pipe a space-separated list of destination file paths
-          rsync --recursive --out-format="$RSYNC_OUT_FORMAT" \
-              ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
-              ${{ inputs.source }} ${{ inputs.target }} \
-            | grep --invert-match '/$' \
-            | tr '\n' ' ' \
-            | tee ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
+            # Create intermediate directories since we can't use `rsync`s `--mkpath` on some deployment targets
+            mkdir -p "$target"
+
+            # The output of the rsync command will be a list of transferred absolute paths, for further processing
+            RSYNC_OUT_FORMAT="$(realpath "$target")/%n"
+
+            # Transfer the source to the target, and append destination file paths to the remote log.
+            rsync --recursive --out-format="$RSYNC_OUT_FORMAT" \
+                ${{ ! inputs.overwrite-target && '--ignore-existing' || '--update' }} \
+                $sources $target \
+              | grep --invert-match '/$' \
+              >> ${{ env.REMOTE_RSYNC_FILE_LIST_PATH }}
+          done
           EOT
 
           rsync -e 'ssh -i ${{ steps.ssh.outputs.private-key-path }}' \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_DATA }}:${{ env.REMOTE_RSYNC_FILE_LIST_PATH }} \
             ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }}
-          echo "paths=$(cat ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
+          echo "paths=$(tr '\n' ' ' < ${{ env.LOCAL_RSYNC_FILE_LIST_PATH }})" >> $GITHUB_OUTPUT
 
       - name: Set ACLs on Target
         if: inputs.target-acl-spec != ''
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ${{ steps.ssh.outputs.private-key-path }} /bin/bash <<'EOT'
-          setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" ${{ inputs.target }}
-          getfacl -t ${{ inputs.target }}
+          declare -A targets
+          pairs='${{ inputs.input }}'
+          IFS=,
+
+          for entry in $pairs; do
+            entry=$(echo "$entry" | xargs)
+            target_rel="${entry##* }"
+            targets["${{ vars.CONFIGS_INPUT_DIR }}/$target_rel"]=1
+          done
+
+          for target in "${!targets[@]}"; do
+            setfacl --recursive --modify "${{ needs.setup.outputs.formatted-acl }}" "$target"
+            getfacl -t "$target"
+          done
           EOT
 
       - name: Update Manifests
@@ -223,7 +444,7 @@ jobs:
         # output:
         #   paths: space-separated list of manifests created
         env:
-          REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}.log
+          REMOTE_MANIFEST_FILE_LIST_PATH: ${{ vars.REMOTE_TMP_DIR }}/remote-copy-manifests-${{ github.run_id }}-${{ github.run_attempt }}.log
           LOCAL_MANIFEST_FILE_LIST_PATH: ./manifests-copied.log
           MANIFEST_FILE_NAME: .manifest.yaml
         # Generate manifests for files copied over in the earlier rsync job.
@@ -255,7 +476,7 @@ jobs:
 
       - name: Commit Updated Manifests to ${{ github.repository }}
         # TODO: For future remote-environments, we would have to alter the structure of model-config-inputs to be demarcated by target at the root level. For now, only allow Gadi to commit.
-        if: inputs.remote-environment == 'Gadi Release'
+        if: inputs.type == 'Release'
         env:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
@@ -276,12 +497,17 @@ jobs:
           EOT
 
   copy-to-tape-gadi:
-    name: Copy To Tape On ${{ inputs.remote-environment }}
+    name: Copy To Tape On ${{ inputs.remote }} ${{ inputs.type }}
     runs-on: ubuntu-latest
     needs:
       - copy-to-remote
-    if: inputs.store-on-tape && startsWith(inputs.remote-environment, 'Gadi')
-    environment: ${{ inputs.remote-environment }}
+    if: inputs.store-on-tape && inputs.remote == 'Gadi'
+    environment: ${{ inputs.remote }} ${{ inputs.type }}
+    concurrency:
+      # We don't want to copy multiple at the same time
+      group: ${{ inputs.remote }}-${{ inputs.type }}-config-input-tape-copy
+      cancel-in-progress: false
+      queue: max
     steps:
       - name: Setup SSH
         id: ssh

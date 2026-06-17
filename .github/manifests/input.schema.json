@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "Model Config Inputs Manifest",
+  "description": "Schema for .github/manifests/input.yml used by the PR workflow.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "description",
+    "target",
+    "type",
+    "cold-storage",
+    "overwrite",
+    "inputs"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Reason for moving the inputs."
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Remote target HPC name."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Release",
+        "Prerelease"
+      ],
+      "description": "Target configuration type on the remote."
+    },
+    "cold-storage": {
+      "type": "boolean",
+      "description": "Whether to store on cold storage (for example tape)."
+    },
+    "overwrite": {
+      "type": "boolean",
+      "description": "Whether to overwrite existing target paths."
+    },
+    "inputs": {
+      "type": "object",
+      "description": "Map of absolute source path to target path relative to the remote inputs root.",
+      "minProperties": 1,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^/[^,\\s]+$",
+        "description": "Absolute source path accessible to the service user."
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[^/,\\s][^,\\s]+$",
+        "description": "Target path relative to the remote configurations input directory."
+      }
+    }
+  }
+}

@@ -12,3 +12,5 @@
 !README_template.md
 # and the .gitignore
 !.gitignore
+# and the .github files
+!.github/**
