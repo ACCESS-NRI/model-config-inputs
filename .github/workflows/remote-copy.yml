@@ -491,6 +491,9 @@ jobs:
             exit 2
           fi
 
+          # In the case where this commit is the result of a post-PR merge commit, we need to pull the current HEAD first
+          git pull
+
           git add .
           git commit -m "Updated manifests and READMEs as part of ${{ env.RUN_URL }}"
           git push
