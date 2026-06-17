@@ -319,6 +319,9 @@ jobs:
             echo "$rsync_output"
 
             echo "$rsync_output" >> ${{ env.REMOTE_RSYNC_OUTPUTS_FILE }}
+
+            # Removing the empty target directory post-dry-run-rsync
+            rmdir --ignore-fail-on-non-empty --parents "$target"
           done
           EOT
 
