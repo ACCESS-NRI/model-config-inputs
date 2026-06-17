@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       INPUT_YAML_PATH: .github/manifests/input.yml
-      REQUIRED_FIELDS: description target type cold-storage overwrite inputs
+      INPUT_YAML_SCHEMA_PATH: .github/manifests/input.schema.json
+      INPUT_YAML_SCHEMA_VERSION: draft-2019-09
     outputs:
       description: ${{ steps.fields.outputs.description }}
       target: ${{ steps.fields.outputs.target }}
@@ -22,6 +23,17 @@ jobs:
       inputs: ${{ steps.fields.outputs.inputs }}
     steps:
       - uses: actions/checkout@v6
+
+      - name: Validate input.yaml schema
+        uses: GrantBirki/json-yaml-validate@3ff75979f3b21171f2e8a44705f0ff4bed30bbc0 # v5.0.0
+        with:
+          mode: fail
+          files: ${{ env.INPUT_YAML_PATH }}
+          json_schema: ${{ env.INPUT_YAML_SCHEMA_PATH }}
+          json_schema_version: ${{ env.INPUT_YAML_SCHEMA_VERSION }}
+          yaml_as_json: true
+          ajv_strict_mode: false
+          use_gitignore: false
 
       - name: Read input.yaml fields
         id: fields
@@ -37,12 +49,6 @@ jobs:
           echo "cold_storage=$(yq '."cold-storage"' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
           echo "overwrite_target=$(yq '.overwrite' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
           echo "inputs=$(yq -r '.inputs | to_entries | map("\(.key) \(.value)") | join(",")' ${{ env.INPUT_YAML_PATH }})" >> $GITHUB_OUTPUT
-
-      - name: Validate fields
-        if: contains(steps.fields.outputs.*, 'null')
-        run: |
-          echo "::error::Required fields are missing, check: ${{ env.REQUIRED_FIELDS }}"
-          exit 2
 
   call-remote-copy:
     name: Copy
