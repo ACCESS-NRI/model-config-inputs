@@ -1,6 +1,6 @@
 # Description
 
-Please include a brief plain english summary of the files being copied copied relevant motivation and context, 
+Please include a brief plain english summary of the files being copied, relevant motivation, and context, 
 e.g. "Adding release versions of updated radiative forcing ancillaries for the UM component of ACCESS-ESM1.6".
 
 ## Type of change
