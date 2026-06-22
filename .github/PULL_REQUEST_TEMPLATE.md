@@ -11,6 +11,7 @@ Please delete options that are not relevant.
 - [ ] Entirely new inputs
 - [ ] New directory structure required
 - [ ] Replacing incorrect versions of existing inputs (in this case please ping @codegat or @aidanheerdegen)
+- [ ] Removing incorrect versions of existing inputs (in this case please ping @CodeGat or @aidanheerdegen )
       
 # How Has This Been Tested?
 
