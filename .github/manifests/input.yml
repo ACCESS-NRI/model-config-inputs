@@ -1,12 +1,18 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  These inputs are being moved because I feel like it!
+  Copy static ESM1.5/ESM1.6 ancillaries to vk83
 target: Gadi
-type: Prerelease
-cold-storage: false
+type: Release
+cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /scratch/tm70/tg0447/test: .test/2026.06.00
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/fraction_src/: access-esm1p5/modern/share/atmosphere/land_fraction
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/orography_src/: access-esm1p5/modern/share/atmosphere/orography
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/rivers_src/: access-esm1p5/modern/share/atmosphere/rivers
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/soil_dust_src/: access-esm1p5/modern/share/atmosphere/land/soil_dust
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/soil_properties_src/: access-esm1p5/modern/share/atmosphere/land/soil_properties
+
+
