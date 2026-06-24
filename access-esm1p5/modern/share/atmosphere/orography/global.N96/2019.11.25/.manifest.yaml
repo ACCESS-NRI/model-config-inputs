@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/orography/global.N96/2019.11.25/README.md
+  hashes:
+    binhash: f2ffbbec5c368661bb1f14f2a2667679
+    md5: a470dc24035d52e5d04701a83ea0f681
+qrparm.orog:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/orography/global.N96/2019.11.25/qrparm.orog
+  hashes:
+    binhash: a97dddfbc005569aa934953c6fadadad
+    md5: cfca4bf98c5017d91b7f24f640f4a48d

@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/land/soil_properties/global.N96/2019.11.22/README.md
+  hashes:
+    binhash: e85f1bbd248ee72e774dfaff10470436
+    md5: 253dd83298fb5f27ad5b363d1bcf063e
+qrparm.soil_ch:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/land/soil_properties/global.N96/2019.11.22/qrparm.soil_ch
+  hashes:
+    binhash: 5cd552d238f143ea5eeefb0b71f6189d
+    md5: db38a351ebdb7bb7819e01e7af550306

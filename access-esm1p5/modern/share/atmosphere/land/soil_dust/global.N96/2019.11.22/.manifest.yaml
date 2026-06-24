@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/land/soil_dust/global.N96/2019.11.22/README.md
+  hashes:
+    binhash: 5bb3195c1da9bcff3e5a0717c208a9a4
+    md5: eddab9e355f9de019e93e579c6cb1146

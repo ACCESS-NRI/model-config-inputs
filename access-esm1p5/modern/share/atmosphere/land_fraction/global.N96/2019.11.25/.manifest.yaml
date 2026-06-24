@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/land_fraction/global.N96/2019.11.25/README.md
+  hashes:
+    binhash: bbffe2e4f55ab62912fa290973e49b11
+    md5: aaff3b631b6aaa53252e6eb69b56de2d
+qrparm.landfrac:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/land_fraction/global.N96/2019.11.25/qrparm.landfrac
+  hashes:
+    binhash: aa113e33a283ccfd3a22470382c8fb89
+    md5: 8975f1b89ba732edf23a77ea0d7bbfbc

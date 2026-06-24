@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/rivers/global.N96/2019.11.22/README.md
+  hashes:
+    binhash: b94a82a51405d9ef88bd571959bcc2c7
+    md5: a75f4d1f492e262d731175dd12d5e4d3
+riverrouting_access_v2:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/atmosphere/rivers/global.N96/2019.11.22/riverrouting_access_v2
+  hashes:
+    binhash: b731a950295b6047b333036eba8dd78f
+    md5: 0dfd578336bbe0eb9cb11ad9e5291c64
