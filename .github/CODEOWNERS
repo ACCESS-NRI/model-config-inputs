@@ -1,0 +1,8 @@
+# Owner of workflows and the CODEOWNERS file itself
+/.github/ @CodeGat
+
+# Owners of model configuration inputs directories
+/access-om2 @dougiesquire
+/access-om3 @dougiesquire
+/access-esm1p5 @blimlim
+/access-esm1p6 @blimlim 
