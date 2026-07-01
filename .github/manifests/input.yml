@@ -1,18 +1,22 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy static ESM1.5/ESM1.6 ancillaries to vk83
+  Copy updated OM3 panan+isf topog and bottom roughness to prerelease
+  Original file locations are:
+  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/kmt.nc
+  - /g/data/x77/cy8964/mom6/input/input-8km/22.06.26/topog.nc
+  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/topog_seaice.nc
+  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/access-om3-4km-ESMFmesh.nc
+  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/access-om3-4km-nomask-ESMFmesh.nc
+  - /g/data/x77/cy8964/mom6/input/input-8km/22.06.26/ice_shelf_thick.nc
+  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/bottom_roughness.nc
 target: Gadi
-type: Release
+type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/fraction_src/: access-esm1p5/modern/share/atmosphere/land_fraction
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/orography_src/: access-esm1p5/modern/share/atmosphere/orography
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/rivers_src/: access-esm1p5/modern/share/atmosphere/rivers
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/soil_dust_src/: access-esm1p5/modern/share/atmosphere/land/soil_dust
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/esm1p5-static/soil_properties_src/: access-esm1p5/modern/share/atmosphere/land/soil_properties
-
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/2026.06.17: access-om3/panan-isf.4km/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/2026.06.22: access-om3/panan-isf.4km/
 
