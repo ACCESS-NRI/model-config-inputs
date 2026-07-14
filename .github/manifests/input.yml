@@ -1,14 +1,8 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated OM3 panan+isf topog and bottom roughness to prerelease
+  Copy initial ESM1.6 scenarioMIP h and vl forcings to prerelease for testing.
   Original file locations are:
-  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/kmt.nc
-  - /g/data/x77/cy8964/mom6/input/input-8km/22.06.26/topog.nc
-  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/topog_seaice.nc
-  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/access-om3-4km-ESMFmesh.nc
-  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/access-om3-4km-nomask-ESMFmesh.nc
-  - /g/data/x77/cy8964/mom6/input/input-8km/22.06.26/ice_shelf_thick.nc
-  - /g/data/x77/cy8964/mom6/input/input-8km/17.06.26/bottom_roughness.nc
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.02
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -17,6 +11,6 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/2026.06.17: access-om3/panan-isf.4km/
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/2026.06.22: access-om3/panan-isf.4km/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/h/: access-esm1p6/modern/scen7-h/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/vl/: access-esm1p6/modern/scen7-vl/
 
