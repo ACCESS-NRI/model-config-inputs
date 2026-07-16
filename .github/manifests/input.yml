@@ -1,8 +1,10 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy initial ESM1.6 scenarioMIP h and vl forcings to prerelease for testing.
+  Copy initial ESM1.6 scenarioMIP h and vl volcanic forcings to prerelease for testing.
+  This corrects the 2026.07.14 versions of the files which were missing data for 1850-2021
   Original file locations are:
-  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.02
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil_test/2026.07.15/scenarios/h/atmosphere/forcing/resolution_independent/2026.07.15
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil_test/2026.07.15/scenarios/vl/atmosphere/forcing/resolution_independent/2026.07.15
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -11,6 +13,5 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/h/: access-esm1p6/modern/scen7-h/
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/vl/: access-esm1p6/modern/scen7-vl/
-
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/new-volcanic/h/: access-esm1p6/modern/scen7-h/atmosphere/forcing/resolution_independent/2026.07.15
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/new-volcanic/vl/: access-esm1p6/modern/scen7-vl/atmosphere/forcing/resolution_independent/2026.07.15
