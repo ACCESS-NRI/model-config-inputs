@@ -1,0 +1,14 @@
+# CI related files
+.github @CodeGat @aidanheerdegen
+
+# Model input related. Choose a reviewer based on which directory files
+# are being copied into
+access-am3/ @ccarouge @Whyborn
+access-esm1p5/ @MartinDix @blimlim
+access-esm1p6/ @MartinDix @blimlim
+access-om2/ @dougiesquire @chrisb13
+access-om3/ @dougiesquire @chrisb13
+JRA-55/ @chrisb13 @anton-seaice
+
+# PR template file and associated documentation
+templates/ @ccarouge @aidanheerdegen

@@ -11,6 +11,8 @@ Since model configuration inputs are so large, we can't store them directly on g
 This repository is not committed to directly - think of it more as a representation of what released model configuration inputs are currently on Gadi.
 
 But, we do have a workflow for adding/updating the actual model configuration inputs on Gadi here: https://github.com/ACCESS-NRI/model-config-inputs/actions/workflows/remote-copy.yml. This is used by regular users to move configurations from shared spaces into the locked-down Release area of `vk83` on Gadi, or the less restrictive Prerelease area of `vk83`.
+
+
 ### Using the Workflow
 
 The workflow has the following inputs:
@@ -25,9 +27,49 @@ The workflow has the following inputs:
 | ACL spec to be passed to `setfacl -m` for the given target | `string` (ACL spec) | `target-acl-spec` | `true` | `u::rwx,u:tm70_ci:rwx,g::r-x,m::rwx,o::---,d:u::rwx,d:u:tm70_ci:rwx,d:g::r-x,d:m::rwx,d:o::---` | N/A | ACL Spec used to prevent writing by anyone but the service user. This is used in Release to disallow edits to released config inputs by users |
 | Also store target on the remotes cold storage service | `boolean` | `store-on-tape` | `true` | `true` | `true`, `false` | Used to also store the config inputs on the HPCs cold storage (such as Gadi's tape storage). Used for archival purposes. Is demarcated by `release`/`prerelease` |
 
-#### Common Pitfalls When Using the Workflow
+### Pull Request Process
 
-##### Source and Target Use the Same `basename`
+When you want to add or update model configuration inputs, use a pull request rather than committing directly to this repository.
+
+1. Create a branch from `main` and make the requested change to the `.github/manifests/input.yaml` file
+2. Open a pull request against `main`. The template in [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) asks you to describe the change, select the type of change, record the validation you ran, and confirm that any relevant README files have been added.
+3. The PR workflow validates the request and runs a dry run of the copy process. A comment is posted on the pull request showing the destination paths that would be used.
+4. Review the dry-run output carefully to confirm that the intended target locations are correct. If the destination is wrong or the change needs to be adjusted, update the pull request and rerun the workflow.
+5. Request review from the appropriate subject matter expert depending on which directory is being modified, they are listed in [CODEOWNERS](./CODEOWNERS), and wait for the checks to complete before merging.
+
+> [!NOTE]
+> This repository is primarily a metadata view of released configuration inputs. The pull request process is used to review and approve changes before the underlying inputs are copied to the HPC.
+
+#### Example
+
+Below is an example `input.yml` file:
+```yaml
+description: |
+  Copy initial ESM1.6 scenarioMIP h and vl forcings to prerelease for testing.
+  Original file locations are: /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.02
+target: Gadi
+type: Prerelease
+cold-storage: true
+overwrite: false
+inputs:
+  # Note that the source is an absolute path accessible to the service user
+  # Note that the target is a relative path to the given targets inputs directory,
+  # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/h/: access-esm1p6/modern/scen7-h/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/vl/: access-esm1p6/modern/scen7-vl/
+```
+
+Other example usage is visible in the commits to this repo.
+
+## Provenance
+
+All model configuration inputs should include README files that provide provenance and other critical information so that users can understand the origin and purpose of the input data files.
+
+See [the templates README](./templates/README.md) for more detail.
+
+## Common Pitfalls When Using the Workflow
+
+### Source and Target Use the Same `basename`
 
 *Problem*: `source` is `/scratch/tm70/inputs/access-om2/2025.06.00` and `target` is `/g/data/vk83/configurations/inputs/access-om2/2025.06.00`, the workflow will fail.
 
@@ -35,7 +77,7 @@ The workflow has the following inputs:
 
 *Solution*: Drop the `2025.06.00` directory from the `target`, so it is `/g/data/vk83/configurations/inputs/access-om2`. This will lead to the expected directory structure of `g/data/vk83/configurations/inputs/access-om2/2025.06.00`.
 
-##### Target Is A File
+### Target Is A File
 
 *Problem*: `source` is `/scratch/tm70/inputs/access-om2/2025.06.00/some.nc` and `target` is `/g/data/vk83/configurations/inputs/access-om2/2025.06.00/some.nc`, the workflow will fail.
 
@@ -45,9 +87,3 @@ The workflow has the following inputs:
 
 > [!NOTE]
 > If this is desired behavior for Prereleases, then `overwrite-target` must be `true`
-
-## Provenance
-
-All model configuration inputs should include README files that provide provenance and other critical information so that users can understand the origin and purpose of the input data files.
-
-See [the templates README](./templates/README.md) for more detail.
