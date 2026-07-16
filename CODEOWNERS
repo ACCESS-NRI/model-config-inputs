@@ -1,8 +1,11 @@
 # CI related files
 .github @CodeGat @aidanheerdegen
+# Unprotect the file required to be changed for every PR
+.github/manifests/input.yml
 
 # Model input related. Choose a reviewer based on which directory files
-# are being copied into
+# are being copied into. Direct changes are not made to these directories
+# so CODEOWNERS is symblic/informative in this case
 access-am3/ @ccarouge @Whyborn
 access-esm1p5/ @MartinDix @blimlim
 access-esm1p6/ @MartinDix @blimlim
@@ -12,3 +15,4 @@ JRA-55/ @chrisb13 @anton-seaice
 
 # PR template file and associated documentation
 templates/ @ccarouge @aidanheerdegen
+CODEOWNERS @ccarouge @aidanheerdegen @chrisb13
