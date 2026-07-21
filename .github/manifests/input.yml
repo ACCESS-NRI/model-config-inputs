@@ -12,4 +12,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/amip-ssts/2026.07.08_src: access-esm1p6/modern/amip/atmosphere/boundary_conditions/global.N96/2026.07.08
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/amip-ssts/2026.07.08_src/: access-esm1p6/modern/amip/atmosphere/boundary_conditions/global.N96/2026.07.08
