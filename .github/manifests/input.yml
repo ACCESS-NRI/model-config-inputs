@@ -1,9 +1,10 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated AMIP ssts and sea ice to be used in the ESM1.6 AMIP configuration. This corrects issues in the 2026.04.21 versions of the files.
+  Copy new default restart for the ESM1.6 AMIP configuration. This is copied from the 1978 restart of the r1i1f1
+  concentrations driven historical ensemble member and modified for AMIP.
   Refer to the README.md for further details.
   Original file locations are:
-  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.08/modern/amip/atmosphere/boundary_conditions/global.N96/2026.07.08
+  - /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.07.21-amip
 target: Gadi
 type: Release
 cold-storage: true
@@ -12,4 +13,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/amip-ssts/2026.07.08_src/: access-esm1p6/modern/amip/atmosphere/boundary_conditions/global.N96/2026.07.08
+  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.07.21-amip/: access-esm1p6/modern/amip/restart/2026.01.21
