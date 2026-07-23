@@ -31,7 +31,7 @@ The workflow has the following inputs:
 
 When you want to add or update model configuration inputs, use a pull request rather than committing directly to this repository.
 
-1. Create a branch from `main` and make the requested change to the `.github/manifests/input.yaml` file
+1. Create a branch from `main` and make the requested change to the `.github/manifests/input.yml` file
 2. Open a pull request against `main`. The template in [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) asks you to describe the change, select the type of change, record the validation you ran, and confirm that any relevant README files have been added.
 3. The PR workflow validates the request and runs a dry run of the copy process. A comment is posted on the pull request showing the destination paths that would be used.
 4. Review the dry-run output carefully to confirm that the intended target locations are correct. If the destination is wrong or the change needs to be adjusted, update the pull request and rerun the workflow.

@@ -5,10 +5,10 @@
 
 # Model input related. Choose a reviewer based on which directory files
 # are being copied into. Direct changes are not made to these directories
-# so CODEOWNERS is symblic/informative in this case
+# so CODEOWNERS is symbolic/informative in this case
 /access-am3/ @ccarouge @Whyborn
 /access-esm1p5/ @MartinDix @blimlim
-/access-esm1p6/ @MartinDix @blimlim @penguian
+/access-esm1p6/ @MartinDix @blimlim @paul-leopardi 
 /access-om2/ @dougiesquire @chrisb13
 /access-om3/ @dougiesquire @chrisb13
 /JRA-55/ @chrisb13 @anton-seaice
