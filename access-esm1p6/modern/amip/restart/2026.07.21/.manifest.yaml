@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/amip/restart/2026.07.21/README.md
+  hashes:
+    binhash: 6b52407730b47ca538397437d10b619c
+    md5: 8f8eee404af8054f1e54e4a9b4041908
