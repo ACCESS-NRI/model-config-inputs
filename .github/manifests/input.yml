@@ -16,4 +16,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /scratch/tm70/lw5085/qrclim.aerosols85.nc: access-am3/atmosphere/aerosols/n96e/2026.07.24/qrclim.aerosols85.nc
+  /scratch/tm70/lw5085/qrclim.aerosols85.nc: access-am3/atmosphere/aerosols/n96e/2026.07.24
