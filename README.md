@@ -35,7 +35,7 @@ When you want to add or update model configuration inputs, use a pull request ra
 2. Open a pull request against `main`. The template in [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) asks you to describe the change, select the type of change, record the validation you ran, and confirm that any relevant README files have been added.
 3. The PR workflow validates the request and runs a dry run of the copy process. A comment is posted on the pull request showing the destination paths that would be used.
 4. Review the dry-run output carefully to confirm that the intended target locations are correct. If the destination is wrong or the change needs to be adjusted, update the pull request and rerun the workflow.
-5. Request review from the appropriate subject matter expert depending on which directory is being modified, they are listed in [CODEOWNERS](./CODEOWNERS), and wait for the checks to complete before merging.
+5. Request review from the appropriate subject matter expert depending on which directory is being modified, they are listed in [CODEOWNERS](./CODEOWNERS).
 
 > [!NOTE]
 > This repository is primarily a metadata view of released configuration inputs. The pull request process is used to review and approve changes before the underlying inputs are copied to the HPC.
