@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+qrclim.aerosols85.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.07.24/qrclim.aerosols85.nc
+  hashes:
+    binhash: e574ac623efdbb06021d469d24a46224
+    md5: f1427d4d5cced98efa055783b9dc6258
