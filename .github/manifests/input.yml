@@ -1,10 +1,13 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy new default restart for the ESM1.6 AMIP configuration. This is copied from the 1978 restart of the r1i1f1
-  concentrations driven historical ensemble member and modified for AMIP.
-  Refer to the README.md for further details.
-  Original file locations are:
-  - /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.07.21-amip
+  Fixes a bug in the original n96e aerosols file, regarding specification of the calendar.
+  The aerosols file provides monthly aerosol data, but the time axis specifies a calendar,
+  which was left as "360day" with 'flexible_calendar = "1"'. This flag should be an integer.
+  This bug comes directly from the UKMO sources, but needs to be fixed anyway. The new
+  aerosols that are being copied specify "gregorian" calendar, and fixes the type of the
+  "flexible_calendar" attribute.
+  Original file locations are (before fixing of the "flexible_calendar" attribute type):
+  - /g/data/access/projects/access/umdir/ancil/atmos/GC5/n96e/aerosol_clims/glomap/gregorian/v1/qrclim.aerosols85.nc
 target: Gadi
 type: Release
 cold-storage: true
@@ -13,4 +16,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.07.21-amip/: access-esm1p6/modern/amip/restart/2026.07.21
+  /scratch/tm70/lw5085/qrclim.aerosols85.nc: access-am3/atmosphere/aerosols/n96e/2026.07.24
