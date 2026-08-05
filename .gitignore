@@ -14,3 +14,5 @@
 !.gitignore
 # and the .github files
 !.github/**
+# and the CODEOWNERS file
+!CODEOWNERS
