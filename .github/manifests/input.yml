@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Brings in the ancillary data for ACCESS-AM3 at n512e resolution.
+  Brings in the socrates spectral files for 13.8
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -9,4 +9,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /scratch/tm70/ccc561/AM3/n512-ancillaries/.: access-am3/
+  /scratch/tm70/bjs581/am3-inputs-13.8/.: access-am3/
