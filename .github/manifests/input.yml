@@ -2,7 +2,7 @@
 description: |
   Brings in the socrates spectral files for 13.8
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
