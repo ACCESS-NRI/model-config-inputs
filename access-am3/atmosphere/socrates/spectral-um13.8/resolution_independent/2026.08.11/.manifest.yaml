@@ -1,0 +1,43 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/README.md
+  hashes:
+    binhash: 4b43cfd0455b91fa262328b925524373
+    md5: 00941a09763f92550dca10619201e7c9
+mcica_data:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/mcica_data
+  hashes:
+    binhash: ecd78a53d539b2d5604b1a16a234314d
+    md5: c09383b99c2e61fa579dcb07f3cbd5ef
+sp_lw_cloud9:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/sp_lw_cloud9
+  hashes:
+    binhash: 3904ebc4f6cc178d80c2641bb62f0115
+    md5: f2511380b20eceb5ac9700936e61de3f
+sp_lw_ga9:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/sp_lw_ga9
+  hashes:
+    binhash: 7b2cbd7928f13f8556f4fa43f8f34415
+    md5: f10171f0859f22b9c568d29f2ba23e36
+sp_lw_ga9_k:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/sp_lw_ga9_k
+  hashes:
+    binhash: 3144307b29f6313e72203a0f9e5fb423
+    md5: 60b00ba22a55b4c05226955da4aa05bb
+sp_sw_cloud9:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/sp_sw_cloud9
+  hashes:
+    binhash: 7a788ebc2ca6fb8482a8b9e30008bb23
+    md5: 0741ae9e7e0cfda521897589ddf0b1eb
+sp_sw_ga9:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/sp_sw_ga9
+  hashes:
+    binhash: 43a86648b9524c7021378ed428b7c6c5
+    md5: 379394a9bf5325a8c17c3d9d5f0a9988
+sp_sw_ga9_k:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/socrates/spectral-um13.8/resolution_independent/2026.08.11/sp_sw_ga9_k
+  hashes:
+    binhash: 2ca450465a7240ded531128294a38fe9
+    md5: 753e801822ed898db089d8c69d8bb051
