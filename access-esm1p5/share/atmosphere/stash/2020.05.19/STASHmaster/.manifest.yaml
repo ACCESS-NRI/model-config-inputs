@@ -1,11 +1,6 @@
 format: yamanifest
 version: 1.0
 ---
-.STASHmaster_A.swp:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/.STASHmaster_A.swp
-  hashes:
-    binhash: 60d15938356838580832d4f08f3ae113
-    md5: 6b1d1fc06139ee4c5826fb9ebbb11be6
 STASHmaster_A:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/share/atmosphere/stash/2020.05.19/STASHmaster/STASHmaster_A
   hashes:

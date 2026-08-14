@@ -1,11 +1,6 @@
 format: yamanifest
 version: 1.0
 ---
-.manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/.manifest.yaml
-  hashes:
-    binhash: 8de6fbdfecca00d1952ff0fdc8b9ea4a
-    md5: 70b3bc4a83914600aac55d7a5f2dbbc4
 X01001218:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/stash/2026.01.21/stasets/X01001218
   hashes:

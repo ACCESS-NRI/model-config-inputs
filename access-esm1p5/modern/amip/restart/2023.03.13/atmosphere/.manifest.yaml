@@ -1,11 +1,6 @@
 format: yamanifest
 version: 1.0
 ---
-.manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/amip/restart/2023.03.13/atmosphere/.manifest.yaml
-  hashes:
-    binhash: 61adeefae7e9fba188cc46fdbc501b83
-    md5: 07321303d519a3823a037516d6f66573
 README:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p5/modern/amip/restart/2023.03.13/atmosphere/README
   hashes:

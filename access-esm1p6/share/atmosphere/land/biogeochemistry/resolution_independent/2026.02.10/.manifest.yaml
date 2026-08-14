@@ -1,11 +1,6 @@
 format: yamanifest
 version: 1.0
 ---
-.manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/land/biogeochemistry/resolution_independent/2026.02.10/.manifest.yaml
-  hashes:
-    binhash: 57bbb6b00a37f824159ffd776794b428
-    md5: 2a1fac55171be20a365bd7a961c57135
 pftlookup_cable3_Pfix.csv:
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/share/atmosphere/land/biogeochemistry/resolution_independent/2026.02.10/pftlookup_cable3_Pfix.csv
   hashes:

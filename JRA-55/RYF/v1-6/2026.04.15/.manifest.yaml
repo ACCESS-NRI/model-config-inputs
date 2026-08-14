@@ -1,11 +1,6 @@
 format: yamanifest
 version: 1.0
 ---
-.manifest.yaml:
-  fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/.manifest.yaml
-  hashes:
-    binhash: 077745ba4d926d254f9833b363b35e13
-    md5: 632d31868595745ad452de7a781a9b5f
 RYF.friver.1990_1991.nc:
   fullpath: /g/data/vk83/configurations/inputs/JRA-55/RYF/v1-6/2026.04.15/RYF.friver.1990_1991.nc
   hashes:
