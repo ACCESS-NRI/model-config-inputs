@@ -1,12 +1,13 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Brings in the socrates spectral files for 13.8
+  Brings in input files to prerelease for the ACCESS-rOM3 MOM6 Tas configuration for use in a rOM3 template and for testing. 
 target: Gadi
-type: Release
+type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /scratch/tm70/bjs581/am3-inputs-13.8/.: access-am3/
+        /g/data/tm70/hm6113/rom3-inputdirs/access-rom3-demo/.: access-rom3/regional_template/2026.08.14/
+
