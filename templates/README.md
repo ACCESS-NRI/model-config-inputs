@@ -62,7 +62,7 @@ be ACCESS-NRI.
 
 #### Licensing/restrictions
 
-ACCESS-NRI uses [CC-By-4.0](https://spdx.org/licenses/CC-BY-4.0.html) 
+ACCESS-NRI uses [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html) 
 for data products unless another existing license applies. 
 
 #### Other locations
