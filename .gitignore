@@ -10,6 +10,7 @@
 !README.md
 !README.txt
 !README_template.md
+!*.README.md
 # and the .gitignore
 !.gitignore
 # and the .github files
