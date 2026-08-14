@@ -9,5 +9,5 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-        /g/data/tm70/hm6113/rom3-inputdirs/access-rom3-demo/.: access-rom3/regional_template/2026.08.14/
+        /g/data/tm70/hm6113/rom3-inputdirs/template2upload/.: access-rom3/regional_template/2026.08.14/
 
