@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Bring the UKCA emissions and aerosols inputs for the AM3 configuration into Release
+  Bring the AM3 inputs into Release: UKCA emissions (n96e), aerosol emissions for aeroprog (n96e), n512e ancillaries and restart files for n96e and n512e
 target: Gadi
 type: Release
 cold-storage: true
@@ -10,4 +10,8 @@ inputs:
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
   /g/data/vk83/prerelease/configurations/inputs/access-am3/ukca/.: access-am3/ukca/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/.: access-am3/atmosphere/aerosols/n96e/2026.05.19/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/restart/.: access-am3/restart/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/land/.: access-am3/land/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/aerosols/.: access-am3/atmosphere/aerosols/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/ocean/.: access-am3/atmosphere/ocean/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/orography/.: access-am3/atmosphere/orography/
