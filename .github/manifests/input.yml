@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy the AM3 ancillaries to Release
+  Copy AM3 ancillaries to Release
 target: Gadi
 type: Release
 cold-storage: true
