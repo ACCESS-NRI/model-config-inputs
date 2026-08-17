@@ -1,13 +1,16 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Brings in input files to prerelease for the ACCESS-rOM3 MOM6 Tas configuration for use in a rOM3 template and for testing.
+  Bring the UKCA emissions and aerosols inputs for the AM3 configuration into Release
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-        /g/data/tm70/hm6113/rom3-inputdirs/template2upload/.: access-rom3/regional_template/2026.08.14/
-
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/.: access-am3/ukca/emissions/n96e/2026.05.19/
+  /scratch/tm70/bjs581/am3-inputs-13.8/ukca_emissions/README.md: access-am3/ukca/emissions/n96e/2026.05.19/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/.: access-am3/ukca/oxidants/n96e/2026.05.19/
+  /scratch/tm70/bjs581/am3-inputs-13.8/ukca_oxidants/README.md: access-am3/ukca/oxidants/n96e/2026.05.19/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/.: access-am3/atmosphere/aerosols/n96e/2026.05.19/
