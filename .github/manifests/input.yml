@@ -1,6 +1,17 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Brings in input files to prerelease for the ACCESS-rOM3 MOM6 Tas configuration for use in a rOM3 template and for testing.
+  Copy updated ACCESS-OM3 25km topog.nc, kmt.nc and ESMF meshes to prerelease.
+  This is a new version of the 2026.06.11 files, rebuilt from
+  https://github.com/ACCESS-NRI/make_om3_topo (main, commit f6660f2) with
+  USE_BGRID_MERGE=false (C-grid pipeline), adding 5 hand-edits that close
+  narrow dead-end bays which trap sea ice, per
+  https://github.com/ACCESS-NRI/access-om3-configs/issues/409#issuecomment-5276886954.
+  Meshes were regenerated from the new topog.nc so their land/sea mask stays
+  consistent with kmt.nc.
+  Original file locations are:
+  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17
+  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17
+  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -9,5 +20,6 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-        /g/data/tm70/hm6113/rom3-inputdirs/template2upload/.: access-rom3/regional_template/2026.08.14/
-
+  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17: access-om3/share/grids/global.25km/
+  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17: access-om3/cice/grids/global.25km/
+  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17: access-om3/share/meshes/global.25km/
