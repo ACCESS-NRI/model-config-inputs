@@ -1,24 +1,24 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated ACCESS-OM3 25km topog.nc, kmt.nc, ESMF meshes, and the full set
-  of files derived from them (tidal, chlorophyll, rof remap weights, rofi
-  pattern, wombat forcing) to prerelease.
+  Copy updated ACCESS-OM3 25km topog.nc, kmt.nc, and the files whose values
+  actually change as a result, to prerelease.
   This is a new version of the 2026.06.11 files, rebuilt from
   https://github.com/ACCESS-NRI/make_om3_topo (main, commit f6660f2) with
   USE_BGRID_MERGE=false (C-grid pipeline), adding 5 hand-edits that close
   narrow dead-end bays which trap sea ice, per
   https://github.com/ACCESS-NRI/access-om3-configs/issues/409#issuecomment-5276886954.
-  Meshes and all topog-derived files were regenerated via make_om3_topo's
-  finalise.sh from the new topog.nc so they stay consistent with kmt.nc.
+  Verified by direct data comparison against the 2026.06.11 predecessor which
+  files actually differ; the masked ESMF mesh, rof remap weights, bottom
+  roughness and tidal amplitude all depend on topog.nc and do differ. The
+  nomask ESMF mesh, chlorophyll, rofi-climatology, and wombat CO2/SFe forcing
+  only depend on ocean_hgrid.nc (unchanged) or are unchanged within floating
+  point noise, so are deliberately NOT included here.
   Original file locations are:
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_tidal_external_25km/2026.08.18
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_chlorophyll_25km/2026.08.18
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.08.18
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_rofi_pattern_25km/2026.08.18
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/wombat_forcing_25km/2026.08.18
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -31,7 +31,4 @@ inputs:
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17: access-om3/cice/grids/global.25km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17: access-om3/share/meshes/global.25km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_tidal_external_25km/2026.08.18: access-om3/mom/tidal_external_files/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_chlorophyll_25km/2026.08.18: access-om3/mom/chlorophyll/global.25km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.08.18: access-om3/cmeps/remap_weights/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_rofi_pattern_25km/2026.08.18: access-om3/cmeps/rofi_pattern/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/wombat_forcing_25km/2026.08.18: access-om3/wombat/forcing/global.25km/
