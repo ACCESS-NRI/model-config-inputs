@@ -1,20 +1,11 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated ACCESS-OM3 25km topog.nc, kmt.nc, and the files whose values
-  actually change as a result, to prerelease.
-  This is a new version of the 2026.06.11 files, rebuilt from
+  Copy updated ACCESS-OM3 25km land mask and related files to prerelease.
+  This is a new version of the to include remove the "B-grid" land mask
   https://github.com/ACCESS-NRI/make_om3_topo (main, commit f6660f2) with
   USE_BGRID_MERGE=false (C-grid pipeline), adding 5 hand-edits that close
   narrow dead-end bays which trap sea ice, per
   https://github.com/ACCESS-NRI/access-om3-configs/issues/409#issuecomment-5276886954.
-  Verified by direct data comparison against the 2026.06.11 predecessor which
-  files actually differ; the masked ESMF mesh, rof remap weights, bottom
-  roughness and tidal amplitude all depend on topog.nc and do differ.
-  rofi-climatology is included too (regenerated from the new topog.nc,
-  differences are within floating point noise but included for a complete,
-  consistent provenance chain). The nomask ESMF mesh, chlorophyll, and wombat
-  CO2/SFe forcing only depend on ocean_hgrid.nc (unchanged), so are
-  deliberately NOT included here.
   Original file locations are:
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17
