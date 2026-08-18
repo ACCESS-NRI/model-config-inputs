@@ -15,3 +15,4 @@ inputs:
   /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/aerosols/.: access-am3/atmosphere/aerosols/
   /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/ocean/.: access-am3/atmosphere/ocean/
   /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/orography/.: access-am3/atmosphere/orography/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/README.md: access-am3/
