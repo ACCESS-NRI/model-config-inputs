@@ -9,16 +9,19 @@ description: |
   https://github.com/ACCESS-NRI/access-om3-configs/issues/409#issuecomment-5276886954.
   Verified by direct data comparison against the 2026.06.11 predecessor which
   files actually differ; the masked ESMF mesh, rof remap weights, bottom
-  roughness and tidal amplitude all depend on topog.nc and do differ. The
-  nomask ESMF mesh, chlorophyll, rofi-climatology, and wombat CO2/SFe forcing
-  only depend on ocean_hgrid.nc (unchanged) or are unchanged within floating
-  point noise, so are deliberately NOT included here.
+  roughness and tidal amplitude all depend on topog.nc and do differ.
+  rofi-climatology is included too (regenerated from the new topog.nc,
+  differences are within floating point noise but included for a complete,
+  consistent provenance chain). The nomask ESMF mesh, chlorophyll, and wombat
+  CO2/SFe forcing only depend on ocean_hgrid.nc (unchanged), so are
+  deliberately NOT included here.
   Original file locations are:
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_tidal_external_25km/2026.08.18
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.08.18
+  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_rofi_pattern_25km/2026.08.18
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -32,3 +35,4 @@ inputs:
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17: access-om3/share/meshes/global.25km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_tidal_external_25km/2026.08.18: access-om3/mom/tidal_external_files/global.25km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.08.18: access-om3/cmeps/remap_weights/global.25km/
+  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_rofi_pattern_25km/2026.08.18: access-om3/cmeps/rofi_pattern/global.25km/
