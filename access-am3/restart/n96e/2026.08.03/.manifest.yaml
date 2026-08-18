@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/restart/n96e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: 0b9a11d6225a6179e22bd9dfb5e4a33c
+    md5: 7cd6b6d8f3792e8ef27afbd1501e5ae9
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/restart/n96e/2026.08.03/README.md
+  hashes:
+    binhash: a8833908342f23589252a08e437d9b51
+    md5: 9615ac4a95d9d5c56ec0c4f607264e44
+deva.da20070101_00:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/restart/n96e/2026.08.03/deva.da20070101_00
+  hashes:
+    binhash: 1d7cc5bd154e410dc8abcef89997447e
+    md5: b9261f873b4a431bc0b373556cae7d73

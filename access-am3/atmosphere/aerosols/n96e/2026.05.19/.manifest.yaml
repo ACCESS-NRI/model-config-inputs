@@ -1,0 +1,43 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/.manifest.yaml
+  hashes:
+    binhash: 71160db96192a724565eadafd07ed17b
+    md5: edd4f67cc5b9b64f723429900bf44834
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/README.md
+  hashes:
+    binhash: 1c2e665b534c352c8958b3c75d18e322
+    md5: 087422ee6a9ecb2d310583afb84ff81e
+volc_aer_absorption_lw.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/volc_aer_absorption_lw.nc
+  hashes:
+    binhash: b13d3b1355abbcdd31024ebd276ac3d4
+    md5: 5b342ea727592f34fd5ffcb435f4521d
+volc_aer_absorption_sw.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/volc_aer_absorption_sw.nc
+  hashes:
+    binhash: 42a057a597faf1d1b0e8e8d06b28e148
+    md5: bc0f742f4fdee9abb266f456008a050e
+volc_aer_asymmetry_lw.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/volc_aer_asymmetry_lw.nc
+  hashes:
+    binhash: 96bcce39df5eb3f6a4feb7b734ae6ef8
+    md5: 2380a17d99af031fd3f83e3f71dbc0cd
+volc_aer_asymmetry_sw.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/volc_aer_asymmetry_sw.nc
+  hashes:
+    binhash: 891bb3078f317a1a99887820f2e3f2f9
+    md5: 24c97ca6aaf5deb0b0bf7f86fa718e54
+volc_aer_extinction_lw.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/volc_aer_extinction_lw.nc
+  hashes:
+    binhash: e5aec27830d4742e9f8ca686c5dd8ae3
+    md5: bd4901390ff863053bd671db8a04b5af
+volc_aer_extinction_sw.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n96e/2026.05.19/volc_aer_extinction_sw.nc
+  hashes:
+    binhash: adf481b8545dddc5204d8944eee0e080
+    md5: 4b9489db312843f346b9437ed8607db1

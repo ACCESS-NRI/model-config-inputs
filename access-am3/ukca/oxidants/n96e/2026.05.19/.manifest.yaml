@@ -1,0 +1,38 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/.manifest.yaml
+  hashes:
+    binhash: 11423503e34838a70b3a5a5d03000000
+    md5: 4df56e6c3535bc5b35409e03bfd0cc2b
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/README.md
+  hashes:
+    binhash: 726e32c4de63f4a55ba962d85ec78df7
+    md5: 56aaf846b8a72c3ecc4943ae27dfe2c1
+ukca_oxid_clim_H2O2.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/ukca_oxid_clim_H2O2.nc
+  hashes:
+    binhash: 67db76f5d58d940b7b06949598d6f2c1
+    md5: 0a7dcd36faec739e8f2f1ae0fe3ec97c
+ukca_oxid_clim_HO2.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/ukca_oxid_clim_HO2.nc
+  hashes:
+    binhash: e20fefbb5b201bf89d27927e4eb34146
+    md5: 444aa9ac9d0f6cd104be96b25cc759d9
+ukca_oxid_clim_NO3.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/ukca_oxid_clim_NO3.nc
+  hashes:
+    binhash: 249083182fd55b006cf171ad54c198a2
+    md5: 0362b658bc6f96f9ffa16a34f5a4b334
+ukca_oxid_clim_O3.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/ukca_oxid_clim_O3.nc
+  hashes:
+    binhash: b9d57db3e02c8658dea1b12c1784c512
+    md5: 8997c3afc45fd87366260a464aca6bdf
+ukca_oxid_clim_OH.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/oxidants/n96e/2026.05.19/ukca_oxid_clim_OH.nc
+  hashes:
+    binhash: cbc76fb237b5c81d559cf6b89712c214
+    md5: 789278f593aee1d317c7ce687072568d

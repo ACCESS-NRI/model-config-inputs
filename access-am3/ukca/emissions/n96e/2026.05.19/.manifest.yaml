@@ -1,0 +1,93 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/.manifest.yaml
+  hashes:
+    binhash: 1e7cd8389cf9d0b410b9f59d307d12f9
+    md5: 4d7fe5c5a42f9b36fa9692dc92782b4c
+BC_biofuel_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/BC_biofuel_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 14cd186796601c6312b0ce7cd80a72e0
+    md5: 6b68e22c8f69bcb05fb802e48578e216
+BC_biomass_high_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/BC_biomass_high_1849_2015_time_series.nc
+  hashes:
+    binhash: a522843f20048af32e6f8f8d9d3b941b
+    md5: 853788e2d3a1b58cf07cb222f36097ea
+BC_biomass_low_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/BC_biomass_low_1849_2015_time_series.nc
+  hashes:
+    binhash: 565e41c23b8e2fdacdf39509457ab42a
+    md5: 691264e6ef489731f887d2c9331fe827
+BC_fossil_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/BC_fossil_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 25d9c34b768cff72ad0e195f68e69d8d
+    md5: 9330df0ba68dbba6c0b031362f9d72fa
+CO_biomass_low_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/CO_biomass_low_1849_2015_time_series.nc
+  hashes:
+    binhash: 0133a2d14425544b2b1c0d1c0a33ef5f
+    md5: e66b01eba6a210c2085e795e4dc1d239
+DMS_land_spiro1992.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/DMS_land_spiro1992.nc
+  hashes:
+    binhash: c744903bec0b02de39d13b9f7de6e284
+    md5: e5b6cfc055ac0cf925a7545a0fe7faad
+OC_biofuel_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/OC_biofuel_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 29f1792b9fbba5dabb94148945a69df5
+    md5: ccb4ee6d5d50ccf413863dfb5e3c132b
+OC_biomass_high_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/OC_biomass_high_1849_2015_time_series.nc
+  hashes:
+    binhash: 0ef2e96cbe5096bb4c873687da815c18
+    md5: 85ca5fe7d64e8cb7fb930dbdf297f3f8
+OC_biomass_low_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/OC_biomass_low_1849_2015_time_series.nc
+  hashes:
+    binhash: c90a9699c18ca84d1da6d3af4900885e
+    md5: eb204e239121da55ca64845d6a9dea08
+OC_fossil_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/OC_fossil_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 6d73b52b6bd4e8619ec4b1653d2a28aa
+    md5: dc2883b8c38fed3b9cc4a8ff3fcc6f56
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/README.md
+  hashes:
+    binhash: ea09f2cdb1af99b9017cd1d57f72a188
+    md5: e12ee6d96d7f9206f37161e3f1b93c64
+SO2_all_low_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/SO2_all_low_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 1284d1edc7f28b0843a91ab08cecf252
+    md5: 2f666d3c0d78d049b4f45ce439591cdc
+SO2_high_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/SO2_high_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 0f176162ccc5b7b8dd0cce70a8b4f3e6
+    md5: 012107531e95ef724edbe08040890184
+SO2_low_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/SO2_low_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: 0c35ba107b2807b79dbecfd9d322e4c6
+    md5: 170a828f096893ee910dfc75707c49a8
+dummy_SO2_high_anthropogenic_1849_2015_time_series.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/dummy_SO2_high_anthropogenic_1849_2015_time_series.nc
+  hashes:
+    binhash: cc3b0bf7d7a98ebc74893db7ed01927c
+    md5: 701f51d7f57cfedb92f1c95677ba5a0e
+ukca_emiss_Monoterp.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/ukca_emiss_Monoterp.nc
+  hashes:
+    binhash: a1be4d27cafcc24ca34c048d8b2b2ce8
+    md5: beade45a1ea4f3541a511831a75891f3
+ukca_emiss_SO2_nat.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/ukca/emissions/n96e/2026.05.19/ukca_emiss_SO2_nat.nc
+  hashes:
+    binhash: 7dd7e2531073d03db5a8076dae6b5854
+    md5: 02e08f701830b6dd2198cedf2827a1c6
