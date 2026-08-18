@@ -1,18 +1,16 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Bring the AM3 inputs into Release: UKCA emissions (n96e), aerosol emissions for aeroprog (n96e), n512e ancillaries and restart files for n96e and n512e
+  Copy the preliminary ESM1.6 esm-scen7-h and esm-scen7-vl CO2 emissions into the prerelease area for testing
 target: Gadi
-type: Release
+type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/ukca/.: access-am3/ukca/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/restart/.: access-am3/restart/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/land/.: access-am3/land/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/aerosols/.: access-am3/atmosphere/aerosols/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/ocean/.: access-am3/atmosphere/ocean/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/orography/.: access-am3/atmosphere/orography/
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/README.md: access-am3/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/esm-h/: access-esm1p6/modern/esm-scen7-h/atmosphere/forcing/global.N96/2026.08.14/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/esm-hl/: access-esm1p6/modern/esm-scen7-hl/atmosphere/forcing/global.N96/2026.08.14/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/esm-m/: access-esm1p6/modern/esm-scen7-m/atmosphere/forcing/global.N96/2026.08.14/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7/esm-vl/: access-esm1p6/modern/esm-scen7-vl/atmosphere/forcing/global.N96/2026.08.14/
+  
