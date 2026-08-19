@@ -1,29 +1,14 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated ACCESS-OM3 25km land mask and related files to prerelease.
-  This is a new version of the to include remove the "B-grid" land mask
-  https://github.com/ACCESS-NRI/make_om3_topo (main, commit f6660f2) with
-  USE_BGRID_MERGE=false (C-grid pipeline), adding 5 hand-edits that close
-  narrow dead-end bays which trap sea ice, per
-  https://github.com/ACCESS-NRI/access-om3-configs/issues/409#issuecomment-5276886954.
+  Copy remaining n512e data from prerelease to release.
   Original file locations are:
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_tidal_external_25km/2026.08.18
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.08.18
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_rofi_pattern_25km/2026.08.18
+  - /g/data/vk83/prerelease/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_grids_25km/2026.08.17: access-om3/share/grids/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cice_grids_25km/2026.08.17: access-om3/cice/grids/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/share_meshes_25km/2026.08.17: access-om3/share/meshes/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/mom_tidal_external_25km/2026.08.18: access-om3/mom/tidal_external_files/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.08.18: access-om3/cmeps/remap_weights/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_rofi_pattern_25km/2026.08.18: access-om3/cmeps/rofi_pattern/global.25km/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/: access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/
