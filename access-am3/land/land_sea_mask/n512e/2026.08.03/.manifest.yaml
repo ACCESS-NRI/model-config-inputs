@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/land_sea_mask/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: eaa2499a7877fd288bda717b813198f8
+    md5: f40416e5e0164c4da1e5847368274bc2
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/land_sea_mask/n512e/2026.08.03/README.md
+  hashes:
+    binhash: 99afe1d9938eea756bc828b9ea994b5a
+    md5: 2da8bfd7f5e99e77adb7d327c9284ca6
+qrparm.landfrac:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/land_sea_mask/n512e/2026.08.03/qrparm.landfrac
+  hashes:
+    binhash: e4eaa6dc4a20412e098cc2e058ed573a
+    md5: 572ca55a313f9496b867b98c06e5708d
+qrparm.landfrac.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/land_sea_mask/n512e/2026.08.03/qrparm.landfrac.nc
+  hashes:
+    binhash: e3e2e9f6adea2c6cb33428f8cce0fe07
+    md5: bbee16ab98d7f0f4293542714a123d07
+qrparm.mask:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/land_sea_mask/n512e/2026.08.03/qrparm.mask
+  hashes:
+    binhash: 0ef0cd699aa44151c6765d1c31da93f3
+    md5: 6521379c545eb36d90d2afc5a6263c85
+qrparm.mask.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/land_sea_mask/n512e/2026.08.03/qrparm.mask.nc
+  hashes:
+    binhash: 17bbec544f637351a1c61eda21425111
+    md5: abe3de870f9f1fb30bc1c121d89697cd

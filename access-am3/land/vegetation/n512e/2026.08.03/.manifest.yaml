@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/vegetation/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: 750b5ec7bbc4772167a9f76acfe7d75d
+    md5: 0620fa81529ee16722cb976305124f34
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/vegetation/n512e/2026.08.03/README.md
+  hashes:
+    binhash: 0bee2ed3adff65c945ff8313cf148249
+    md5: a24bff3596899f6a0048a4b89be81d01
+qrparm.veg.frac:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/vegetation/n512e/2026.08.03/qrparm.veg.frac
+  hashes:
+    binhash: 7c001fed851bf637552eaaaf4895b7e8
+    md5: 0d4fd2271c63c801232993c82d6ec510
+qrparm.veg.frac.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/vegetation/n512e/2026.08.03/qrparm.veg.frac.nc
+  hashes:
+    binhash: f77b68fc22b9e19c61a3c5d6c77790f6
+    md5: b10f0c03c45adc5ac372c269ca897b9b
+qrparm.veg.func:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/vegetation/n512e/2026.08.03/qrparm.veg.func
+  hashes:
+    binhash: b5e382f0b9c44949f17802d6422f9fb0
+    md5: 580ba7d589cb5166436712d84ebe5792
+qrparm.veg.func.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/vegetation/n512e/2026.08.03/qrparm.veg.func.nc
+  hashes:
+    binhash: 150aa1527df039fc5225d4df457bb752
+    md5: c494b3e2e13870a2e1af695871d8f82e

@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/topography/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: 54dfcdb78558a6ea31210d0d44d70ecb
+    md5: d720eb0cabf5c2be2d6710f218685fc5
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/topography/n512e/2026.08.03/README.md
+  hashes:
+    binhash: 487515385017ba35bf3919b65851c208
+    md5: 4501eb4ae5ec40da86222f119e5fbd54
+qrparm.hydtop:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/topography/n512e/2026.08.03/qrparm.hydtop
+  hashes:
+    binhash: ab5b96e4043454b733c690d135d459b6
+    md5: 60e17748843f8255f5afcb7f9238da67
+qrparm.hydtop.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/land/topography/n512e/2026.08.03/qrparm.hydtop.nc
+  hashes:
+    binhash: 77bd2eb44fcdd5427feebe01e85fb54a
+    md5: 54a3b3256561662dc7194f31622610dc

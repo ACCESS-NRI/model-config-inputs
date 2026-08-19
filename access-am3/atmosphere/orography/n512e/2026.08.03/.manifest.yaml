@@ -1,0 +1,58 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: e28cd0ccdbed9b7461417b949670753b
+    md5: 9908aa780364be977bf9d0055821afbf
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/README.md
+  hashes:
+    binhash: 2959b5c9a4bbb7234b550dc0a5984114
+    md5: cf9d541c57f7fde0ee4fab13ac5d499b
+README.nc:
+  fullpath: /g/data/vk83/prerelease/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/README.nc
+  hashes:
+    binhash: 57534af94bcf5ab0df8a659ffb522cbe
+    md5: 2aea44dd7f74b8943cfba6fa25dd08ef
+qrparm.ash:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.ash
+  hashes:
+    binhash: 24baa9408e145710c9c3eea18894bb68
+    md5: f12691fe1e79dc6943933483f83ed87c
+qrparm.ash.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.ash.nc
+  hashes:
+    binhash: 2197aa4a82eb8dc504ddaa2a4b68f5e7
+    md5: c21daddc3af18fd55896bc49cf67cf80
+qrparm.orog_mean:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.orog_mean
+  hashes:
+    binhash: 3b605c925749e618661786ea7885517a
+    md5: 70b4f1334665c074164fac7ede7dd817
+qrparm.orog_mean.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.orog_mean.nc
+  hashes:
+    binhash: ab23808cb465abd1f443db6c745de111
+    md5: 1b0478ce1e7da2bfc42917a4774ba805
+qrparm.orog_radiation_parameters:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.orog_radiation_parameters
+  hashes:
+    binhash: da1fb0578f08e86348ffdfd95596bb3b
+    md5: 7fb94ce9c3f0b1c0afe22960bff707ae
+qrparm.orog_radiation_parameters.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.orog_radiation_parameters.nc
+  hashes:
+    binhash: db85fddcdae0d69b193d1eca874a546e
+    md5: b00660d0a63b6d98eef749b3f787a4ea
+qrparm.orog_wavedrag:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.orog_wavedrag
+  hashes:
+    binhash: d0416f1ade4862de659b2b709388a88c
+    md5: 6ab753b0f1d1bdc191135d3bb41a1de5
+qrparm.orog_wavedrag.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/orography/n512e/2026.08.03/qrparm.orog_wavedrag.nc
+  hashes:
+    binhash: 63a9d81f15b1395289514bcb113515dd
+    md5: d27a72d39c2d5ba14966047b886e1375

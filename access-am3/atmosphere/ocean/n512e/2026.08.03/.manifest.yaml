@@ -1,0 +1,48 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: 89ca6a4dde59579ed2133f32ebff1109
+    md5: 36b9a3b3d395562486a98b7bff92d98e
+.qrclim.seaice.zkdOjT:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/.qrclim.seaice.zkdOjT
+  hashes:
+    binhash: 6892673af1de6618c2676a9c777d244d
+    md5: c775d60feba9737deb2a233d69dcc14d
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/README.md
+  hashes:
+    binhash: 5e1eaac48d50a51f2ee91301368baaab
+    md5: b3bcc58fbd354d396b91654585295317
+qrclim.sea:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/qrclim.sea
+  hashes:
+    binhash: 09d1c91508283cb9d5e76954c65372d6
+    md5: 8ee4bcafdad1ee7db4052b49e76386ac
+qrclim.sea.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/qrclim.sea.nc
+  hashes:
+    binhash: 34b20688ccd5ab72f203775ca5b369c2
+    md5: 841cb5b079c6b4523d361e4781593890
+qrclim.seaice:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/qrclim.seaice
+  hashes:
+    binhash: ceb532666a171460453907f3f4bd0933
+    md5: d25b851cb7f06d0d02faee3958d1a55f
+qrclim.seaice.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/qrclim.seaice.nc
+  hashes:
+    binhash: e99aca1c59dbc81d3580f778dde2cb57
+    md5: 0a425009b203f0159e7707addece6891
+qrclim.sst:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/qrclim.sst
+  hashes:
+    binhash: f29923c8b1677682da606de243368bb5
+    md5: fb05a13efc161050a55a56c3c9103227
+qrclim.sst.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/ocean/n512e/2026.08.03/qrclim.sst.nc
+  hashes:
+    binhash: 90c48e14b252dcbc5a54d26a66e45e85
+    md5: bfab40651f47f6319f0c665fff24e8bd

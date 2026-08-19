@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/restart/n96e/2026.08.17/README.md
+  hashes:
+    binhash: a9e9c58ddf0726e61dc2b547f3797358
+    md5: 76dae98205f321dd2a76398ad7a1de2f
+de208a.da20000101_00_redated:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/restart/n96e/2026.08.17/de208a.da20000101_00_redated
+  hashes:
+    binhash: d4de09131daa9284a79461ecfbe24c3d
+    md5: 9f76b7b3b051eb31f51e2e5badb6dde1

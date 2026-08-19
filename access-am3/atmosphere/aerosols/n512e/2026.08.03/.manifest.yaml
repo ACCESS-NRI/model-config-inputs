@@ -1,0 +1,38 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: 98985457266c2f764c7e6ae9949bfcd5
+    md5: 1b14f2d75517d1d2647b23450dfda0a3
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/README.md
+  hashes:
+    binhash: 4279b9d03efe360dcdd6302e84189ad3
+    md5: 0761308d9f3937a1b724bb6cf3758c6f
+mmro3_monthly_CMIP6v2_3d_1978_2014_ants.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/mmro3_monthly_CMIP6v2_3d_1978_2014_ants.anc
+  hashes:
+    binhash: d186582258a8d8e33429a6a07d887200
+    md5: c73fb319f58b67b47eeeb6fd1d08287d
+mmro3_monthly_CMIP6v2_3d_1978_2014_ants.anc.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/mmro3_monthly_CMIP6v2_3d_1978_2014_ants.anc.nc
+  hashes:
+    binhash: 4200490491017953ebcf679eb2d068db
+    md5: 3c2a8d8b94954b0854a368e0d7f8ce09
+qrclim.aerosols.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/qrclim.aerosols.nc
+  hashes:
+    binhash: 940981c5cb80eb309621b88bd169f67e
+    md5: 0d0f8748aa268d5016d08243f0527e7b
+qrclim.sulpdms:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/qrclim.sulpdms
+  hashes:
+    binhash: 15d87a276f710fef5dd5ef36e100f3b9
+    md5: 60bd3b7fc82d35ad86ff9dde2f15eb27
+qrclim.sulpdms.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/atmosphere/aerosols/n512e/2026.08.03/qrclim.sulpdms.nc
+  hashes:
+    binhash: f6de2abb4e04a77bb44e01c2df6f9b00
+    md5: 41049e99d468fb647a2a8e8a5b6750da
