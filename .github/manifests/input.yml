@@ -11,4 +11,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/: access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/
+  /g/data/vk83/prerelease/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/.: access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/
