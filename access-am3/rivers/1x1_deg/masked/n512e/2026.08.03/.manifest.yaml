@@ -1,0 +1,33 @@
+format: yamanifest
+version: 1.0
+---
+.manifest.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/.manifest.yaml
+  hashes:
+    binhash: 8ebdc0d9bebe2017bb82c2a2db202e29
+    md5: 23863040891f3560d4c23b67cb757495
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/README.md
+  hashes:
+    binhash: f8da7b7a981ee1fe521ff5e62a21d58f
+    md5: d8be50784f749cc107c6d9d1d11dcbd6
+qrclim.rivstor:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/qrclim.rivstor
+  hashes:
+    binhash: 5a87291a016936ed7ae626c644cf4b3d
+    md5: 583bea3b24444843668730a0349c7e94
+qrclim.rivstor.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/qrclim.rivstor.nc
+  hashes:
+    binhash: 30303e08c773ac7f8a75926fe40f4fe5
+    md5: dbe22272ade962a8001917101b54f7ac
+qrparm.rivseq:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/qrparm.rivseq
+  hashes:
+    binhash: 20840da64a3101e6c614a9e1c7d36d16
+    md5: fe56d7b8534b91161cf9776dc39f8ab8
+qrparm.rivseq.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/qrparm.rivseq.nc
+  hashes:
+    binhash: 79d6c0d9d2239e2d296dd52ea6c2235b
+    md5: 8d027f169640a5258cac1c33b1cb0a86
