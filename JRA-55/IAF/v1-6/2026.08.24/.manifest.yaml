@@ -1,0 +1,58 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/README.md
+  hashes:
+    binhash: 24adfdbbd81df028448e209f505c8816
+    md5: d79e099c8c1f102be6ccbec48a71b511
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196201010000-196212312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196201010000-196212312100.nc
+  hashes:
+    binhash: 4c25e9d51133ce82ba2ec47396a5bc23
+    md5: 8be2295c93a1299abe1666467c8c7ed1
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196301010000-196312312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196301010000-196312312100.nc
+  hashes:
+    binhash: a70938e28132e1628916bada01280fdf
+    md5: 952ced1b20f1a8b5b7052f42a3fcb940
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196401010000-196412312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196401010000-196412312100.nc
+  hashes:
+    binhash: c630d5b2f97babec2dfa3e9603dc2b15
+    md5: 2f36cf4b0217550637b36f3a3e3ab613
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196501010000-196512312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196501010000-196512312100.nc
+  hashes:
+    binhash: 5b0ce8316ae5bf1826904b7ea3eb2669
+    md5: 72a5cc2259291dd03183f5d93c88fe24
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196601010000-196612312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196601010000-196612312100.nc
+  hashes:
+    binhash: 8e21010125abecbceb890d6381aa3237
+    md5: ab55d5ab172adefd7fb6872c1cbbdfe3
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196701010000-196712312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196701010000-196712312100.nc
+  hashes:
+    binhash: 130555e2077ffaa054121498400b6ee3
+    md5: 0f5c3020517258f25b7a379c6645f5d3
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196801010000-196812312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196801010000-196812312100.nc
+  hashes:
+    binhash: fd3fd67c5543d7b5a6b30aba36320ca3
+    md5: 4e735a3539fde7aa8884a91eb1fc5b3f
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196901010000-196912312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_196901010000-196912312100.nc
+  hashes:
+    binhash: f8038c63822b2577dc296560367143a9
+    md5: a93e43a5f9a71b4499558314e8d95936
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_197001010000-197012312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_197001010000-197012312100.nc
+  hashes:
+    binhash: 4f9c5664012eb2d81f099eb69a3c993c
+    md5: 471bbf16a3d2c9e730cd137cfceac85c
+rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_197101010000-197112312100.nc:
+  fullpath: /g/data/vk83/configurations/inputs/JRA-55/IAF/v1-6/2026.08.24/rhuss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_197101010000-197112312100.nc
+  hashes:
+    binhash: a2748cb14fe4e1652affe90fadf9fc48
+    md5: ec9b366152ff744c5381f0d4f98086bf
