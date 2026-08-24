@@ -1,10 +1,8 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy JRA55-do v1.6.0 derived relative humidity dataset (rhuss). This is to be used for long
-  spin-up experiments with ACCESS-OM2+WOMBATlite. Only one decade (1962-71) of IAF data is
-  required for these experiments, so only data for those years is copied at this point.
-  Original dataset location is:
-  - /g/data/tm70/ds0092/model/inputs/JRA55-do/rhuss/IAF
+  Copy initial restart to use for the ESM1.6 esm-piControl configuration
+  Original file locations are:
+  - /g/data/p73/archive/CMIP7/ACCESS-ESM1-6/production/Ndep2-PI-CNP-emissions/restart099/
 target: Gadi
 type: Release
 cold-storage: true
@@ -13,4 +11,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/ds0092/model/inputs/JRA55-do/rhuss/IAF/.: JRA-55/IAF/v1-6/2026.08.24
+  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.04.19-esm-piControl/: access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19
