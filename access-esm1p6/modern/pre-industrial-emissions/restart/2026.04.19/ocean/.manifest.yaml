@@ -1,0 +1,93 @@
+format: yamanifest
+version: 1.0
+---
+ocean_age.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_age.res.nc
+  hashes:
+    binhash: a25ab8c55a121fc44989ae69811ad7af
+    md5: 65736d2bb8fbbb75a2459443c76df947
+ocean_barotropic.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_barotropic.res.nc
+  hashes:
+    binhash: 7b693812fe5ca1409b9575054398f052
+    md5: a644020e25e677542e5093e3674836b6
+ocean_bih_friction.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_bih_friction.res.nc
+  hashes:
+    binhash: f65b96286de4020d81ba65b18edddfe6
+    md5: 9479fe2922174fc24a8dad69597501a1
+ocean_density.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_density.res.nc
+  hashes:
+    binhash: b0f7e814d39ee3237c9d7832a90922b7
+    md5: 8b5663dfca6402001b550bae0be0e4e7
+ocean_frazil.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_frazil.res.nc
+  hashes:
+    binhash: 5e35f11c2039fb6e0a23c2aaf8f3936b
+    md5: 62bc1b0382999237abca765c7f6bfd7d
+ocean_lap_friction.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_lap_friction.res.nc
+  hashes:
+    binhash: 278755cc0f91375e1ff244a834353d4e
+    md5: f71acd417f535b6f02cad12c3c72f26a
+ocean_neutral.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_neutral.res.nc
+  hashes:
+    binhash: 8447d4e016d609ba9cf3ca923f0b215d
+    md5: a86667725360eaf86ea978f86abcf3de
+ocean_pot_temp.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_pot_temp.res.nc
+  hashes:
+    binhash: 832774e76b628dbf9df694884344d5b9
+    md5: ddd5fa0a82e0090f0f14100094233ea4
+ocean_sbc.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_sbc.res.nc
+  hashes:
+    binhash: a5efef559bef80bd0974620dd8aa7fff
+    md5: 2f1dfd3f5c81e409893aebb827986c27
+ocean_sigma_transport.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_sigma_transport.res.nc
+  hashes:
+    binhash: 2cac1fe70132461fb96ec0b5198c2f89
+    md5: 13cedb1ccde6b993fbd12afc326975f1
+ocean_solo.res:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_solo.res
+  hashes:
+    binhash: 0d13e1e4656b20bdb4ee489872a14fc7
+    md5: a5985b5851fbb6e03a745a7d151bc9da
+ocean_temp_salt.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_temp_salt.res.nc
+  hashes:
+    binhash: 1c05d6c464b3b6c32cb3e83c42f1b24a
+    md5: 7422829d384b6c8f3be364f8fb2d26bc
+ocean_thickness.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_thickness.res.nc
+  hashes:
+    binhash: 9d2061d6a1042e318c04681508cd9598
+    md5: 96db946dc88a99af7d886ba7f93448b9
+ocean_tracer.res:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_tracer.res
+  hashes:
+    binhash: c315e3c0e4646eada8d3bd147923c29a
+    md5: eb3d7971990a93eee9ca460370ca4de9
+ocean_velocity.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_velocity.res.nc
+  hashes:
+    binhash: 8ef6b0d5579bd120111e7e81efe654e1
+    md5: 3365fafe56179b27619a4095ab60996a
+ocean_velocity_advection.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_velocity_advection.res.nc
+  hashes:
+    binhash: fc8a72642d00a3e9dcd7876cf0ae5fb8
+    md5: 9cdf176829850b8fa5fbcd7f239490d5
+ocean_wombatlite.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_wombatlite.res.nc
+  hashes:
+    binhash: 19d034368980c6e183a549d22a7f8617
+    md5: 575743e664934e6ee912600c1a3cbad4
+ocean_wombatlite_airsea_flux.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ocean/ocean_wombatlite_airsea_flux.res.nc
+  hashes:
+    binhash: c0049d4a2b2a4322a78f17a8963c3e0e
+    md5: 04eabc2a42f51015595ebcd6a00a9b62

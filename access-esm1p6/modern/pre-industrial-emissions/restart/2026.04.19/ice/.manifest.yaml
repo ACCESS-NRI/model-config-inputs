@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+cice_in.nml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ice/cice_in.nml
+  hashes:
+    binhash: 54b86abe84800a90a2bf854f0a4d978a
+    md5: f27d1348905f57fd090b3add437f7d49
+ice.restart_file:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ice/ice.restart_file
+  hashes:
+    binhash: 772f65f8a88c09d96f63204a7f14a8ce
+    md5: 715be58b53b6ce03f92c9b521c0d2484
+iced.0101-01-01-00000.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ice/iced.0101-01-01-00000.nc
+  hashes:
+    binhash: abbe3fd8b281f711fcf14b20dee026db
+    md5: 476c2630f7a8fd63d02d529d93941ab8
+mice.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19/ice/mice.nc
+  hashes:
+    binhash: 6ba9a287e748ebf4f0aaec353a1e9dcd
+    md5: 7d737aad3d933e3e1ba760d5bd04b2ce
