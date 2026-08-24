@@ -1,8 +1,10 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy remaining n512e data from prerelease to release.
-  Original file locations are:
-  - /g/data/vk83/prerelease/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/
+  Copy JRA55-do v1.6.0 derived relative humidity dataset (rhuss). This is to be used for long
+  spin-up experiments with ACCESS-OM2+WOMBATlite. Only one decade (1962-71) of IAF data is
+  required for these experiments, so only data for those years is copied at this point.
+  Original dataset location is:
+  - /g/data/tm70/ds0092/model/inputs/JRA55-do/rhuss/IAF
 target: Gadi
 type: Release
 cold-storage: true
@@ -11,4 +13,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/vk83/prerelease/configurations/inputs/access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/.: access-am3/rivers/1x1_deg/masked/n512e/2026.08.03/
+  /g/data/tm70/ds0092/model/inputs/JRA55-do/rhuss/IAF/.: JRA-55/IAF/v1-6/2026.08.24
