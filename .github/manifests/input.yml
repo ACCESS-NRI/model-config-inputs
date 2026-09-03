@@ -1,8 +1,13 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy initial restart to use for the ESM1.6 esm-piControl configuration
+  Copy ESM1.6 ScenarioMIP atmospheric forcing data to the release area
   Original file locations are:
-  - /g/data/p73/archive/CMIP7/ACCESS-ESM1-6/production/Ndep2-PI-CNP-emissions/restart099/
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.14/scenarios/vl/
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.14/scenarios/h/
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.08.14/esm-scenarios/vl/
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.08.14/esm-scenarios/h/
+  - /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/scen7-common
+
 target: Gadi
 type: Release
 cold-storage: true
@@ -11,4 +16,4 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.04.19-esm-piControl/: access-esm1p6/modern/pre-industrial-emissions/restart/2026.04.19
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-release/: access-esm1p6/modern/
