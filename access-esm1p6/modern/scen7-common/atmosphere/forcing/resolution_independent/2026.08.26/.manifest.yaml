@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-common/atmosphere/forcing/resolution_independent/2026.08.26/README.md
+  hashes:
+    binhash: 9c40fed9f3fa764c86c5ef909a3a249f
+    md5: d8fc84a137806b85c4d687dac5a90e5f
+TSI_CMIP7_ESM:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-common/atmosphere/forcing/resolution_independent/2026.08.26/TSI_CMIP7_ESM
+  hashes:
+    binhash: 800f0d0d8bd672ee215d88fedc025b31
+    md5: cbd86f8ee9031f88fd40ee6b59473d44
+volcts_cmip7.dat:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-common/atmosphere/forcing/resolution_independent/2026.08.26/volcts_cmip7.dat
+  hashes:
+    binhash: 5d3db8cc41dd4cf3991c86367476e13f
+    md5: f5c6e230237638d91f48eb6e111a6b0c
