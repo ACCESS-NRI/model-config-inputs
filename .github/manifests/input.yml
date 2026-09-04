@@ -1,12 +1,11 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy ESM1.6 ScenarioMIP atmospheric forcing data to the release area
+  Copy ESM1.6 ScenarioMIP vegetation maps and wood thinning data to the release area
   Original file locations are:
-  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.14/scenarios/vl/
-  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.07.14/scenarios/h/
-  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.08.14/esm-scenarios/vl/
-  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.08.14/esm-scenarios/h/
-  - /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/scen7-common
+  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/H-Scenario/ACCESS_vegfrac_scen_h.nc
+  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/H-Scenario/ACCESS_forest_thinning_frac_scen_h.nc
+  -  /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/VL-Scenario/ACCESS_vegfrac_scen_vl.nc
+  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/VL-Scenario/ACCESS_forest_thinning_frac_scen_vl.nc
 
 target: Gadi
 type: Release
@@ -16,4 +15,5 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-release/: access-esm1p6/modern/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-land/scen7-h/: access-esm1p6/modern/scen7-h/atmosphere/land/vegetation/global.N96/2026.08.28/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-land/scen7-vl/: access-esm1p6/modern/scen7-vl/atmosphere/land/vegetation/global.N96/2026.08.28/
