@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+a2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-h/restart/2026.08.04/coupler/a2i.nc
+  hashes:
+    binhash: dd1e6832ebf727a0741dee678d9247d8
+    md5: f86fbcf1123b1104f920b81c2b36df8a
+i2a.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-h/restart/2026.08.04/coupler/i2a.nc
+  hashes:
+    binhash: a4f7fc9ab2ae73d2dffc232c501ba725
+    md5: 14f1f508de3a76d9a726d01c9e5ef529
+o2i.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-h/restart/2026.08.04/coupler/o2i.nc
+  hashes:
+    binhash: 74380bac7c4ed7aa6404cf8ddfab7390
+    md5: 681da11b1673a5d3eda572c7509ac523

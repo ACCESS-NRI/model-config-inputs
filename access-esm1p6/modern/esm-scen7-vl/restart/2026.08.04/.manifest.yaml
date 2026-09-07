@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-vl/restart/2026.08.04/README.md
+  hashes:
+    binhash: 3f2e2a477154f6b241be73b9a2c11998
+    md5: 5ac41789f24fee75b79565faa90f46a6
