@@ -1,11 +1,10 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy ESM1.6 ScenarioMIP vegetation maps and wood thinning data to the release area
   Original file locations are:
-  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/H-Scenario/ACCESS_vegfrac_scen_h.nc
-  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/H-Scenario/ACCESS_forest_thinning_frac_scen_h.nc
-  -  /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/VL-Scenario/ACCESS_vegfrac_scen_vl.nc
-  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/VL-Scenario/ACCESS_forest_thinning_frac_scen_vl.nc
+  Copy initial restarts for ESM1.6 h and vl scenarios. Restarts are copied from
+  - /g/data/jq44/access-nri/access-esm1p6/global/historical/r1i1p1f1/2026.06.12/restart171
+  - /g/data/jq44/access-nri/access-esm1p6/global/esm-historical/r1i1p1f1/2026.06.12/restart171
+  and have had the land field modification scripts from the scenario configurations applied.
 
 target: Gadi
 type: Release
@@ -15,5 +14,7 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-land/scen7-h/: access-esm1p6/modern/scen7-h/atmosphere/land/vegetation/global.N96/2026.08.28/
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-land/scen7-vl/: access-esm1p6/modern/scen7-vl/atmosphere/land/vegetation/global.N96/2026.08.28/
+  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-scen7-h/: access-esm1p6/modern/scen7-h/restart/2026.08.04
+  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-scen7-vl/: access-esm1p6/modern/scen7-vl/restart/2026.08.04
+  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-esm-scen7-h/: access-esm1p6/modern/esm-scen7-h/restart/2026.08.04
+  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-esm-scen7-vl/: access-esm1p6/modern/esm-scen7-vl/restart/2026.08.04
