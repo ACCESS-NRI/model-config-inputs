@@ -6,3 +6,8 @@ README.md:
   hashes:
     binhash: ae88d7b7815fbaf6e4fdb7572124e760
     md5: aff9d3d74edf61bd0725c53b850f0a67
+restart_metadata.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-h/restart/2026.08.04/restart_metadata.yaml
+  hashes:
+    binhash: c783afcad909c54f2be601457a699449
+    md5: c933fabe1335ac14d82ac748eeda5b52
