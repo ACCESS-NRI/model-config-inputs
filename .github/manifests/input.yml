@@ -1,16 +1,12 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy restart metadata for ESM1.6 h and vl scenarios.
-
+  Brings in input files to prerelease for the ACCESS-rOM3 MOM6 Tas configuration for use in a rOM3 template and for testing.
 target: Gadi
-type: Release
+type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-scen7-h/restart_metadata.yaml: access-esm1p6/modern/scen7-h/restart/2026.08.04/
-  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-scen7-vl/restart_metadata.yaml: access-esm1p6/modern/scen7-vl/restart/2026.08.04/
-  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-esm-scen7-h/restart_metadata.yaml: access-esm1p6/modern/esm-scen7-h/restart/2026.08.04/
-  /g/data/tm70/sw6175/development/esm1p6/restartfiles/2026.08.04-esm-scen7-vl/restart_metadata.yaml: access-esm1p6/modern/esm-scen7-vl/restart/2026.08.04/
+        /g/data/tm70/ab8992/rom3_files_to_upload/.: access-rom3/regional_template/2026.09.24/
