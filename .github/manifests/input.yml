@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Brings in input files to prerelease for the ACCESS-rOM3 MOM6 Tas configuration for use in a rOM3 template and for testing.
+  Copy ESM1.6 scen-7 forcings extended to 2150 to the prerelease area for testing
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -9,4 +9,29 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-        /g/data/tm70/ab8992/rom3_files_to_upload/.: access-rom3/regional_template/2026.09.24/
+        # h
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-h/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-h/atmosphere/aerosol/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-h/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-h/atmosphere/forcing/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-h/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-h/atmosphere/land/biogeochemistry/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/esm-scen7-h/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-h/atmosphere/forcing/global.N96/2026.10.06/
+        # vl
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-vl/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-vl/atmosphere/aerosol/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-vl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-vl/atmosphere/forcing/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-vl/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-vl/atmosphere/land/biogeochemistry/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/esm-scen7-vl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-vl/atmosphere/forcing/global.N96/2026.10.06/
+        # m
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-m/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/aerosol/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-m/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/forcing/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-m/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/land/biogeochemistry/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/esm-scen7-m/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-m/atmosphere/forcing/global.N96/2026.10.06/
+        # hl
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-hl/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/aerosol/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-hl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/forcing/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-hl/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/land/biogeochemistry/global.N96/2026.10.06/
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/esm-scen7-hl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-hl/atmosphere/forcing/global.N96/2026.10.06/
+        # Common
+        /g/data/tm70/sw6175/development/esm1p6/misc/2026.10.06/scen7-common/atmosphere/forcing/resolution_independent/2026.10.06_base/: access-esm1p6/modern/scen7-common/atmosphere/forcing/resolution_independent/2026.10.06
+
+
+
+
