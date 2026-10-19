@@ -1,14 +1,12 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy new ACCESS-OM3 rof remap weights for each land mask (8km, 25km, 100km, panan 4km and
-  panan+isf 4km) to prerelease. Generated with om3-scripts main (1ba84cb), which adds the Ob,
-  Pechora and Back rivers to the spread points (https://github.com/ACCESS-NRI/om3-scripts/pull/174).
+  Copy new ACCESS-OM3 rof remap weights for the 8km, 25km and 100km land masks to prerelease.
+  Generated with om3-scripts main (1ba84cb), which adds the Ob, Pechora and Back rivers to the
+  spread points (https://github.com/ACCESS-NRI/om3-scripts/pull/174).
   Original file locations are:
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_8km/2026.10.16
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.10.16
   - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_100km/2026.10.16
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_panan4km/2026.10.16
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_panan-isf4km/2026.10.16
 target: Gadi
 type: Prerelease
 cold-storage: true
@@ -20,5 +18,3 @@ inputs:
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_8km/2026.10.16: access-om3/cmeps/remap_weights/global.8km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.10.16: access-om3/cmeps/remap_weights/global.25km/
   /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_100km/2026.10.16: access-om3/cmeps/remap_weights/global.100km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_panan4km/2026.10.16: access-om3/cmeps/remap_weights/panan.4km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_panan-isf4km/2026.10.16: access-om3/cmeps/remap_weights/panan-isf.4km/
