@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+CO2_fluxes_h_2022_2150_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-h/atmosphere/forcing/global.N96/2026.10.06/CO2_fluxes_h_2022_2150_cmip7.anc
+  hashes:
+    binhash: f687fca3c662cc19647cefca1cd883e5
+    md5: 0b683264200a836a22d051408ef53a56
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-h/atmosphere/forcing/global.N96/2026.10.06/README.md
+  hashes:
+    binhash: eb6f1b96dd0f238aa6b36d26835af118
+    md5: ea1681a7ec85ad5e4ff643d7c410d7a0
