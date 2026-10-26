@@ -1,20 +1,29 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy new ACCESS-OM3 rof remap weights for the 8km, 25km and 100km land masks to prerelease.
-  Generated with om3-scripts main (1ba84cb), which adds the Ob, Pechora and Back rivers to the
-  spread points (https://github.com/ACCESS-NRI/om3-scripts/pull/174).
+  Copy ESM1.6 scen7-h and scen7-vl forcings exetended to 2150 to Release.
   Original file locations are:
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_8km/2026.10.16
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.10.16
-  - /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_100km/2026.10.16
+  - /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.10.06/modern
+  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/H-Scenario-ext
+  - /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/VL-Scenario-ext
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_8km/2026.10.16: access-om3/cmeps/remap_weights/global.8km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_25km/2026.10.16: access-om3/cmeps/remap_weights/global.25km/
-  /g/data/tm70/as2285/making_inputs/model-config-inputs-staging/cmeps_remap_weights_100km/2026.10.16: access-om3/cmeps/remap_weights/global.100km/
+  # h
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-h/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-h/atmosphere/aerosol/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-h/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-h/atmosphere/land/biogeochemistry/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-h/atmosphere/land/vegetation/global.N96/2026.10.23_base/: access-esm1p6/modern/scen7-h/atmosphere/land/vegetation/global.N96/2026.10.23
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-h/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-h/atmosphere/forcing/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/esm-scen7-h/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-h/atmosphere/forcing/global.N96/2026.10.06
+  # vl
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-vl/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-vl/atmosphere/aerosol/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-vl/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-vl/atmosphere/land/biogeochemistry/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-vl/atmosphere/land/vegetation/global.N96/2026.10.23_base/: access-esm1p6/modern/scen7-vl/atmosphere/land/vegetation/global.N96/2026.10.23
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-vl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-vl/atmosphere/forcing/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/esm-scen7-vl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-vl/atmosphere/forcing/global.N96/2026.10.06
+  # common
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-h-vl-ext-2150/scen7-common/atmosphere/forcing/resolution_independent/2026.10.06_base/: access-esm1p6/modern/scen7-common/atmosphere/forcing/resolution_independent/2026.10.06
