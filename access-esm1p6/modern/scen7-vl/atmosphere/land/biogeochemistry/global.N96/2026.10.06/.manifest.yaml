@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+Ndep_vl_2022_2150_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-vl/atmosphere/land/biogeochemistry/global.N96/2026.10.06/Ndep_vl_2022_2150_cmip7.anc
+  hashes:
+    binhash: 716bdf7d768d98596b043e79cb01fe0b
+    md5: 3ca1998574879f90d3765d0b28674328
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-vl/atmosphere/land/biogeochemistry/global.N96/2026.10.06/README.md
+  hashes:
+    binhash: 2e58ae8890518afa1e2825cffc59c8bf
+    md5: d6c4abdb22a669b09ff9b057c6c34cc4
