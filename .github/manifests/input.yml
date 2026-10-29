@@ -38,5 +38,6 @@ inputs:
   /g/data/vk83/prerelease/configurations/inputs/access-om3/cice/grids/global.100km/2026.10.13/kmt.nc: access-om3/cice/grids/global.100km/2026.10.13/
   /g/data/vk83/prerelease/configurations/inputs/access-om3/cice/grids/global.100km/2026.10.13/kmt.README.md: access-om3/cice/grids/global.100km/2026.10.13/
   /g/data/vk83/prerelease/configurations/inputs/access-om3/ww3/initial_conditions/global.100km/2026.10.13/restart.ww3: access-om3/ww3/initial_conditions/global.100km/2026.10.13/
+  /g/data/vk83/prerelease/configurations/inputs/access-om3/ww3/mod_def/global.100km/2026.10.13/README_TOPO_CUTOFF17000.md: access-om3/ww3/initial_conditions/global.100km/2026.10.13/
   /g/data/vk83/prerelease/configurations/inputs/access-om3/ww3/mod_def/global.100km/2026.10.22/mod_def.ww3: access-om3/ww3/mod_def/global.100km/2026.10.22/
   /g/data/vk83/prerelease/configurations/inputs/access-om3/ww3/mod_def/global.100km/2026.10.22/README.md: access-om3/ww3/mod_def/global.100km/2026.10.22/
