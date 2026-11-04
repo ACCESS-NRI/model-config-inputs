@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+topog.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.100km/2026.10.13/topog.README.md
+  hashes:
+    binhash: 2c40bcc803e6035caed63808db24e889
+    md5: 688a1d711322e5fe0ad9bdb99c7976a1
+topog.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.100km/2026.10.13/topog.nc
+  hashes:
+    binhash: 9b643bae935161e3aac61a7567f2e2ab
+    md5: 7fab0aa0f3ef113e506a8a456c095735

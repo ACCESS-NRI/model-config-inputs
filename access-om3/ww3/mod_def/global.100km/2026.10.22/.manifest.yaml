@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/ww3/mod_def/global.100km/2026.10.22/README.md
+  hashes:
+    binhash: 8470a50c392095c4f2546203226298b2
+    md5: 5d76a556c0a8f45024e31bd73dbdc6d2
+mod_def.ww3:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/ww3/mod_def/global.100km/2026.10.22/mod_def.ww3
+  hashes:
+    binhash: e6af68047efb01620f50f08b6a9ab81c
+    md5: 10be5f3c7a6db515b0c79f9545275d54

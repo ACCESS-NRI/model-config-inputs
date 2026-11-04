@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+salt_sfc_restore.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/surface_salt_restoring/global.100km/2026.09.23/salt_sfc_restore.README.md
+  hashes:
+    binhash: 1a1f7e8ee07a4e10414e798ba6429ce9
+    md5: a96d7795bd453cf1032d30c2fd6a9ec7
+salt_sfc_restore.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/surface_salt_restoring/global.100km/2026.09.23/salt_sfc_restore.nc
+  hashes:
+    binhash: f14c71dddcff53580956a4f718e8a263
+    md5: 488131bd6c1cda534c6ff52263cbdc65

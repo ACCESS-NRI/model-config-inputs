@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+access-om3-100km-ESMFmesh.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.100km/2026.10.13/access-om3-100km-ESMFmesh.README.md
+  hashes:
+    binhash: 3595304c1902a41e66f9de0016171934
+    md5: 5b85a45a3970a560ae626c7b5a09d3f7
+access-om3-100km-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.100km/2026.10.13/access-om3-100km-ESMFmesh.nc
+  hashes:
+    binhash: 7c5d6304457411375ba13227a36d816a
+    md5: 029bd1b891f2c460a28e3e6a5ac4f5a0
+access-om3-100km-nomask-ESMFmesh.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.100km/2026.10.13/access-om3-100km-nomask-ESMFmesh.README.md
+  hashes:
+    binhash: d02a11aaff48e71530d46bdd03e335ec
+    md5: 92233258009893f15b314fff3d4bc691
+access-om3-100km-nomask-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/global.100km/2026.10.13/access-om3-100km-nomask-ESMFmesh.nc
+  hashes:
+    binhash: 48f4abe69b37de563a2a179713fcfe0c
+    md5: 4ab463bbf3bcb95c198b8a10a320b801

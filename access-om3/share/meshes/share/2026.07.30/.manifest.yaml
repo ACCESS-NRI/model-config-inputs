@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ERA5-datm-ESMFmesh.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2026.07.30/ERA5-datm-ESMFmesh.nc
+  hashes:
+    binhash: 324aee5f09105c2da9235775e7ccab44
+    md5: 22cd6e2d70af20ee75a229e054974019

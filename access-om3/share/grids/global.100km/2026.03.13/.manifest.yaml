@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+ocean_hgrid.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/share/grids/global.100km/2026.03.13/ocean_hgrid.nc
+  hashes:
+    binhash: a277f484a1a38bfa02cc90b54635c275
+    md5: 7b9d7947d9e4033143424440f59bdaa0

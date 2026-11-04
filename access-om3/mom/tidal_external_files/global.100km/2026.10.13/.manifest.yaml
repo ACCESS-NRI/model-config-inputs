@@ -1,0 +1,23 @@
+format: yamanifest
+version: 1.0
+---
+bottom_roughness.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.100km/2026.10.13/bottom_roughness.README.md
+  hashes:
+    binhash: 68cde3aaa2718a56171d3885877f6252
+    md5: f65fdef035ccb196e8557952a840d34c
+bottom_roughness.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.100km/2026.10.13/bottom_roughness.nc
+  hashes:
+    binhash: 0858db03c80550839b8952a36e52c8d2
+    md5: 33ddd3030dab4f656da7441457bb283c
+tideamp.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.100km/2026.10.13/tideamp.README.md
+  hashes:
+    binhash: b3e77873e0031c6c3d2957cfbefe67a4
+    md5: 8ebb13ad44e823c06cb5191a9a0f28ef
+tideamp.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/tidal_external_files/global.100km/2026.10.13/tideamp.nc
+  hashes:
+    binhash: a2352ce35c41965f46ae8c97d4790b75
+    md5: feed82b26fddb5c31246cbaed87072be

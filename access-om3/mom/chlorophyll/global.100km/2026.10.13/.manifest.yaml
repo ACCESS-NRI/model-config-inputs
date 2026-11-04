@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+chl_globcolour_monthly_clim.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/chlorophyll/global.100km/2026.10.13/chl_globcolour_monthly_clim.README.md
+  hashes:
+    binhash: c28c1353bb41866a2654679e9400c0e4
+    md5: da0a655eee6ed67fc9fd3e14d7f11a2c
+chl_globcolour_monthly_clim.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/mom/chlorophyll/global.100km/2026.10.13/chl_globcolour_monthly_clim.nc
+  hashes:
+    binhash: 518f1665645ae14a8f415e881a1cb0f9
+    md5: 5711cf835cf9f9c9d52890790580f0e7
