@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+access-om3-100km-rof-remap-weights.README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cmeps/remap_weights/global.100km/2026.10.13/access-om3-100km-rof-remap-weights.README.md
+  hashes:
+    binhash: 7758779ff14cd4233826f2bf0c052c19
+    md5: 49015f5801d358c13ce0e18b1cf1c261
+access-om3-100km-rof-remap-weights.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-om3/cmeps/remap_weights/global.100km/2026.10.13/access-om3-100km-rof-remap-weights.nc
+  hashes:
+    binhash: c668f3e3a1789355133bf9241775c9ab
+    md5: 224ea5f9f60ff54e9480d8c0accab490
