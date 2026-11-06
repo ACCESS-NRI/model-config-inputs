@@ -1,15 +1,18 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Promote the ACCESS-OM3 100 km rof remap weights (2026.10.13) from VK83
-  Prerelease to Release, so the first MCW 100 km beta release
-  (dev-MCW_100km_era_iaf) can match the shared run MCW_100km_era_iaf-test1-961264ad
-  (https://github.com/ACCESS-NRI/access-om3-configs/issues/1881).
+  Copy updated panan bathymetry and related files to prerelease.
+  See https://github.com/ACCESS-NRI/access-om3-configs/pull/1855
+  Original file location is /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.05
 target: Gadi
-type: Release
+type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
-  # Absolute Prerelease files map to directories relative to
-  # /g/data/vk83/configurations/inputs/.
-  /g/data/vk83/prerelease/configurations/inputs/access-om3/cmeps/remap_weights/global.100km/2026.10.13/access-om3-100km-rof-remap-weights.nc: access-om3/cmeps/remap_weights/global.100km/2026.10.13/
-  /g/data/vk83/prerelease/configurations/inputs/access-om3/cmeps/remap_weights/global.100km/2026.10.13/access-om3-100km-rof-remap-weights.README.md: access-om3/cmeps/remap_weights/global.100km/2026.10.13/
+  # Note that the source is an absolute path accessible to the service user
+  # Note that the target is a relative path to the given targets inputs directory,
+  # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.05/kmt.*: access-om3/panan.4km/2026.11.05/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.05/topog.*: access-om3/panan.4km/2026.11.05/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.05/access-om3-4km-ESMFmesh.*: access-om3/panan.4km/2026.11.05/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.05/access-om3-panan4km-rof-remap-weights.*: access-om3/cmeps/remap_weights/panan.4km/2026.11.05/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.05/access-om3-panan4km-rofi-climatology.*: access-om3/cmeps/rofi_pattern/panan.4km/2026.11.05/
