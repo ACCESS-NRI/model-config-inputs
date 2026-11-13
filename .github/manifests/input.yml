@@ -1,20 +1,12 @@
-# yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated panan bathymetry and related files to prerelease.
-  The bathymetry is now made by binning (averaging) the Charrassin 2025 data over each model cell,
-  rather than bilinear regridding, and cells that are less than half open ocean are land. This removes
-  isolated shallow cells next to much deeper water that caused crashes with USE_RIGID_SEA_ICE = False.
-  See https://github.com/ACCESS-NRI/access-om3-configs/pull/1855
+  Regenerated iceberg runoff (rofi) spreading pattern for the panan 4km + ice shelf
+  configuration, using the Bear Ridge sea ice topography
+  (access-om3/panan-isf.4km/2026.09.07/topog_seaice.nc) so that no runoff falls on
+  the masked Bear Ridge cells.
+  See https://github.com/ACCESS-NRI/access-om3-configs/issues/1479
 target: Gadi
 type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
-  # Note that the source is an absolute path accessible to the service user
-  # Note that the target is a relative path to the given targets inputs directory,
-  # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.13/kmt.*: access-om3/panan.4km/2026.11.13/
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.13/topog.*: access-om3/panan.4km/2026.11.13/
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.13/access-om3-4km-ESMFmesh.*: access-om3/panan.4km/2026.11.13/
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.13/access-om3-panan4km-rof-remap-weights.*: access-om3/cmeps/remap_weights/panan.4km/2026.11.13/
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.13/access-om3-panan4km-rofi-climatology.*: access-om3/cmeps/rofi_pattern/panan.4km/2026.11.13/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/bear_ridge/2026.11.13: access-om3/cmeps/rofi_pattern/panan-isf.4km/
