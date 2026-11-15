@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=./input.schema.json
 description: |
   Regenerated iceberg runoff (rofi) spreading pattern for the panan 4km + ice shelf
   configuration, using the Bear Ridge sea ice topography
