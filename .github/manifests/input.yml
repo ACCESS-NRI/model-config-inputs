@@ -1,13 +1,17 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Regenerated iceberg runoff (rofi) spreading pattern for the panan 4km + ice shelf
-  configuration, using the Bear Ridge sea ice topography
-  (access-om3/panan-isf.4km/2026.09.07/topog_seaice.nc) so that no runoff falls on
-  the masked Bear Ridge cells.
-  See https://github.com/ACCESS-NRI/access-om3-configs/issues/1479
+  Copy updated panan tidal amplitude and bottom roughness files to prerelease.
+  Regenerated from the 2026.11.13 panan bathymetry.
+  bottom_roughness.nc is now made from SYNBATH V2.0 and the av17 WOA23 files.
+  See https://github.com/ACCESS-NRI/access-om3-configs/pull/1855
+  Original file location is /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16
 target: Gadi
 type: Prerelease
 cold-storage: true
 overwrite: false
 inputs:
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/bear_ridge/2026.11.13: access-om3/cmeps/rofi_pattern/panan-isf.4km/
+  # Note that the source is an absolute path accessible to the service user
+  # Note that the target is a relative path to the given targets inputs directory,
+  # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16/tideamp.*: access-om3/panan.4km/2026.11.16/
+  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16/bottom_roughness.*: access-om3/panan.4km/2026.11.16/
