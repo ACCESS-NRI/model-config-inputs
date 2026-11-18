@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Regenerated iceberg runoff (rofi) spreading pattern for the panan 4km + ice shelf
-  configuration, using the Bear Ridge sea ice topography
-  (access-om3/panan-isf.4km/2026.09.07/topog_seaice.nc) so that no runoff falls on
-  the masked Bear Ridge cells.
-  See https://github.com/ACCESS-NRI/access-om3-configs/issues/1479
+  Copy README for ESM1.6 piClim boundary conditions.
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan+isf/bear_ridge/2026.11.13: access-om3/cmeps/rofi_pattern/panan-isf.4km/
+  # Note that the source is an absolute path accessible to the service user
+  # Note that the target is a relative path to the given targets inputs directory,
+  # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/piClim-ssts/README.md : modern/piclim/atmosphere/boundary_conditions/global.N96/2026.10.23/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/piClim-ssts/restart/ : modern/piclim/restart/2026.11.09/
