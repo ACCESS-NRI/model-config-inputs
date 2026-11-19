@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/modern/piclim/restart/2026.11.09/README.md
+  hashes:
+    binhash: a713848e56dbe60804979047e93484e7
+    md5: 1e742811b563b5db5e74b4bf759cd579
+restart_metadata.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/modern/piclim/restart/2026.11.09/restart_metadata.yaml
+  hashes:
+    binhash: efef424b49eb2b7b7695cbc766f6cc73
+    md5: f7b5a1723f445ff792c24559b41247d1

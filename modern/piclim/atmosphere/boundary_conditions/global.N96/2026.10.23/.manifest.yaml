@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/modern/piclim/atmosphere/boundary_conditions/global.N96/2026.10.23/README.md
+  hashes:
+    binhash: c3191624f51d2838e4802802f2893317
+    md5: 88b17a1b0887ff40c625267b543945a3
