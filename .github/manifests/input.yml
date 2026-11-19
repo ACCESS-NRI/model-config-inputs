@@ -9,5 +9,5 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/piClim-ssts/README.md : modern/piclim/atmosphere/boundary_conditions/global.N96/2026.10.23/
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/piClim-ssts/restart/ : modern/piclim/restart/2026.11.09/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/piClim-ssts/README.md : access-esm1p6/modern/piclim/atmosphere/boundary_conditions/global.N96/2026.10.23/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/piClim-ssts/restart/ : access-esm1p6/modern/piclim/restart/2026.11.09/
