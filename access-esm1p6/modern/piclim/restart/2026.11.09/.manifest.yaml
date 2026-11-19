@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim/restart/2026.11.09/README.md
+  hashes:
+    binhash: a02d7fa36643a6c824180fa9015b5f83
+    md5: 1e742811b563b5db5e74b4bf759cd579
+restart_metadata.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim/restart/2026.11.09/restart_metadata.yaml
+  hashes:
+    binhash: 51d1b20b8696d4237bd594459ad92957
+    md5: f7b5a1723f445ff792c24559b41247d1
