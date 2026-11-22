@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+restart_dump.astart:
+  fullpath: /g/data/vk83/configurations/inputs/modern/piclim/restart/2026.11.09/atmosphere/restart_dump.astart
+  hashes:
+    binhash: 2b0091af1e9f777e159d622bfb04cb8c
+    md5: 76dc6c9b6cb38cc90fe23902184ee0d6
+um.res.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/modern/piclim/restart/2026.11.09/atmosphere/um.res.yaml
+  hashes:
+    binhash: 491fb3a99563690bd533dd27f663fe47
+    md5: ce60eba88cfefa089e775b12d65dd068

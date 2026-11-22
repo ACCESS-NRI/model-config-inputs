@@ -6,7 +6,7 @@ description: |
   See https://github.com/ACCESS-NRI/access-om3-configs/pull/1855
   Original file location is /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
