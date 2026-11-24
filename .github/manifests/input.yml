@@ -1,10 +1,6 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy atmosphere and land inputs for the ESM1.6 scen7-hl and scen7-m experiments to release.
-  Original file locations are:
-    /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.10.06/modern/scen7-m/atmosphere/aerosol/global.N96/2026.10.06
-    /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/M-Scenario-ext/
-    /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/HL-Scenario-ext/
+  Copy initial conditions for ESM1.6 scen7-hl, scen7-m, esm-scen7-hl, and esm-scen7-m configurations to release.
 
 target: Gadi
 type: Release
@@ -14,14 +10,9 @@ inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/esm-scen7-m/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-m/atmosphere/forcing/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/esm-scen7-hl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-hl/atmosphere/forcing/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/aerosol/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/land/biogeochemistry/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/land/vegetation/global.N96/2026.11.24_base/: access-esm1p6/modern/scen7-hl/atmosphere/land/vegetation/global.N96/2026.11.24
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/forcing/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/aerosol/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/land/biogeochemistry/global.N96/2026.10.06
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24_base/: access-esm1p6/modern/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24
-  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/forcing/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/esm-scen7-hl/restart/2026.11.24_base/: access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/esm-scen7-m/restart/2026.11.24_base/: access-esm1p6/modern/esm-scen7-m/restart/2026.11.24
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/restart/2026.11.24_base/: access-esm1p6/modern/scen7-hl/restart/2026.11.24
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/restart/2026.11.24_base/: access-esm1p6/modern/scen7-m/restart/2026.11.24
+
 
