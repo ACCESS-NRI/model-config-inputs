@@ -1,0 +1,18 @@
+format: yamanifest
+version: 1.0
+---
+ACCESS_forest_thinning_frac_scen_m_2022-2501.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24/ACCESS_forest_thinning_frac_scen_m_2022-2501.nc
+  hashes:
+    binhash: 43e17d68bef1e2967ea053e6e1a7b473
+    md5: 15b9cc9f23053f115f0e4d8b04a1a138
+ACCESS_vegfrac_scen_m_2022-2150.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24/ACCESS_vegfrac_scen_m_2022-2150.nc
+  hashes:
+    binhash: ca2bcd19c57f8055a0b15b1d03e94c86
+    md5: c4a578214430ab27dabecf9811caa915
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24/README.md
+  hashes:
+    binhash: 4be54c592c05e922e3ca36c2189d3f51
+    md5: 42ecb3b38e32f60aea4a7771b34d9c66

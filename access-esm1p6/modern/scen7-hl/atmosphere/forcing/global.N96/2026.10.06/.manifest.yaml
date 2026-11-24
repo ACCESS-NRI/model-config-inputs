@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-hl/atmosphere/forcing/global.N96/2026.10.06/README.md
+  hashes:
+    binhash: 427926d71fbbf47c0e7e0c9345bb308d
+    md5: fdf8d847046a8cf4565f5ed1e50b84cf
+ozone_hl_2022_2150_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/scen7-hl/atmosphere/forcing/global.N96/2026.10.06/ozone_hl_2022_2150_cmip7.anc
+  hashes:
+    binhash: 77fdf6df5d5ccbc86522c3df1fa2bb0d
+    md5: 2982eb88cbcd681c02ebb5a7ca22423e
