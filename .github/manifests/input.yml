@@ -1,17 +1,27 @@
 # yaml-language-server: $schema=./input.schema.json
 description: |
-  Copy updated panan tidal amplitude and bottom roughness files to prerelease.
-  Regenerated from the 2026.11.13 panan bathymetry.
-  bottom_roughness.nc is now made from SYNBATH V2.0 and the av17 WOA23 files.
-  See https://github.com/ACCESS-NRI/access-om3-configs/pull/1855
-  Original file location is /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16
+  Copy atmosphere and land inputs for the ESM1.6 scen7-hl and scen7-m experiments to release.
+  Original file locations are:
+    /g/data/tm70/pcl851/CMIP7/esm1p6_ancil/2026.10.06/modern/scen7-m/atmosphere/aerosol/global.N96/2026.10.06
+    /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/M-Scenario-ext/
+    /g/data/p66/ajn563/ACCESS-ESM/ESM1.6/luh3-1-1/scenarios/HL-Scenario-ext/
+
 target: Gadi
-type: Prerelease
+type: Release
 cold-storage: true
 overwrite: false
 inputs:
   # Note that the source is an absolute path accessible to the service user
   # Note that the target is a relative path to the given targets inputs directory,
   # eg. Gadi Prerelease is /g/data/vk83/prerelease/configurations/inputs
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16/tideamp.*: access-om3/panan.4km/2026.11.16/
-  /g/data/tm70/ds0092/model/inputs/access-om3/panan/2026.11.16/bottom_roughness.*: access-om3/panan.4km/2026.11.16/
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/esm-scen7-m/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-m/atmosphere/forcing/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/esm-scen7-hl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/esm-scen7-hl/atmosphere/forcing/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/aerosol/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/land/biogeochemistry/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/land/vegetation/global.N96/2026.11.24_base/: access-esm1p6/modern/scen7-hl/atmosphere/land/vegetation/global.N96/2026.11.24
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-hl/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-hl/atmosphere/forcing/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/aerosol/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/aerosol/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/land/biogeochemistry/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/land/biogeochemistry/global.N96/2026.10.06
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24_base/: access-esm1p6/modern/scen7-m/atmosphere/land/vegetation/global.N96/2026.11.24
+  /g/data/tm70/sw6175/development/esm1p6/inputfiles/scen7-m-hl/scen7-m/atmosphere/forcing/global.N96/2026.10.06_base/: access-esm1p6/modern/scen7-m/atmosphere/forcing/global.N96/2026.10.06
+
