@@ -1,0 +1,93 @@
+format: yamanifest
+version: 1.0
+---
+ocean_age.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_age.res.nc
+  hashes:
+    binhash: d40916ea54151df163352ce00391c5f6
+    md5: 1e5fcc3aff5e813d750d2a88aec97282
+ocean_barotropic.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_barotropic.res.nc
+  hashes:
+    binhash: 2de65e1f6f7204978af9fd85e4e26073
+    md5: 43e14b1230fab98b6291a4bbec4c554f
+ocean_bih_friction.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_bih_friction.res.nc
+  hashes:
+    binhash: 24875b6f9ab6c7d3d1eeeb2fb76c63ab
+    md5: 9930fc4f715013baf698086993de5a71
+ocean_density.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_density.res.nc
+  hashes:
+    binhash: 969432a03b06e70f155cf8c5a74c8400
+    md5: 4caae104abe49543954a54426c019471
+ocean_frazil.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_frazil.res.nc
+  hashes:
+    binhash: 34e9467a28a43b1f846b24bb68ded005
+    md5: e83c15d86b4b7f011c3536f5e3d662c2
+ocean_lap_friction.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_lap_friction.res.nc
+  hashes:
+    binhash: 46d3d293705fb10f65e5583b6924a4b6
+    md5: fed0d39f4e25d226457caf630e1beb28
+ocean_neutral.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_neutral.res.nc
+  hashes:
+    binhash: 0742a35e5800d92ada61369db0ba7672
+    md5: 6bcd6ac1ee0bbb796807a4667fa358c5
+ocean_pot_temp.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_pot_temp.res.nc
+  hashes:
+    binhash: c0bcfbb2d4c9727ab6b13e83afc6cbe6
+    md5: 27b4dedd95e21e84876626ee8c0b6124
+ocean_sbc.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_sbc.res.nc
+  hashes:
+    binhash: 1420646aa302de531f55846d534862f5
+    md5: f3c6c254198db0f2805e4c13dcac3755
+ocean_sigma_transport.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_sigma_transport.res.nc
+  hashes:
+    binhash: 0f1b85036c241235dda6f7730b2444a4
+    md5: 13cedb1ccde6b993fbd12afc326975f1
+ocean_solo.res:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_solo.res
+  hashes:
+    binhash: bd01c36ac458b183f4a55d2dc9e8a1d7
+    md5: 253e7f183a6043e3e4410fd000dfcb8a
+ocean_temp_salt.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_temp_salt.res.nc
+  hashes:
+    binhash: c70b3a8ab69e3881752f62f9ceed3a19
+    md5: 70317da2d795c929f88e6d8ab5e19fb6
+ocean_thickness.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_thickness.res.nc
+  hashes:
+    binhash: c8e20d170116d3c9b0b11862bfc4a223
+    md5: e1ac0d51742c497229d70055ff085ae3
+ocean_tracer.res:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_tracer.res
+  hashes:
+    binhash: 3348cdac2d73bf621d6b6a888e58f047
+    md5: d040c41f9ad156f1ba87d5d23ae4655b
+ocean_velocity.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_velocity.res.nc
+  hashes:
+    binhash: 85c328e3cef4dc49e86a7d626ff963ca
+    md5: 483c17b763bef961d530371123d58d0e
+ocean_velocity_advection.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_velocity_advection.res.nc
+  hashes:
+    binhash: fa42552641c42aae0d48fa1ed2ea3836
+    md5: b52e2b374daa33097fb068fcff7bcb65
+ocean_wombatlite.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_wombatlite.res.nc
+  hashes:
+    binhash: ab1f74cf7dabb9953474f2834a3f8c49
+    md5: 6cb6a1d3ed236d82296b6999d8bfc3d2
+ocean_wombatlite_airsea_flux.res.nc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/esm-scen7-hl/restart/2026.11.24/ocean/ocean_wombatlite_airsea_flux.res.nc
+  hashes:
+    binhash: 9426a75744436f0f6b69bf0f0cde92a5
+    md5: 879acc171034f97b0287cbd01c587015
