@@ -1,0 +1,28 @@
+format: yamanifest
+version: 1.0
+---
+BC_piclim_anthro_2021_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/aerosol/2026.11.25/BC_piclim_anthro_2021_cmip7.anc
+  hashes:
+    binhash: 1a28fed2f56077cfa82cbedac747ec12
+    md5: a3860a02aa65af84c1446f8caec84df0
+Bio_piclim_anthro_2021_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/aerosol/2026.11.25/Bio_piclim_anthro_2021_cmip7.anc
+  hashes:
+    binhash: 4333c28ebf7afc3f84e19c9cc04be7e0
+    md5: ee8a9b98a52da8618250c8de0900c41c
+OCFF_piclim_anthro_2021_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/aerosol/2026.11.25/OCFF_piclim_anthro_2021_cmip7.anc
+  hashes:
+    binhash: e5958c27c78b13e10a47921b23d0398a
+    md5: 378eb75ce10ff2be0d14062a4801cc07
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/aerosol/2026.11.25/README.md
+  hashes:
+    binhash: ea57c01a27ad05d0f4c1c54f9e51f629
+    md5: 637825b2fbdd38971201dbaaf571a442
+scycl_piclim_anthro_2021_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/aerosol/2026.11.25/scycl_piclim_anthro_2021_cmip7.anc
+  hashes:
+    binhash: 41c554beb9ad7931630f0c383c692a56
+    md5: b04a27880dce37908f58c9309f5f6200

@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/restart/2026.11.25/README.md
+  hashes:
+    binhash: e30a1aa0f6b32f4dad6bc86feabace85
+    md5: 52b19f4dc8dc563b247432874347d225
+restart_metadata.yaml:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/restart/2026.11.25/restart_metadata.yaml
+  hashes:
+    binhash: 67a4a6ab61771e069ff0c09c0b69e878
+    md5: f7b5a1723f445ff792c24559b41247d1

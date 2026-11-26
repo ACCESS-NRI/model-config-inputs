@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/picclim-anthro/atmosphere/forcing/2026.11.25/README.md
+  hashes:
+    binhash: 6b64a64b87b307f9361d7952c33c6718
+    md5: 3c5403acd05b05475ddb80275fc1b650
+ozone_piclim_anthro_2021_cmip7.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/picclim-anthro/atmosphere/forcing/2026.11.25/ozone_piclim_anthro_2021_cmip7.anc
+  hashes:
+    binhash: c7e86d060ea958a46108dca1ac76f5a7
+    md5: 82888abc5d97efc3dd1246db6dd27efd

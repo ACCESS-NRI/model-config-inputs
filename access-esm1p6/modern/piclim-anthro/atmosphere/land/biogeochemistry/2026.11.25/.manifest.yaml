@@ -1,0 +1,13 @@
+format: yamanifest
+version: 1.0
+---
+Ndep_piclim_anthro_2021_cmip7_v2_0.anc:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/land/biogeochemistry/2026.11.25/Ndep_piclim_anthro_2021_cmip7_v2_0.anc
+  hashes:
+    binhash: d8a1088ded865f4ff47598455c77b1cf
+    md5: 4b0ba1e01109454b4d0bd586024eb626
+README.md:
+  fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/piclim-anthro/atmosphere/land/biogeochemistry/2026.11.25/README.md
+  hashes:
+    binhash: 0694ef84ec8f34f8eb0931ae797cbf80
+    md5: 8d01041337446f5e0911ce7f50f3b3d3
